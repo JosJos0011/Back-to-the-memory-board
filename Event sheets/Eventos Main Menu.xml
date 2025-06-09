@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Main Menu</name>
+    <events>
+        <event-group description="" sid="434328976559056" title="Start of game">
+            <sub-events>
+                <variable comment="variable para hacer el efecto de crecimiento en bucle" constant="0" name="oscTime" sid="228584071408538" static="0" type="number">0</variable>
+                <event-block sid="714439415634520">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="748975073383936" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="827950612650224" type="Audio">
+                            <param id="0" name="Audio file">Back-to-the-Random-Access-Memory</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="489819034844534" type="System">
+                            <param id="0" name="Object to create">Negro</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="442921946294032" title="Level OverView">
+            <sub-events>
+                <event-block sid="930001275294465">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="346446393957070" type="Mouse">
+                            <param id="0" name="Object">HitboxTVlvl1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="403329140100874" type="nivel1">
+                            <param id="0" name="Width">186</param>
+                            <param id="1" name="Height">90</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="254556406181539" type="nivel1">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="999824782951228">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="120797681032680" type="Mouse">
+                            <param id="0" name="Object">HitboxTVlvl1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="956358215247159" type="nivel1">
+                            <param id="0" name="Width">155</param>
+                            <param id="1" name="Height"> 75</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="430377333228011" type="nivel1">
+                            <param id="0" name="Opacity">70</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="425552591276207">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="203829162104633" type="Mouse">
+                            <param id="0" name="Object">HitBoxTVLvL2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="813651522391919" type="nivel2">
+                            <param id="0" name="Width">186</param>
+                            <param id="1" name="Height">90</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="114239016114308" type="nivel2">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="350619741004493">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="927925707270826" type="Mouse">
+                            <param id="0" name="Object">HitBoxTVLvL2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="412298604085655" type="nivel2">
+                            <param id="0" name="Width">155</param>
+                            <param id="1" name="Height"> 75</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="805053407982953" type="nivel2">
+                            <param id="0" name="Opacity">70</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="682267120207684">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="315791311441075" type="Mouse">
+                            <param id="0" name="Object">HitBoxTVLvL3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="372754937546506" type="nivel3">
+                            <param id="0" name="Width">186</param>
+                            <param id="1" name="Height">90</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="586149875458242" type="nivel3">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="739214443984656">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="716774235040956" type="Mouse">
+                            <param id="0" name="Object">HitBoxTVLvL3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="692355971703588" type="nivel3">
+                            <param id="0" name="Width">155</param>
+                            <param id="1" name="Height"> 75</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="349741112320955" type="nivel3">
+                            <param id="0" name="Opacity">70</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="381509297678740" title="Load Selected Level">
+            <sub-events>
+                <event-block sid="162058377111459">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="263005750682230" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">HitboxTVlvl1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="326799591762891" type="System">
+                            <param id="0" name="Layout">Nivel1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="892205527605170" type="System">
+                            <param id="0" name="Object to create">Negro</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="562387112534367">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="898873991912101" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">HitBoxTVLvL2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="812961689445832">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="338993321743919" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">HitBoxTVLvL3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

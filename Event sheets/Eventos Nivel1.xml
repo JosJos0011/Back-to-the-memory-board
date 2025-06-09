@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Nivel1</name>
+    <events>
+        <variable comment="Es el temporizador del nivel" constant="0" name="Temporizador" sid="423897483368405" static="0" type="number">180</variable>
+        <event-group description="" sid="630313337647197" title="Start of layout">
+            <sub-events>
+                <event-block sid="967547130646530">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="166164089591801" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="198260610794749" type="System">
+                            <param id="0" name="Object to create">Negro</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action id="6" name="Stop" sid="301895333040294" type="Audio">
+                            <param id="0" name="Tag">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="632778067211707" type="Audio">
+                            <param id="0" name="Audio file">The-Tireless-One-_Instrumental_</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="184567104455658" type="TiempoRestante">
+                            <param id="0" name="X">ViewportLeft(&quot;Foreground&quot;) + 70</param>
+                            <param id="1" name="Y">ViewportTop(&quot;Foreground&quot;) + 50</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="214965252887687" type="TextoPoder">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="694408539622948" type="TextoPoder">
+                            <param id="0" name="X">ViewportLeft(&quot;Foreground&quot;) + 40</param>
+                            <param id="1" name="Y">ViewportTop(&quot;Foreground&quot;) + 100</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="792008824206003" type="System">
+                            <param id="0" name="Variable">Temporizador</param>
+                            <param id="1" name="Value">180</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="456794282715967" title="Game Time Mechanics">
+            <sub-events>
+                <event-block sid="103548361817584">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="928145446614107" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="373477917473346" type="System">
+                            <param id="0" name="Variable">Temporizador</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="200267075952751">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="950237381350376" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="975104616623686" type="TiempoRestante">
+                            <param id="0" name="Text">int(Temporizador / 60) &amp; &quot;:&quot; &amp; right(&quot;0&quot; &amp; (Temporizador % 60), 2)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="937402716523905">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="388780829765411" type="System">
+                            <param id="0" name="Variable">Temporizador</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">120</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="956605109908009" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Set speed" sid="378667717243737" type="Reff">
+                            <param id="0" name="Speed">Reff.Platform.MaxSpeed *1.25</param>
+                        </action>
+                        <action id="0" name="Set text" sid="827758653215292" type="TextoPoder">
+                            <param id="0" name="Text">&quot;¡Permiso otorgado! Prioridad de procesamiento: velocidad +25%&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="101019710725734" type="TextoPoder">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="741617936024969" type="System">
+                            <param id="0" name="Seconds">3.5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="550442372485696" type="TextoPoder">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="563294653720218">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="355350049939674" type="System">
+                            <param id="0" name="Variable">Temporizador</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">60</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="13" name="Set double-jump" sid="295492783331350" type="Reff">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="525671373440493">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="437849877864114" type="System">
+                            <param id="0" name="Variable">Temporizador</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="378433060081530" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="813244739718968" type="System">
+                            <param id="0" name="Layout">GameOver</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

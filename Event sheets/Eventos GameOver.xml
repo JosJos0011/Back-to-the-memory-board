@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos GameOver</name>
+    <events>
+        <event-group description="" sid="463874573992108" title="Start of GameOverLayout">
+            <sub-events>
+                <event-block sid="586848154812151">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="598532079056925" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set web font" sid="565966791531831" type="Text">
+                            <param id="0" name="Family name">&quot;Joystix monospace&quot;</param>
+                            <param id="1" name="CSS URL">&quot;http://&quot;</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="988063576835109" type="System">
+                            <param id="0" name="Object to create">Negro</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action id="6" name="Stop" sid="229166503144131" type="Audio">
+                            <param id="0" name="Tag">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="361194352559066" title="Events">
+            <sub-events>
+                <event-block sid="527927483388814">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="710774043021597" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="968499136458957" type="System">
+                            <param id="0" name="Layout">Nivel1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="606439522493911">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="290482965618840" type="Keyboard">
+                    <param id="0" name="Key">9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="178019679714651" type="System">
+                    <param id="0" name="Layout">Main Menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
