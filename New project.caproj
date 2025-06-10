@@ -280,6 +280,14 @@
         <object-type name="Text" sid="834336455963485">
             <plugin id="Text" />
         </object-type>
+        <object-type name="ZonaNull" sid="188733055666428">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="648880991110484" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

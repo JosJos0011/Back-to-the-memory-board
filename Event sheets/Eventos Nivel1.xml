@@ -128,5 +128,22 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="505093860067279" title="Game Death Mechanics">
+            <sub-events>
+                <event-block sid="289824918201040">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="696080656371713" type="Reff">
+                            <param id="0" name="Object">ZonaNull</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="239726125167316" type="Reff" />
+                        <action id="-2" name="Go to layout" sid="843738765515682" type="System">
+                            <param id="0" name="Layout">GameOver</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
