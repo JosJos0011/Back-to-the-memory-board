@@ -213,25 +213,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Reff" sid="611605234181964">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="ScrollTo" sid="265528539567345">
-                    <behavior id="scrollto" />
-                </behavior-type>
-                <behavior-type name="Platform" sid="520716934060839">
-                    <behavior id="Platform" />
-                </behavior-type>
-                <behavior-type name="BoundToLayout" sid="556815768700980">
-                    <behavior id="bound" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="621630725336225" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="TiempoRestante" sid="818801388825996">
             <plugin id="Text" />
             <behaviors>
@@ -285,6 +266,79 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="648880991110484" speed="5">
                     <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Reff_PJ" sid="281510242356599">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="BoundToLayout" sid="219710303355603">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="462861546281496">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="453609220859567">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="483410242138490" speed="2">
+                    <frame duration="1" hotspotX="0.502415" hotspotY="0.5" original-source="C:\Users\josjo\Downloads\imagen-Photoroom.png" />
+                </animation>
+                <animation framecount="2" loop="1" name="Grab" pingpong="0" repeatcount="1" repeatto="0" sid="502926336978128" speed="5">
+                    <frame duration="1" hotspotX="-0.211864" hotspotY="-0.106742" />
+                    <frame duration="1" hotspotX="-0.20438" hotspotY="-0.0726257" />
+                </animation>
+                <animation framecount="1" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="981318508409364" speed="5">
+                    <frame duration="1" hotspotX="0.479263" hotspotY="0.51049" />
+                </animation>
+                <animation framecount="2" loop="1" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="470987946297026" speed="5">
+                    <frame duration="1" hotspotX="0.427984" hotspotY="0.48505" />
+                    <frame duration="1" hotspotX="0.390977" hotspotY="0.466454" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="NullWraith" sid="145996339866681">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="606045680315694">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="12" loop="1" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="167348207527261" speed="5">
+                    <frame duration="1" hotspotX="0.458333" hotspotY="0.527778" />
+                    <frame duration="1" hotspotX="0.542253" hotspotY="0.527778" />
+                    <frame duration="1" hotspotX="0.620968" hotspotY="0.527778" />
+                    <frame duration="1" hotspotX="0.712871" hotspotY="0.527778" />
+                    <frame duration="1" hotspotX="0.701299" hotspotY="0.527778" />
+                    <frame duration="1" hotspotX="0.537313" hotspotY="0.527778" />
+                    <frame duration="1" hotspotX="0.505263" hotspotY="0.527778" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.527778" />
+                    <frame duration="1" hotspotX="0.57037" hotspotY="0.527778" />
+                    <frame duration="1" hotspotX="0.663866" hotspotY="0.527778" />
+                    <frame duration="1" hotspotX="0.694737" hotspotY="0.506224" />
+                    <frame duration="1" hotspotX="0.606557" hotspotY="0.527778" />
+                </animation>
+                <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="697991326584594" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PuntoIzquierdo" sid="188104607624935">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="136958962497957" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PuntoDerecho" sid="374271168734347">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="745865812020190" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>

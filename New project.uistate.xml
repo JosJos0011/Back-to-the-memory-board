@@ -26,7 +26,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="0" path="music-folder/" />
@@ -41,10 +41,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Negro/" />
         <folder expanded="1" path="animation-folder/BackgrondLvl/" />
         <folder expanded="1" path="animation-folder/Plataform/" />
-        <folder expanded="1" path="animation-folder/Reff/" />
         <folder expanded="1" path="animation-folder/UI_Cartel/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/GameOverBackgrond/" />
         <folder expanded="1" path="animation-folder/ZonaNull/" />
+        <folder expanded="1" path="animation-folder/Reff_PJ/" />
+        <folder expanded="1" path="animation-folder/NullWraith/" />
+        <folder expanded="1" path="animation-folder/PuntoIzquierdo/" />
+        <folder expanded="1" path="animation-folder/PuntoDerecho/" />
     </folders-expanded>
 </c2uistate>

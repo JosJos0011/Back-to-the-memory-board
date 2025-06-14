@@ -41,6 +41,10 @@
                             <param id="0" name="Variable">Temporizador</param>
                             <param id="1" name="Value">180</param>
                         </action>
+                        <action id="4" name="Set animation" sid="122696373022201" type="Reff_PJ">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -80,8 +84,8 @@
                         <condition id="-4" name="Trigger once while true" sid="956605109908009" type="System" />
                     </conditions>
                     <actions>
-                        <action id="6" name="Set speed" sid="378667717243737" type="Reff">
-                            <param id="0" name="Speed">Reff.Platform.MaxSpeed *1.25</param>
+                        <action id="6" name="Set speed" sid="378667717243737" type="Reff_PJ">
+                            <param id="0" name="Speed">Reff_PJ.Platform.MaxSpeed*1.25</param>
                         </action>
                         <action id="0" name="Set text" sid="827758653215292" type="TextoPoder">
                             <param id="0" name="Text">&quot;¡Permiso otorgado! Prioridad de procesamiento: velocidad +25%&quot;</param>
@@ -106,7 +110,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Platform" id="13" name="Set double-jump" sid="295492783331350" type="Reff">
+                        <action behavior="Platform" id="13" name="Set double-jump" sid="295492783331350" type="Reff_PJ">
                             <param id="0" name="State">1</param>
                         </action>
                     </actions>
@@ -128,18 +132,132 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="753806175519908" title="Game Reff Mechanics">
+            <sub-events>
+                <event-block sid="834886410505667">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="509605040677146" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="518463199573901" type="Reff_PJ">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="839279817297518" type="Reff_PJ">
+                            <param id="0" name="Animation">&quot;Run&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="301201605894645">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="705280766625338" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="700629450154002" type="Reff_PJ">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="522672364705590" type="Reff_PJ">
+                            <param id="0" name="Animation">&quot;Run&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="790041630686735">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="526173130543025" type="Keyboard">
+                            <param id="0" name="Key">38</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="714453992037531">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="748794106014309" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="862891648785629" type="Reff_PJ">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="430394857016764">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="422907869027987" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="135209282422711" type="Reff_PJ">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" sid="505093860067279" title="Game Death Mechanics">
             <sub-events>
                 <event-block sid="289824918201040">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="696080656371713" type="Reff">
+                        <condition id="0" name="On collision with another object" sid="696080656371713" type="Reff_PJ">
                             <param id="0" name="Object">ZonaNull</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="239726125167316" type="Reff" />
+                        <action id="-9" name="Destroy" sid="239726125167316" type="Reff_PJ" />
                         <action id="-2" name="Go to layout" sid="843738765515682" type="System">
                             <param id="0" name="Layout">GameOver</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="612887853071894" title="Game Enemies Mechanics ">
+            <sub-events>
+                <event-block sid="893564377323626">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="357464220703792" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="611168357413358" type="NullWraith">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="664113249395833">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="256766907967335" type="NullWraith">
+                            <param id="0" name="Object">PuntoDerecho</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="966909161101534" type="NullWraith">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="442203632894974" type="NullWraith">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="317816446772782">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="438450995725069" type="NullWraith">
+                            <param id="0" name="Object">PuntoIzquierdo</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="730992622327091" type="NullWraith">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="834569306246452" type="NullWraith">
+                            <param id="0" name="Control">1</param>
                         </action>
                     </actions>
                 </event-block>
