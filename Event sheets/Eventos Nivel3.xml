@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Nivel3</name>
     <events>
+        <include>PlayerSettings</include>
         <event-group description="" sid="578029288323182" title="Start Of Layout3">
             <sub-events>
                 <event-block sid="638238251589463">

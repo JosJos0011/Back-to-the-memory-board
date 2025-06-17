@@ -29,7 +29,7 @@
                     </conditions>
                     <actions>
                         <action behavior="Platform" id="4" name="Set jump strength" sid="887007295298084" type="Reff_PJ">
-                            <param id="0" name="Jump strength">200</param>
+                            <param id="0" name="Jump strength">550</param>
                         </action>
                     </actions>
                 </event-block>

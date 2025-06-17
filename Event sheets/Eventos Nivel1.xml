@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Nivel1</name>
     <events>
+        <include>PlayerSettings</include>
         <variable comment="Es el temporizador del nivel" constant="0" name="Temporizador" sid="423897483368405" static="0" type="number">180</variable>
         <event-group description="" sid="630313337647197" title="Start of layout">
             <sub-events>

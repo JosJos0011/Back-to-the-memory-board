@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos GameOver</name>
     <events>
+        <include>PlayerSettings</include>
         <event-group description="" sid="463874573992108" title="Start of GameOverLayout">
             <sub-events>
                 <event-block sid="586848154812151">
