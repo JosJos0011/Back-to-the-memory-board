@@ -26,9 +26,9 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
-                        <action id="-3" name="Set position" sid="184567104455658" type="TiempoRestante">
-                            <param id="0" name="X">ViewportLeft(&quot;Foreground&quot;) + 70</param>
-                            <param id="1" name="Y">ViewportTop(&quot;Foreground&quot;) + 50</param>
+                        <action id="-3" name="Set position" sid="184567104455658" type="TextoTiempoRestante">
+                            <param id="0" name="X">ViewportLeft(&quot;Foreground&quot;) + 45</param>
+                            <param id="1" name="Y">ViewportTop(&quot;Foreground&quot;) + 27</param>
                         </action>
                         <action id="-15" name="Set visible" sid="214965252887687" type="TextoPoder">
                             <param id="0" name="Visibility">0</param>
@@ -44,6 +44,10 @@
                         <action id="4" name="Set animation" sid="122696373022201" type="Reff_PJ">
                             <param id="0" name="Animation">&quot;Idle&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="282627705321103" type="Reff_PJ">
+                            <param id="0" name="Instance variable">Vidas</param>
+                            <param id="1" name="Value">3</param>
                         </action>
                     </actions>
                 </event-block>
@@ -69,8 +73,11 @@
                         <condition id="-1" name="Every tick" sid="950237381350376" type="System" />
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="975104616623686" type="TiempoRestante">
+                        <action id="0" name="Set text" sid="975104616623686" type="TextoTiempoRestante">
                             <param id="0" name="Text">int(Temporizador / 60) &amp; &quot;:&quot; &amp; right(&quot;0&quot; &amp; (Temporizador % 60), 2)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="263478839582628" type="TextoVidasLvl1">
+                            <param id="0" name="Text">Reff_PJ.Vidas</param>
                         </action>
                     </actions>
                 </event-block>
@@ -221,48 +228,139 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-group description="" sid="403565014109170" title="Death for lives" />
+                <event-block sid="723998934257049">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="357970091098885" type="Reff_PJ">
+                            <param id="0" name="Instance variable">Vidas</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="454099741690200" type="Reff_PJ" />
+                        <action id="-9" name="Set value" sid="112567888026163" type="System">
+                            <param id="0" name="Variable">NivelActual</param>
+                            <param id="1" name="Value">&quot;Nivel1&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="330301663935090" type="System">
+                            <param id="0" name="Layout">GameOver</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="612887853071894" title="Game Enemies Mechanics ">
             <sub-events>
                 <event-block sid="664113249395833">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="256766907967335" type="NullWraith">
-                            <param id="0" name="Object">PuntoDerecho</param>
-                        </condition>
+                        <condition id="-1" name="Every tick" sid="256766907967335" type="System" />
                     </conditions>
-                    <actions>
-                        <action id="7" name="Set mirrored" sid="966909161101534" type="NullWraith">
-                            <param id="0" name="State">0</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="751673101823353">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="285841964905987" type="NullWraith">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">Self.spritex</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="747581742091178" type="NullWraith">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="659545979941784" type="NullWraith">
+                                    <param id="0" name="Instance variable">spritex</param>
+                                    <param id="1" name="Value">Self.X</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="665246915352145">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="687783204549960" type="NullWraith">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">Self.spritex</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="878740482497151" type="NullWraith">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="790496616026289" type="NullWraith">
+                                    <param id="0" name="Instance variable">spritex</param>
+                                    <param id="1" name="Value">Self.X</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
-                <event-block sid="317816446772782">
+                <event-block sid="750455730804312">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="438450995725069" type="NullWraith">
-                            <param id="0" name="Object">PuntoIzquierdo</param>
+                        <condition id="0" name="On collision with another object" sid="436463398241221" type="Reff_PJ">
+                            <param id="0" name="Object">NullWraith</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="7" name="Set mirrored" sid="730992622327091" type="NullWraith">
-                            <param id="0" name="State">1</param>
+                        <action id="-10" name="Set value" sid="546010701936561" type="Reff_PJ">
+                            <param id="0" name="Instance variable">Inmune</param>
+                            <param id="1" name="Value">0</param>
                         </action>
-                    </actions>
-                </event-block>
-                <event-block sid="896223514577304">
-                    <conditions>
-                        <condition behavior="Sine" id="2" name="Compare period" sid="750593459440140" type="NullWraith">
-                            <param id="0" name="Comparison">0</param>
-                            <param id="1" name="Value">5</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="7" name="Set mirrored" sid="352583257613241" type="NullWraith">
-                            <param id="0" name="State">0</param>
+                        <action id="-12" name="Subtract from" sid="359308448396351" type="Reff_PJ">
+                            <param id="0" name="Instance variable">Vidas</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="673684413177523" type="Reff_PJ">
+                            <param id="0" name="Instance variable">Inmune</param>
+                            <param id="1" name="Value">1.5</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="309581947507329" type="Reff_PJ">
+                            <param id="0" name="&apos;On&apos; time">0.2</param>
+                            <param id="1" name="&apos;Off&apos; time">0.2</param>
+                            <param id="2" name="Duration">1.5</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="134667615406869" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="991573248263676" type="Reff_PJ">
+                            <param id="0" name="Instance variable">Inmune</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="963718850335054">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="401329366999374" type="Reff_PJ">
+                    <param id="0" name="Object">nullZone</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="724749583831095" type="Reff_PJ">
+                    <param id="0" name="Instance variable">Inmune</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-12" name="Subtract from" sid="876345447666020" type="Reff_PJ">
+                    <param id="0" name="Instance variable">Vidas</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="124219384207377" type="Reff_PJ">
+                    <param id="0" name="Instance variable">Inmune</param>
+                    <param id="1" name="Value">1.5</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="218250348635078" type="Reff_PJ">
+                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                    <param id="2" name="Duration">1.5</param>
+                </action>
+                <action id="-16" name="Wait" sid="718287304256066" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-10" name="Set value" sid="996435396848410" type="Reff_PJ">
+                    <param id="0" name="Instance variable">Inmune</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
