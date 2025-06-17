@@ -157,7 +157,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="488805850421389" title="Lvl3Enemies2">
+        <event-group description="" sid="488805850421389" title="Lvl3Enemies">
             <sub-events>
                 <event-block sid="529663385150385">
                     <conditions>
@@ -197,7 +197,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="Vidas del jugador en el nivel 3" sid="903144726412154" title="PlayerHearthLvl4">
+        <event-group description="Vidas del jugador en el nivel 3" sid="903144726412154" title="PlayerHearthLvl3">
             <sub-events>
                 <event-block sid="621053126638853">
                     <conditions>
@@ -211,7 +211,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="575994201907566" title="Lvl3Gems2">
+        <event-group description="" sid="575994201907566" title="Lvl3Gems">
             <sub-events>
                 <event-block sid="267297601146165">
                     <conditions>
