@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Main Menu</name>
     <events>
+        <variable comment="Variable global para recordar en cuál nivel se está jugando" constant="0" name="NivelActual" sid="662477618618652" static="0" type="text"></variable>
         <event-group description="" sid="434328976559056" title="Start of game">
             <sub-events>
                 <variable comment="variable para hacer el efecto de crecimiento en bucle" constant="0" name="oscTime" sid="228584071408538" static="0" type="number">0</variable>
@@ -167,7 +168,17 @@
                             <param id="2" name="Object clicked">HitBoxTVLvL3</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="702128903277091" type="System">
+                            <param id="0" name="Layout">Nivel3</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="585695471933633" type="System">
+                            <param id="0" name="Object to create">Negro</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>

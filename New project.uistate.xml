@@ -10,11 +10,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Nivel1</layout>
-        <layout order="2">Main Menu</layout>
-        <layout order="3">GameOver</layout>
-        <event-sheet active="1" order="1">Eventos Nivel1</event-sheet>
-        <event-sheet order="4">Eventos GameOver</event-sheet>
+        <layout order="2">Nivel1</layout>
+        <layout order="0">Main Menu</layout>
+        <layout order="6">GameOver</layout>
+        <layout order="4">Nivel3</layout>
+        <event-sheet order="3">Eventos Nivel1</event-sheet>
+        <event-sheet order="7">Eventos GameOver</event-sheet>
+        <event-sheet active="1" order="5">Eventos Nivel3</event-sheet>
+        <event-sheet order="1">Eventos Main Menu</event-sheet>
+        <event-sheet order="8">PlayerSettings</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -26,7 +30,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="0" path="event-folder/" />
+        <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="0" path="music-folder/" />
@@ -49,5 +53,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/NullWraith/" />
         <folder expanded="1" path="animation-folder/PuntoIzquierdo/" />
         <folder expanded="1" path="animation-folder/PuntoDerecho/" />
+        <folder expanded="1" path="animation-folder/Platform/" />
+        <folder expanded="1" path="animation-folder/GreenGem/" />
+        <folder expanded="1" path="animation-folder/LockSprite/" />
+        <folder expanded="1" path="animation-folder/RedGem/" />
+        <folder expanded="1" path="animation-folder/enemySwimming_1/" />
+        <folder expanded="1" path="animation-folder/spikesLow/" />
+        <folder expanded="1" path="animation-folder/Cartel/" />
+        <folder expanded="1" path="animation-folder/enemyFloating_1/" />
+        <folder expanded="1" path="animation-folder/switchGreen_left/" />
     </folders-expanded>
 </c2uistate>

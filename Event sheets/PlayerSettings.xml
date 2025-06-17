@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>PlayerSettings</name>
+    <events>
+        <event-group description="" sid="588648732493857" title="PlayerJumpStrength">
+            <sub-events>
+                <event-block sid="139502262053690">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="690647750376853" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Nivel1&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="4" name="Set jump strength" sid="807897133665022" type="Reff_PJ">
+                            <param id="0" name="Jump strength">900</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="592426160595882">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="694034727037132" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Nivel3&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="4" name="Set jump strength" sid="887007295298084" type="Reff_PJ">
+                            <param id="0" name="Jump strength">200</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

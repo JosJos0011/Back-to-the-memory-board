@@ -15,6 +15,7 @@
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
@@ -342,17 +343,206 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Platform" sid="355289893412139">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="590189505276765">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="285615211149065" speed="5">
+                    <frame duration="1" hotspotX="0.475275" hotspotY="0.410714" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\platform.png">
+                        <collision-poly>
+                            <point x="0.421703" y="0.0625" />
+                            <point x="0.475275" y="0.107143" />
+                            <point x="0.535714" y="0.0178571" />
+                            <point x="0.98489" y="0.410714" />
+                            <point x="0.546703" y="0.875" />
+                            <point x="0.475275" y="0.901786" />
+                            <point x="0.401099" y="0.892857" />
+                            <point x="0.00549451" y="0.410714" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GreenGem" sid="134477527211089">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="704368835590571" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\platformer-assets\Platformer\Abstract Platformer\PNG\Items\greenGem.png">
+                        <collision-poly>
+                            <point x="0.181818" y="0.181818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.818182" y="0.181818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.818182" y="0.818182" />
+                            <point x="0.5" y="1" />
+                            <point x="0.181818" y="0.818182" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LockSprite" sid="302753401388897">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="436776490624313" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\platformer-assets\Platformer\Abstract Platformer\PNG\Other\blockGreen_lock.png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.96875" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="RedGem" sid="874776432706970">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="206564204842721" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\platformer-assets\Platformer\Abstract Platformer\PNG\Items\redGem.png">
+                        <collision-poly>
+                            <point x="0.181818" y="0.181818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.818182" y="0.181818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.818182" y="0.818182" />
+                            <point x="0.5" y="1" />
+                            <point x="0.181818" y="0.818182" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tilemap1" sid="182233950133166">
+            <plugin id="Tilemap" />
+            <texture original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\Sci-Fi Platformer Tileset [16x16][FREE] - RottingPixels\Sci-Fi Platformer Tileset [16x16][FREE] - RottingPixels\screenshot-1.png" />
+            <tiles />
+        </object-type>
+        <object-type name="TilemapSolid" sid="294397857294205">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="799873905058211">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\Sci-Fi Platformer Tileset [16x16][FREE] - RottingPixels\Sci-Fi Platformer Tileset [16x16][FREE] - RottingPixels\screenshot-2.png" />
+            <tiles />
+        </object-type>
+        <object-type name="enemySwimming_1" sid="488503371849100">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="133382174589238" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemySwimming_1.png">
+                        <collision-poly>
+                            <point x="0.0454545" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.886364" y="0.15625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.886364" y="0.84375" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0454545" y="0.9375" />
+                            <point x="0.227273" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spikesLow" sid="472014369952284">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="275583510401589" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\platformer-assets\Platformer\Abstract Platformer\PNG\Other\spikesLow.png">
+                        <collision-poly>
+                            <point x="0.109375" y="0.269231" />
+                            <point x="0.5" y="0" />
+                            <point x="0.890625" y="0.269231" />
+                            <point x="0.9375" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cartel" sid="470334946964564">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="166964554390763" speed="5">
+                    <frame duration="1" hotspotX="0.495798" hotspotY="0.404181" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\Cartel.png">
+                        <collision-poly>
+                            <point x="0.134454" y="0.00464576" />
+                            <point x="0.857143" y="0.00464576" />
+                            <point x="0.994748" y="0.404181" />
+                            <point x="0.844538" y="0.789779" />
+                            <point x="0.495798" y="0.998839" />
+                            <point x="0.147059" y="0.789779" />
+                            <point x="0.00420168" y="0.404181" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemyFloating_1" sid="614866959110501">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="155165083696206" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemyFloating_1.png">
+                        <collision-poly>
+                            <point x="0.0238095" y="0.025" />
+                            <point x="0.97619" y="0.025" />
+                            <point x="0.97619" y="0.975" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0238095" y="0.975" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="switchGreen_left" sid="428815961044426">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="526831644692497" speed="5">
+                    <frame duration="1" hotspotX="0.510638" hotspotY="0.510638" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\platformer-assets\Platformer\Abstract Platformer\PNG\Other\switchGreen_left.png">
+                        <collision-poly>
+                            <point x="0.0425532" y="0.0425532" />
+                            <point x="0.489362" y="0.404255" />
+                            <point x="0.638298" y="0.361702" />
+                            <point x="0.93617" y="0.489362" />
+                            <point x="1" y="1" />
+                            <point x="0.489362" y="1" />
+                            <point x="0.361702" y="0.638298" />
+                            <point x="0.404255" y="0.489362" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Main Menu.xml</layout>
         <layout>Nivel1.xml</layout>
         <layout>GameOver.xml</layout>
+        <layout>Nivel3.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Eventos Main Menu.xml</event-sheet>
         <event-sheet>Eventos Nivel1.xml</event-sheet>
         <event-sheet>Eventos GameOver.xml</event-sheet>
+        <event-sheet>PlayerSettings.xml</event-sheet>
+        <event-sheet>Eventos Nivel3.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="0" />

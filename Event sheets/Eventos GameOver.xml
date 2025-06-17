@@ -29,15 +29,15 @@
         </event-group>
         <event-group description="" sid="361194352559066" title="Events">
             <sub-events>
-                <event-block sid="527927483388814">
+                <event-block any="1" sid="527927483388814">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="710774043021597" type="Keyboard">
                             <param id="0" name="Key">32</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-2" name="Go to layout" sid="968499136458957" type="System">
-                            <param id="0" name="Layout">Nivel1</param>
+                        <action id="-25" name="Go to layout (by name)" sid="968499136458957" type="System">
+                            <param id="0" name="Layout">NivelActual</param>
                         </action>
                     </actions>
                 </event-block>
