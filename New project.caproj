@@ -529,6 +529,33 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite2" sid="630971232055791">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="356472636703900" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BatteryLife" sid="713841188810872">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="516014409188601" speed="5">
+                    <frame duration="1" hotspotX="0.492537" hotspotY="0.485427" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\batteryLife.png">
+                        <collision-poly>
+                            <point x="0.228628" y="0.219095" />
+                            <point x="0.492048" y="0.113568" />
+                            <point x="0.756461" y="0.21809" />
+                            <point x="0.871769" y="0.485427" />
+                            <point x="0.706759" y="0.702513" />
+                            <point x="0.492048" y="0.859297" />
+                            <point x="0.277336" y="0.702513" />
+                            <point x="0.112326" y="0.485427" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
