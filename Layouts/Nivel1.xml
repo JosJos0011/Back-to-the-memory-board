@@ -2154,6 +2154,7 @@
                     </properties>
                     <instance-variables>
                         <Vidas>10</Vidas>
+                        <Inmune>0</Inmune>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="BoundToLayout">

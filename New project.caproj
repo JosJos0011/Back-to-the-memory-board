@@ -276,6 +276,7 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable comment="Vidas del jugador" name="Vidas" sid="894775046122566" type="number" />
+                <instance-variable name="Inmune" sid="969045950179295" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="BoundToLayout" sid="219710303355603">
