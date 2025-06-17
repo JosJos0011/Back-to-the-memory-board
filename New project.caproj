@@ -19,8 +19,10 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Persist" version="1">Persist</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -282,6 +284,9 @@
                 <behavior-type name="Platform" sid="453609220859567">
                     <behavior id="Platform" />
                 </behavior-type>
+                <behavior-type name="Flash" sid="779146424347836">
+                    <behavior id="Flash" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="483410242138490" speed="2">
@@ -441,20 +446,16 @@
         </object-type>
         <object-type name="enemySwimming_1" sid="488503371849100">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="644270197142214">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="133382174589238" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemySwimming_1.png">
-                        <collision-poly>
-                            <point x="0.0454545" y="0.0625" />
-                            <point x="0.5" y="0" />
-                            <point x="0.886364" y="0.15625" />
-                            <point x="1" y="0.5" />
-                            <point x="0.886364" y="0.84375" />
-                            <point x="0.5" y="1" />
-                            <point x="0.0454545" y="0.9375" />
-                            <point x="0.227273" y="0.5" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="3" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="133382174589238" speed="8">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemySwimming_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemySwimming_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemySwimming_3.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -497,7 +498,7 @@
         <object-type name="enemyFloating_1" sid="614866959110501">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="155165083696206" speed="5">
+                <animation framecount="3" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="155165083696206" speed="8">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemyFloating_1.png">
                         <collision-poly>
                             <point x="0.0238095" y="0.025" />
@@ -507,6 +508,8 @@
                             <point x="0.0238095" y="0.975" />
                         </collision-poly>
                     </frame>
+                    <frame duration="1" hotspotX="0.509091" hotspotY="0.509091" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemyFloating_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemyFloating_3.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -529,14 +532,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="630971232055791">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="356472636703900" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="BatteryLife" sid="713841188810872">
             <plugin id="Sprite" />
             <animation-folder>
@@ -555,6 +550,79 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="enemyFlying_1" sid="951155495843973">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="750624602249610">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Sine2" sid="181001720496038">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="777488886799677" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.488372" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemyFlying_3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemyFlying_1.png">
+                        <collision-poly>
+                            <point x="0.265625" y="0.5" />
+                            <point x="0.265625" y="0.447368" />
+                            <point x="0.5" y="0" />
+                            <point x="0.734375" y="0.447368" />
+                            <point x="0.734375" y="0.5" />
+                            <point x="0.890625" y="0.815789" />
+                            <point x="0.5" y="0.631579" />
+                            <point x="0.109375" y="0.815789" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemyFlying_2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="greenJewelUI" sid="252479982075570">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="683490226118062" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\platformer-assets\Platformer\Abstract Platformer\PNG\Items\greenJewel - UI.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.181818" />
+                            <point x="0.5" y="0.0454545" />
+                            <point x="0.833333" y="0.181818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.791667" y="0.772727" />
+                            <point x="0.5" y="0.954545" />
+                            <point x="0.208333" y="0.772727" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="redJewelUI" sid="438334303459614">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="759320783518885" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\platformer-assets\Platformer\Abstract Platformer\PNG\Items\redJewel - UI.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.181818" />
+                            <point x="0.5" y="0.0454545" />
+                            <point x="0.833333" y="0.181818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.791667" y="0.772727" />
+                            <point x="0.5" y="0.954545" />
+                            <point x="0.208333" y="0.772727" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextoGemaVerde" sid="867006939318900">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextoGemaRoja" sid="435588196783929">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />

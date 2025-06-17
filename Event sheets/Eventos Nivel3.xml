@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Nivel3</name>
     <events>
+        <variable comment="Contador de gemas rojas" constant="0" name="RedGemsCount" sid="462794560276677" static="0" type="number">0</variable>
+        <variable comment="Contador de gemas verdes" constant="0" name="GreenGemsCount" sid="216400122679484" static="0" type="number">0</variable>
         <include>PlayerSettings</include>
         <event-group description="" sid="578029288323182" title="Start Of Layout3">
             <sub-events>

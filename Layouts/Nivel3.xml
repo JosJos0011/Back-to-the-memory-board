@@ -164,8 +164,8 @@
                         <width>144</width>
                         <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.47527501</hotspotX>
-                        <hotspotY>0.410714</hotspotY>
+                        <hotspotX>0.475274712</hotspotX>
+                        <hotspotY>0.410714298</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -193,8 +193,8 @@
                         <width>97.147399902</width>
                         <height>32.741088867</height>
                         <depth>0</depth>
-                        <hotspotX>0.47527501</hotspotX>
-                        <hotspotY>0.410714</hotspotY>
+                        <hotspotX>0.475274712</hotspotX>
+                        <hotspotY>0.410714298</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -222,8 +222,8 @@
                         <width>144</width>
                         <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.47527501</hotspotX>
-                        <hotspotY>0.410714</hotspotY>
+                        <hotspotX>0.475274712</hotspotX>
+                        <hotspotY>0.410714298</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -251,8 +251,8 @@
                         <width>144</width>
                         <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.47527501</hotspotX>
-                        <hotspotY>0.410714</hotspotY>
+                        <hotspotX>0.475274712</hotspotX>
+                        <hotspotY>0.410714298</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -280,8 +280,8 @@
                         <width>144</width>
                         <height>35</height>
                         <depth>0</depth>
-                        <hotspotX>0.47527501</hotspotX>
-                        <hotspotY>0.410714</hotspotY>
+                        <hotspotX>0.475274712</hotspotX>
+                        <hotspotY>0.410714298</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -576,11 +576,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1177</x>
-                        <y>263</y>
+                        <x>1179.130371094</x>
+                        <y>256.770507813</y>
                         <z>0</z>
-                        <width>42</width>
-                        <height>40</height>
+                        <width>30</width>
+                        <height>30</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -598,58 +598,306 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1181</x>
-                        <y>487</y>
+                        <x>1181.479248047</x>
+                        <y>481.593505859</y>
                         <z>0</z>
-                        <width>42</width>
+                        <width>30</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="enemyFloating_1" uid="140">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>451</x>
+                        <y>791</y>
+                        <z>0</z>
+                        <width>30</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="enemyFlying_1" uid="141">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Horizontal</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine2">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Vertical</movement>
+                                <wave>Sine</wave>
+                                <period>2</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>30</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>140</x>
+                        <y>379</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>43</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.488372087</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="enemyFlying_1" uid="123">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Horizontal</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine2">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Vertical</movement>
+                                <wave>Sine</wave>
+                                <period>2</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>30</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>600</x>
+                        <y>93</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>43</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.488372087</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="enemyFlying_1" uid="137">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Horizontal</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>100</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine2">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Vertical</movement>
+                                <wave>Sine</wave>
+                                <period>2</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>30</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>766</x>
+                        <y>641</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>43</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.488372087</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="greenJewelUI" uid="142">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>145.440689087</x>
+                        <y>14.958633423</y>
+                        <z>0</z>
+                        <width>24</width>
+                        <height>22</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="redJewelUI" uid="143">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>20.616470337</x>
+                        <y>15.71370697</y>
+                        <z>0</z>
+                        <width>24</width>
+                        <height>22</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BatteryLife" uid="144">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>282.655090332</x>
+                        <y>16.652931213</y>
+                        <z>0</z>
+                        <width>40</width>
                         <height>40</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.49253732</hotspotX>
+                        <hotspotY>0.485427141</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="enemySwimming_1" uid="123">
+                <instance type="TextoGemaVerde" uid="145">
                     <properties>
+                        <text>0</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <font>Arial,-21,700,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>576</x>
-                        <y>112</y>
+                        <x>170.662414551</x>
+                        <y>1.232254028</y>
                         <z>0</z>
-                        <width>44</width>
-                        <height>32</height>
+                        <width>85.937057495</width>
+                        <height>33.415039063</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="enemySwimming_1" uid="137">
+                <instance type="TextoGemaRoja" uid="146">
                     <properties>
+                        <text>0</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <font>Arial,-21,700,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>119</x>
-                        <y>390</y>
+                        <x>42.44821167</x>
+                        <y>2.082115173</y>
                         <z>0</z>
-                        <width>44</width>
-                        <height>32</height>
+                        <width>75.207229614</width>
+                        <height>30.826828003</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -997,8 +1245,8 @@
                         <width>47</width>
                         <height>47</height>
                         <depth>0</depth>
-                        <hotspotX>0.510637999</hotspotX>
-                        <hotspotY>0.510637999</hotspotY>
+                        <hotspotX>0.510638297</hotspotX>
+                        <hotspotY>0.510638297</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -1019,8 +1267,8 @@
                         <width>54.3152771</width>
                         <height>45.291320801</height>
                         <depth>0</depth>
-                        <hotspotX>0.495797992</hotspotX>
-                        <hotspotY>0.404181004</hotspotY>
+                        <hotspotX>0.49579832</hotspotX>
+                        <hotspotY>0.404181182</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -1076,6 +1324,7 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>

@@ -35,5 +35,75 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="242810120650090" title="Lvl3Enemies">
+            <sub-events>
+                <event-block sid="229763465210382">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="862449087139226" type="Reff_PJ">
+                            <param id="0" name="Object">enemyFloating_1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Flash" id="0" name="Flash" sid="495931711878322" type="Reff_PJ">
+                            <param id="0" name="&apos;On&apos; time">0.2</param>
+                            <param id="1" name="&apos;Off&apos; time">0.2</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="989957522076432">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="545847707685771" type="Reff_PJ">
+                            <param id="0" name="Object">enemyFlying_1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Flash" id="0" name="Flash" sid="443374338994949" type="Reff_PJ">
+                            <param id="0" name="&apos;On&apos; time">0.2</param>
+                            <param id="1" name="&apos;Off&apos; time">0.2</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="150008312096083" title="Lvl3Gems">
+            <sub-events>
+                <event-block sid="612762530368649">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="481334624662790" type="Reff_PJ">
+                            <param id="0" name="Object">RedGem</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="101601958445093" type="RedGem" />
+                        <action id="-10" name="Add to" sid="534031586377429" type="System">
+                            <param id="0" name="Variable">RedGemsCount</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="968543785448911" type="TextoGemaRoja">
+                            <param id="0" name="Text">RedGemsCount</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="992144270188729">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="694268245428362" type="Reff_PJ">
+                            <param id="0" name="Object">GreenGem</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="658167972396401" type="GreenGem" />
+                        <action id="-10" name="Add to" sid="553968039252194" type="System">
+                            <param id="0" name="Variable">GreenGemsCount</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="399179617542165" type="TextoGemaVerde">
+                            <param id="0" name="Text">GreenGemsCount</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
