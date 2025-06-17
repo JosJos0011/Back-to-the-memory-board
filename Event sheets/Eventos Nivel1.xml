@@ -212,6 +212,10 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="239726125167316" type="Reff_PJ" />
+                        <action id="-9" name="Set value" sid="971800713572471" type="System">
+                            <param id="0" name="Variable">NivelActual</param>
+                            <param id="1" name="Value">&quot;Nivel1&quot;</param>
+                        </action>
                         <action id="-2" name="Go to layout" sid="843738765515682" type="System">
                             <param id="0" name="Layout">GameOver</param>
                         </action>
