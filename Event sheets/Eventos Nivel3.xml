@@ -5,7 +5,6 @@
     <events>
         <variable comment="Contador de gemas rojas" constant="0" name="RedGemsCount" sid="462794560276677" static="0" type="number">0</variable>
         <variable comment="Contador de gemas verdes" constant="0" name="GreenGemsCount" sid="216400122679484" static="0" type="number">0</variable>
-        <include>PlayerSettings</include>
         <event-group description="" sid="578029288323182" title="Start Of Layout3">
             <sub-events>
                 <event-block sid="638238251589463">
@@ -13,6 +12,10 @@
                         <condition id="-2" name="On start of layout" sid="320690208976935" type="System" />
                     </conditions>
                     <actions>
+                        <action id="-10" name="Set value" sid="824779268392706" type="Reff_PJ">
+                            <param id="0" name="Instance variable">Vidas</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
                         <action id="4" name="Set animation" sid="421872102531884" type="Reff_PJ">
                             <param id="0" name="Animation">&quot;Idle&quot;</param>
                             <param id="1" name="From">1</param>
@@ -25,6 +28,13 @@
                             <param id="2" name="Loop">1</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;MusicaNivel3&quot;</param>
+                        </action>
+                        <action behavior="Platform" id="4" name="Set jump strength" sid="525479314363406" type="Reff_PJ">
+                            <param id="0" name="Jump strength">550</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="460992664966300" type="System">
+                            <param id="0" name="Variable">NivelActual</param>
+                            <param id="1" name="Value">&quot;Nivel3&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -119,6 +129,121 @@
                         </action>
                         <action id="-2" name="Go to layout" sid="640845505342838" type="System">
                             <param id="0" name="Layout">GameOver</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Muerte por vidas igual o menor a 0" sid="213298282630316" title="Death3">
+            <sub-events>
+                <event-block sid="760012131863371">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="942119888207580" type="Reff_PJ">
+                            <param id="0" name="Instance variable">Vidas</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="714166745357135" type="Reff_PJ">
+                            <param id="0" name="Instance variable">Vidas</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="391386236416460" type="System">
+                            <param id="0" name="Layout">GameOver</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="870359957665794" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="488805850421389" title="Lvl3Enemies2">
+            <sub-events>
+                <event-block sid="529663385150385">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="431243606814741" type="Reff_PJ">
+                            <param id="0" name="Object">enemyFloating_1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Flash" id="0" name="Flash" sid="273430200204309" type="Reff_PJ">
+                            <param id="0" name="&apos;On&apos; time">0.2</param>
+                            <param id="1" name="&apos;Off&apos; time">0.2</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="418815332198968" type="Reff_PJ">
+                            <param id="0" name="Instance variable">Vidas</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="372749530909000">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="272671477364230" type="Reff_PJ">
+                            <param id="0" name="Object">enemyFlying_1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Flash" id="0" name="Flash" sid="633519863021398" type="Reff_PJ">
+                            <param id="0" name="&apos;On&apos; time">0.2</param>
+                            <param id="1" name="&apos;Off&apos; time">0.2</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="912451869059972" type="Reff_PJ">
+                            <param id="0" name="Instance variable">Vidas</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Vidas del jugador en el nivel 3" sid="903144726412154" title="PlayerHearthLvl4">
+            <sub-events>
+                <event-block sid="621053126638853">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="324531009257252" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="385073555761247" type="TextoVidasLvl3">
+                            <param id="0" name="Text">Reff_PJ.Vidas</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="575994201907566" title="Lvl3Gems2">
+            <sub-events>
+                <event-block sid="267297601146165">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="174631406955307" type="Reff_PJ">
+                            <param id="0" name="Object">RedGem</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="426389324909110" type="RedGem" />
+                        <action id="-10" name="Add to" sid="898884874180567" type="System">
+                            <param id="0" name="Variable">RedGemsCount</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="365024568932654" type="TextoGemaRoja">
+                            <param id="0" name="Text">RedGemsCount</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="917852123390516">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="377791456942146" type="Reff_PJ">
+                            <param id="0" name="Object">GreenGem</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="357630712227077" type="GreenGem" />
+                        <action id="-10" name="Add to" sid="621294969101661" type="System">
+                            <param id="0" name="Variable">GreenGemsCount</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="530140974494191" type="TextoGemaVerde">
+                            <param id="0" name="Text">GreenGemsCount</param>
                         </action>
                     </actions>
                 </event-block>

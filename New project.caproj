@@ -274,6 +274,9 @@
         </object-type>
         <object-type name="Reff_PJ" sid="281510242356599">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="Vidas del jugador" name="Vidas" sid="894775046122566" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="BoundToLayout" sid="219710303355603">
                     <behavior id="bound" />
@@ -624,6 +627,9 @@
         <object-type name="TextoGemaRoja" sid="435588196783929">
             <plugin id="Text" />
         </object-type>
+        <object-type name="TextoVidasLvl3" sid="670965116170484">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -636,7 +642,6 @@
         <event-sheet>Eventos Main Menu.xml</event-sheet>
         <event-sheet>Eventos Nivel1.xml</event-sheet>
         <event-sheet>Eventos GameOver.xml</event-sheet>
-        <event-sheet>PlayerSettings.xml</event-sheet>
         <event-sheet>Eventos Nivel3.xml</event-sheet>
     </event-folder>
     <global-instances>

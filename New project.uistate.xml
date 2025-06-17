@@ -16,9 +16,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="6">GameOver</layout>
         <event-sheet order="1">Eventos Main Menu</event-sheet>
         <event-sheet order="3">Eventos Nivel1</event-sheet>
-        <event-sheet order="5">Eventos Nivel3</event-sheet>
+        <event-sheet active="1" order="5">Eventos Nivel3</event-sheet>
         <event-sheet order="7">Eventos GameOver</event-sheet>
-        <event-sheet active="1" order="8">PlayerSettings</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
