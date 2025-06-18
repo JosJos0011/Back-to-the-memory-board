@@ -15,6 +15,7 @@
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
     </used-plugins>
     <used-behaviors>
@@ -1086,6 +1087,244 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="trap2lvl2" sid="646919081135353">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="835922564628653">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="367352299452616" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Anthony\Desktop\plataforma.png">
+                        <collision-poly>
+                            <point x="0.542969" y="0.457031" />
+                            <point x="0.53418" y="0.5" />
+                            <point x="0.542969" y="0.542969" />
+                            <point x="0.5" y="0.862305" />
+                            <point x="0.445313" y="0.554688" />
+                            <point x="0.445313" y="0.445313" />
+                            <point x="0.5" y="0.168945" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackgroundlvl2" sid="859784974510398">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Anthony\Desktop\Cosas nivel 3 proyecto Reff\fondo nivel.png" />
+        </object-type>
+        <object-type name="Spritelvl2" sid="429973649624724">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="674688910053680">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="912271149205564">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="345178138836306">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="810953442360220" speed="5">
+                    <frame duration="1" hotspotX="0.502415" hotspotY="0.5" original-source="C:\Users\Anthony\Desktop\000.png">
+                        <collision-poly>
+                            <point x="0.115942" y="0.0821918" />
+                            <point x="0.497585" y="0.010274" />
+                            <point x="0.884058" y="0.0821918" />
+                            <point x="0.743961" y="0.5" />
+                            <point x="0.78744" y="0.849315" />
+                            <point x="0.497585" y="0.797945" />
+                            <point x="0.275362" y="0.804795" />
+                            <point x="0.42029" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="groundlvl2" sid="859258321417623">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="433453619042745">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="895577902140232" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="platformlvl2" sid="261751916591310">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="751300177142420">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="628433164499987" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Anthony\Desktop\plataforma.png">
+                        <collision-poly>
+                            <point x="0.457031" y="0.457031" />
+                            <point x="0.5" y="0.46582" />
+                            <point x="0.542969" y="0.457031" />
+                            <point x="0.862305" y="0.5" />
+                            <point x="0.554688" y="0.554688" />
+                            <point x="0.445313" y="0.554688" />
+                            <point x="0.168945" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="trap1lvl2" sid="360605847258238">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="804857450693830" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Anthony\Desktop\plataforma.png">
+                        <collision-poly>
+                            <point x="0.457031" y="0.457031" />
+                            <point x="0.5" y="0.46582" />
+                            <point x="0.542969" y="0.457031" />
+                            <point x="0.862305" y="0.5" />
+                            <point x="0.554688" y="0.554688" />
+                            <point x="0.445313" y="0.554688" />
+                            <point x="0.168945" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="movingplatform2" sid="825009888253788">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="148444812169220">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="377318183602992">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="261728738069418" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Anthony\Desktop\plataforma.png">
+                        <collision-poly>
+                            <point x="0.457031" y="0.457031" />
+                            <point x="0.5" y="0.46582" />
+                            <point x="0.542969" y="0.457031" />
+                            <point x="0.862305" y="0.5" />
+                            <point x="0.554688" y="0.554688" />
+                            <point x="0.445313" y="0.554688" />
+                            <point x="0.168945" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="movingplatform1" sid="429491639330233">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="562325367925878">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="581470561172793">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="192378870394596" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Anthony\Desktop\plataforma.png">
+                        <collision-poly>
+                            <point x="0.457031" y="0.457031" />
+                            <point x="0.5" y="0.46582" />
+                            <point x="0.542969" y="0.457031" />
+                            <point x="0.862305" y="0.5" />
+                            <point x="0.554688" y="0.554688" />
+                            <point x="0.445313" y="0.554688" />
+                            <point x="0.168945" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ItemU2" sid="450349721095973">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="itemText" sid="729002980476833" type="string" />
+                <instance-variable name="isCorrect" sid="913050967467518" type="boolean" />
+            </instance-variables>
+            <container>
+                <type>ItemU2</type>
+                <type>ItemTextNivel2</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="629812405310367" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="movingplatform3" sid="163022330662900">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="863222223852320">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="597498436074835">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="664167439240432" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Anthony\Desktop\plataforma.png">
+                        <collision-poly>
+                            <point x="0.457031" y="0.457031" />
+                            <point x="0.5" y="0.46582" />
+                            <point x="0.542969" y="0.457031" />
+                            <point x="0.862305" y="0.5" />
+                            <point x="0.554688" y="0.554688" />
+                            <point x="0.445313" y="0.554688" />
+                            <point x="0.168945" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="movingplatform4" sid="130011783080648">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="964847637152786">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="404289342920967">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="903389485330949" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Anthony\Desktop\plataforma.png">
+                        <collision-poly>
+                            <point x="0.457031" y="0.457031" />
+                            <point x="0.5" y="0.46582" />
+                            <point x="0.542969" y="0.457031" />
+                            <point x="0.862305" y="0.5" />
+                            <point x="0.554688" y="0.554688" />
+                            <point x="0.445313" y="0.554688" />
+                            <point x="0.168945" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ItemTextNivel2" sid="400248556172085">
+            <plugin id="Text" />
+            <container>
+                <type>ItemU2</type>
+                <type>ItemTextNivel2</type>
+            </container>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1093,12 +1332,14 @@
         <layout>Nivel1.xml</layout>
         <layout>GameOver.xml</layout>
         <layout>Nivel3.xml</layout>
+        <layout>Nivel2.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Eventos Main Menu.xml</event-sheet>
         <event-sheet>Eventos Nivel1.xml</event-sheet>
         <event-sheet>Eventos GameOver.xml</event-sheet>
         <event-sheet>Eventos Nivel3.xml</event-sheet>
+        <event-sheet>Eventos nivel2.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="0" />

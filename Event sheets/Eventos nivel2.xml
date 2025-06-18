@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos nivel2</name>
+    <events>
+        <event-block sid="930466436711401">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="317433186366713" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="328028280063625">
+            <conditions>
+                <condition id="-11" name="For Each" sid="594564509355992" type="System">
+                    <param id="0" name="Object">ItemU2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="979899645092823" type="ItemTextNivel2">
+                    <param id="0" name="Width">ItemU2.Width + 20</param>
+                </action>
+                <action id="-6" name="Set height" sid="827008665700042" type="ItemTextNivel2">
+                    <param id="0" name="Height">ItemU2.Height + 20</param>
+                </action>
+                <action id="-1" name="Set X" sid="875596534083184" type="ItemTextNivel2">
+                    <param id="0" name="X">ItemU2.X -80</param>
+                </action>
+                <action id="-2" name="Set Y" sid="639564233577282" type="ItemTextNivel2">
+                    <param id="0" name="Y">ItemU2.Y + 5</param>
+                </action>
+                <action id="0" name="Set text" sid="698788684071160" type="ItemTextNivel2">
+                    <param id="0" name="Text">ItemU2.itemText</param>
+                </action>
+                <action id="-24" name="Move to top" sid="871855409386919" type="ItemTextNivel2" />
+                <action id="-24" name="Move to top" sid="289762071786663" type="Spritelvl2" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
