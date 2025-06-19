@@ -1116,6 +1116,9 @@
         </object-type>
         <object-type name="Spritelvl2" sid="429973649624724">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="IsInmune" sid="629392302636021" type="boolean" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="ScrollTo" sid="674688910053680">
                     <behavior id="scrollto" />
@@ -1324,6 +1327,12 @@
                 <type>ItemU2</type>
                 <type>ItemTextNivel2</type>
             </container>
+        </object-type>
+        <object-type name="TimeTextlvl2" sid="986630215193586">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Livestextlvl2" sid="205404252916116">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
