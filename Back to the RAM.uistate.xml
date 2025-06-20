@@ -10,17 +10,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">InfoDump</layout>
-        <layout active="1" order="2">Main Menu</layout>
-        <layout order="4">Nivel2</layout>
-        <layout order="6">Nivel3</layout>
-        <layout order="8">GameOver</layout>
-        <layout order="10">Nivel1</layout>
-        <event-sheet order="0">Eventos Nivel1</event-sheet>
-        <event-sheet order="3">Eventos Main Menu</event-sheet>
-        <event-sheet order="5">Eventos nivel2</event-sheet>
-        <event-sheet order="7">Eventos Nivel3</event-sheet>
-        <event-sheet order="9">Eventos GameOver</event-sheet>
+        <layout order="0">Nivel1</layout>
+        <layout order="3">Nivel2</layout>
+        <event-sheet active="1" order="1">Eventos Nivel1</event-sheet>
+        <event-sheet order="2">Eventos nivel2</event-sheet>
+        <event-sheet order="4">Eventos Nivel3</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -28,17 +22,17 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
-    <families-expanded root="1">
+    <families-expanded root="0">
         <family expanded="0" name="FamReference" />
         <family expanded="1" name="FamObject" />
     </families-expanded>
     <folders-expanded>
-        <folder expanded="1" path="object-folder/" />
-        <folder expanded="1" path="layout-folder/" />
-        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="object-folder/" />
+        <folder expanded="0" path="layout-folder/" />
+        <folder expanded="0" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
-        <folder expanded="0" path="music-folder/" />
+        <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/Backgound/" />
         <folder expanded="1" path="animation-folder/nivel1/" />

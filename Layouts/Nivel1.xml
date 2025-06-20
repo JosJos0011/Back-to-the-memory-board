@@ -4796,7 +4796,7 @@
                     <properties>
                         <text>INFO SOBRE EL PROGRA Y EL JUEGO</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-64,400,0</font>
+                        <font>Arial,-34.4,400,0</font>
                         <color>0,255,102</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -4807,11 +4807,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2785</x>
-                        <y>-285</y>
+                        <x>2935</x>
+                        <y>-595</y>
                         <z>0</z>
-                        <width>836</width>
-                        <height>214</height>
+                        <width>796</width>
+                        <height>944</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

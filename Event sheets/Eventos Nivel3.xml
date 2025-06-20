@@ -12,6 +12,7 @@
                         <condition id="-2" name="On start of layout" sid="320690208976935" type="System" />
                     </conditions>
                     <actions>
+                        <action id="-21" name="Reset global variables" sid="343671748855875" type="System" />
                         <action id="-10" name="Set value" sid="824779268392706" type="Reff_PJ">
                             <param id="0" name="Instance variable">Vidas</param>
                             <param id="1" name="Value">3</param>

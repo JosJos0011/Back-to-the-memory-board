@@ -10,7 +10,22 @@
             <conditions>
                 <condition id="-2" name="On start of layout" sid="317433186366713" type="System" />
             </conditions>
-            <actions />
+            <actions>
+                <action id="-21" name="Reset global variables" sid="410341984038457" type="System" />
+                <action id="6" name="Stop" sid="134102631833393" type="Audio">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="562786013002078" type="Audio">
+                    <param id="0" name="Audio file">Object_and_Rhyme</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="448284967073323" type="System">
+                    <param id="0" name="Variable">NivelActual</param>
+                    <param id="1" name="Value">&quot;Nivel2&quot;</param>
+                </action>
+            </actions>
         </event-block>
         <event-block sid="328028280063625">
             <conditions>
@@ -79,7 +94,7 @@
         <event-group description="" sid="285446391274319" title="Health Events" />
         <event-block sid="369965382915469">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="913932207868260" type="Spritelvl2">
+                <condition id="0" name="On collision with another object" sid="913932207868260" type="Reff_PJ">
                     <param id="0" name="Object">ItemU2</param>
                 </condition>
                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="190670572930684" type="ItemU2">
