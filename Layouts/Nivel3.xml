@@ -109,7 +109,7 @@
                         <hotspotX>0.74000001</hotspotX>
                         <hotspotY>0.527426183</hotspotY>
                         <angle>0</angle>
-                        <opacity>0</opacity>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="Wall" uid="305">
@@ -138,7 +138,7 @@
                         <hotspotX>0.74000001</hotspotX>
                         <hotspotY>0.527426183</hotspotY>
                         <angle>0</angle>
-                        <opacity>0</opacity>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="Wall" uid="306">
@@ -167,7 +167,7 @@
                         <hotspotX>0.74000001</hotspotX>
                         <hotspotY>0.527426183</hotspotY>
                         <angle>0</angle>
-                        <opacity>0</opacity>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="Wall" uid="307">
@@ -196,7 +196,7 @@
                         <hotspotX>0.74000001</hotspotX>
                         <hotspotY>0.527426183</hotspotY>
                         <angle>0</angle>
-                        <opacity>0</opacity>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="Wall" uid="308">
@@ -225,7 +225,7 @@
                         <hotspotX>0.74000001</hotspotX>
                         <hotspotY>0.527426183</hotspotY>
                         <angle>0</angle>
-                        <opacity>0</opacity>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="Wall" uid="309">
@@ -254,7 +254,7 @@
                         <hotspotX>0.74000001</hotspotX>
                         <hotspotY>0.527426183</hotspotY>
                         <angle>0</angle>
-                        <opacity>0</opacity>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="Wall" uid="310">
@@ -283,7 +283,7 @@
                         <hotspotX>0.74000001</hotspotX>
                         <hotspotY>0.527426183</hotspotY>
                         <angle>0</angle>
-                        <opacity>0</opacity>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="Wall" uid="311">
@@ -312,7 +312,7 @@
                         <hotspotX>0.74000001</hotspotX>
                         <hotspotY>0.527426183</hotspotY>
                         <angle>0</angle>
-                        <opacity>0</opacity>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="Wall" uid="312">
@@ -341,7 +341,7 @@
                         <hotspotX>0.74000001</hotspotX>
                         <hotspotY>0.527426183</hotspotY>
                         <angle>0</angle>
-                        <opacity>0</opacity>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="Wall" uid="313">
@@ -370,7 +370,7 @@
                         <hotspotX>0.74000001</hotspotX>
                         <hotspotY>0.527426183</hotspotY>
                         <angle>0</angle>
-                        <opacity>0</opacity>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="Wall" uid="314">
@@ -399,7 +399,7 @@
                         <hotspotX>0.74000001</hotspotX>
                         <hotspotY>0.527426183</hotspotY>
                         <angle>0</angle>
-                        <opacity>0</opacity>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>
@@ -1880,7 +1880,7 @@
                     <properties>
                         <text>INFO SOBRE EL PROGRA Y EL JUEGO</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-64,400,0</font>
+                        <font>Arial,-21,400,0</font>
                         <color>0,255,102</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -1891,11 +1891,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>646</x>
-                        <y>-283</y>
+                        <x>-41</x>
+                        <y>281</y>
                         <z>0</z>
-                        <width>836</width>
-                        <height>214</height>
+                        <width>842</width>
+                        <height>415</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
