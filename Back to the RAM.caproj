@@ -1514,19 +1514,11 @@
         <object-type name="TextoReferenciasObtenidas" sid="588240181948350">
             <plugin id="Text" />
         </object-type>
-        <object-type name="SensorIzq" sid="887328364177452">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="566898366671574" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="SensorDer" sid="573024069116306">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="926924364799771" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.614865" hotspotY="0.487805" />
                 </animation>
             </animation-folder>
         </object-type>

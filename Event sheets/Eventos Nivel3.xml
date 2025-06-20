@@ -457,57 +457,23 @@
                         <condition id="-1" name="Every tick" sid="689374535694697" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-3" name="Set position" sid="497818940842494" type="SensorIzq">
-                            <param id="0" name="X">Reff_PJ.X-(Reff_PJ.Width/2)-(SensorIzq.Width/2) - 1</param>
-                            <param id="1" name="Y">Reff_PJ.Y</param>
-                        </action>
                         <action id="-3" name="Set position" sid="253801517595400" type="SensorDer">
-                            <param id="0" name="X">Reff_PJ.X + (Reff_PJ.Width / 2) + (SensorDer.Width / 2) + 1</param>
+                            <param id="0" name="X">Reff_PJ.X +1</param>
                             <param id="1" name="Y">Reff_PJ.Y</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="866687975904553">
-                    <conditions>
-                        <condition id="-1" name="Every tick" sid="463616152772508" type="System" />
-                        <condition id="1" name="Is overlapping another object" sid="291208892087144" type="SensorIzq">
-                            <param id="0" name="Object">Wall</param>
-                        </condition>
-                        <condition behavior="Platform" id="2" inverted="1" name="Is on floor" sid="464437182388361" type="Reff_PJ" />
-                        <condition id="2" name="Key is down" sid="906006709956596" type="Keyboard">
-                            <param id="0" name="Key">37</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Set value" sid="766792820437732" type="Reff_PJ">
-                            <param id="0" name="Instance variable">EnPared</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="228622905366293" type="Reff_PJ">
-                            <param id="0" name="Instance variable">WallDirection</param>
-                            <param id="1" name="Value">&quot;izquierda&quot;</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block sid="658922702369585">
                     <conditions>
-                        <condition id="-1" name="Every tick" sid="758738271052576" type="System" />
                         <condition id="1" name="Is overlapping another object" sid="441359233687454" type="SensorDer">
                             <param id="0" name="Object">Wall</param>
                         </condition>
                         <condition behavior="Platform" id="2" inverted="1" name="Is on floor" sid="301115074453462" type="Reff_PJ" />
-                        <condition id="2" name="Key is down" sid="369135482267880" type="Keyboard">
-                            <param id="0" name="Key">39</param>
-                        </condition>
                     </conditions>
                     <actions>
                         <action id="-10" name="Set value" sid="941493875455899" type="Reff_PJ">
                             <param id="0" name="Instance variable">EnPared</param>
                             <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="337539414876246" type="Reff_PJ">
-                            <param id="0" name="Instance variable">WallDirection</param>
-                            <param id="1" name="Value">&quot;derecha&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -564,17 +530,6 @@
                     <actions>
                         <action behavior="Platform" id="9" name="Set vector Y" sid="983130260453096" type="Reff_PJ">
                             <param id="0" name="Vector Y">-800</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="293116325448904" type="Reff_PJ">
-                            <param id="0" name="Instance variable">WallDirection</param>
-                            <param id="1" name="Value">&quot;izquierda&quot;</param>
-                        </action>
-                        <action behavior="Platform" id="8" name="Set vector X" sid="105870608768941" type="Reff_PJ">
-                            <param id="0" name="Vector X">400</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="387132802012167" type="Reff_PJ">
-                            <param id="0" name="Instance variable">WallDirection</param>
-                            <param id="1" name="Value">&quot;derecha&quot;</param>
                         </action>
                         <action behavior="Platform" id="8" name="Set vector X" sid="192270774988856" type="Reff_PJ">
                             <param id="0" name="Vector X">-400</param>
