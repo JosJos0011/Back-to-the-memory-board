@@ -4,10 +4,10 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
-        <position-x>646.996</position-x>
+        <position-x>1033.77</position-x>
         <position-y>404.21</position-y>
-        <position-z>257.231</position-z>
-        <lookat-x>646.996</lookat-x>
+        <position-z>342.374</position-z>
+        <lookat-x>1033.77</lookat-x>
         <lookat-y>404.21</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
@@ -25,13 +25,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <active-layer name="Player" />
     <layers>
-        <layer locked="1" name="Background" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="Platforms" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="Hazards" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="Enemies" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="Gameplay" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Background" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Platforms" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Hazards" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Enemies" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Gameplay" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Player" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="UI" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="UI" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="PopUp" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>
