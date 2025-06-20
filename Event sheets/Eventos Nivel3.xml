@@ -12,7 +12,6 @@
                         <condition id="-2" name="On start of layout" sid="320690208976935" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-21" name="Reset global variables" sid="666166696833851" type="System" />
                         <action id="-10" name="Set value" sid="824779268392706" type="Reff_PJ">
                             <param id="0" name="Instance variable">Vidas</param>
                             <param id="1" name="Value">3</param>
@@ -409,11 +408,11 @@
                             <param id="0" name="Time scale">0</param>
                         </action>
                         <action id="0" name="Set text" sid="144166926161278" type="HintText">
-                            <param id="0" name="Text">&quot;En Java, el Array estático es eficiente y rápido, pero tiene un tamaño fijo y solo almacena un tipo de dato (por eso solo acepta gemas azules en este nivel). El ArrayList es dinámico y puede crecer, acepta cualquier tipo de objeto, pero expandirlo consume más memoria y hace tu programa menos eficiente.&#x0D;&#x0A;&#x0D;&#x0A;Debido a esto, en este nivel:&#x0D;&#x0A;&#x0D;&#x0A;Guardar una gema azul en el Array estático es siempre la opción más rápida.&#x0D;&#x0A;&#x0D;&#x0A;Usar el ArrayList antes de llenar el Array baja tu velocidad.&#x0D;&#x0A;&#x0D;&#x0A;Si el ArrayList se expande, perderás aún más velocidad y el juego se pausará.&#x0D;&#x0A;&#x0D;&#x0A;Llena primero el Array estático para recibir un bonus y moverte más rápido.&quot;</param>
+                            <param id="0" name="Text">&quot;En Java, el Array estático es eficiente y rápido, pero tiene un tamaño fijo y solo almacena un tipo de dato (por eso solo acepta gemas azules en este nivel). El ArrayList es dinámico y puede crecer, acepta cualquier tipo de objeto, pero expandirlo consume más memoria y hace tu programa menos eficiente.&#x0D;&#x0A;&#x0D;&#x0A;Debido a esto, en este nivel:&#x0D;&#x0A;&#x0D;&#x0A;Guardar una gema azul en el Array estático es siempre la opción más rápida.&#x0D;&#x0A;&#x0D;&#x0A;Usar el ArrayList antes de llenar el Array baja tu velocidad.&#x0D;&#x0A;&#x0D;&#x0A;Si el ArrayList se expande, perderás aún más velocidad y el juego se pausará.&#x0D;&#x0A;&#x0D;&#x0A;Llena primero el Array estático para recibir un bonus y moverte más rápido.&quot;</param>
                         </action>
                         <action id="-3" name="Set position" sid="422421835230518" type="HintText">
-                            <param id="0" name="X">ViewportLeft(&quot;Foreground&quot;) + 620</param>
-                            <param id="1" name="Y">ViewportTop(&quot;Foreground&quot;) + 450</param>
+                            <param id="0" name="X">ViewportLeft(&quot;PopUp&quot;) + 320</param>
+                            <param id="1" name="Y">ViewportTop(&quot;PopUp&quot;) + 350</param>
                         </action>
                         <action id="-15" name="Set visible" sid="487647535937612" type="HintText">
                             <param id="0" name="Visibility">1</param>
