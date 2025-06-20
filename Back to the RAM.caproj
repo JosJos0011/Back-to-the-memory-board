@@ -11,6 +11,7 @@
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
@@ -1535,6 +1536,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Browser" sid="282970367902408">
+            <plugin id="Browser" />
+        </object-type>
     </object-folder>
     <families>
         <family name="FamReference" plugin-id="Sprite" sid="177368928108616">
@@ -1603,6 +1607,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
+        <global-instance type="Browser" uid="211" />
     </global-instances>
     <sounds-folder />
     <music-folder>
