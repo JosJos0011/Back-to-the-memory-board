@@ -408,7 +408,7 @@
                             <param id="0" name="Time scale">0</param>
                         </action>
                         <action id="0" name="Set text" sid="144166926161278" type="HintText">
-                            <param id="0" name="Text">&quot;En Java, una referencia es como una dirección... bla bla bla&quot;</param>
+                            <param id="0" name="Text">&quot;En Java, un vector estático bla bla y un vector dinámico bla bla&quot;</param>
                         </action>
                         <action id="-3" name="Set position" sid="422421835230518" type="HintText">
                             <param id="0" name="X">ViewportLeft(&quot;Foreground&quot;) + 620</param>
