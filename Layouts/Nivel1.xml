@@ -3893,7 +3893,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>7319</x>
-                        <y>2618</y>
+                        <y>2680</y>
                         <z>0</z>
                         <width>724</width>
                         <height>114</height>
@@ -4796,7 +4796,7 @@
                     <properties>
                         <text>INFO SOBRE EL PROGRA Y EL JUEGO</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-64,400,0</font>
+                        <font>Arial,-32,400,0</font>
                         <color>0,255,102</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -4804,14 +4804,17 @@
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
+                    <instance-variables>
+                        <NumHint>0</NumHint>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2785</x>
-                        <y>-285</y>
+                        <x>2686</x>
+                        <y>-979</y>
                         <z>0</z>
-                        <width>836</width>
-                        <height>214</height>
+                        <width>828</width>
+                        <height>792</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -4841,6 +4844,36 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+                <instance type="HintText2" uid="211">
+                    <properties>
+                        <text>INFO SOBRE EL PROGRA Y EL JUEGO</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-32,400,0</font>
+                        <color>0,255,102</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <instance-variables>
+                        <NumHint>0</NumHint>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3401</x>
+                        <y>-984</y>
+                        <z>0</z>
+                        <width>828</width>
+                        <height>792</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>

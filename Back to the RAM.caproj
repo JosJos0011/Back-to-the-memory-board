@@ -1371,6 +1371,9 @@
         </object-type>
         <object-type name="HintText" sid="631620617783805">
             <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="NumHint" sid="558350114140974" type="number" />
+            </instance-variables>
         </object-type>
         <object-type name="Btn_InfoDump" sid="604615871584729">
             <plugin id="Button" />
@@ -1534,6 +1537,12 @@
                     <frame duration="1" hotspotX="0.74" hotspotY="0.527426" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="HintText2" sid="788226120230927">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="NumHint" sid="607018205128328" type="number" />
+            </instance-variables>
         </object-type>
     </object-folder>
     <families>

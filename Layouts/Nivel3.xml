@@ -1888,6 +1888,9 @@
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
+                    <instance-variables>
+                        <NumHint>0</NumHint>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
