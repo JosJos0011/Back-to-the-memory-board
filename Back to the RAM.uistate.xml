@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Main Menu</layout>
+        <layout active="1" order="2">Nivel1</layout>
+        <layout order="4">Nivel2</layout>
+        <layout order="6">Nivel3</layout>
+        <layout order="8">GameOver</layout>
+        <layout order="10">InfoDump</layout>
+        <event-sheet order="1">Eventos Main Menu</event-sheet>
+        <event-sheet order="3">Eventos Nivel1</event-sheet>
+        <event-sheet order="5">Eventos nivel2</event-sheet>
+        <event-sheet order="7">Eventos Nivel3</event-sheet>
+        <event-sheet order="9">Eventos GameOver</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1">
+        <family expanded="0" name="FamReference" />
+        <family expanded="1" name="FamObject" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="layout-folder/" />
+        <folder expanded="0" path="event-folder/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="0" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/Backgound/" />
+        <folder expanded="1" path="animation-folder/nivel1/" />
+        <folder expanded="1" path="animation-folder/nivel2/" />
+        <folder expanded="1" path="animation-folder/nivel3/" />
+        <folder expanded="1" path="animation-folder/HitboxTVlvl1/" />
+        <folder expanded="1" path="animation-folder/HitBoxTVLvL2/" />
+        <folder expanded="1" path="animation-folder/HitBoxTVLvL3/" />
+        <folder expanded="1" path="animation-folder/Negro/" />
+        <folder expanded="1" path="animation-folder/BackgrondLvl/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/GameOverBackgrond/" />
+        <folder expanded="1" path="animation-folder/ZonaNull/" />
+        <folder expanded="1" path="animation-folder/Reff_PJ/" />
+        <folder expanded="1" path="animation-folder/NullWraith/" />
+        <folder expanded="1" path="animation-folder/Platform/" />
+        <folder expanded="1" path="animation-folder/GreenGem/" />
+        <folder expanded="1" path="animation-folder/LockSprite/" />
+        <folder expanded="1" path="animation-folder/RedGem/" />
+        <folder expanded="1" path="animation-folder/enemySwimming_1/" />
+        <folder expanded="1" path="animation-folder/spikesLow/" />
+        <folder expanded="1" path="animation-folder/Cartel/" />
+        <folder expanded="1" path="animation-folder/enemyFloating_1/" />
+        <folder expanded="1" path="animation-folder/switchGreen_left/" />
+        <folder expanded="1" path="animation-folder/BatteryLife/" />
+        <folder expanded="1" path="animation-folder/enemyFlying_1/" />
+        <folder expanded="1" path="animation-folder/greenJewelUI/" />
+        <folder expanded="1" path="animation-folder/redJewelUI/" />
+        <folder expanded="1" path="animation-folder/PlatformLVL1/" />
+        <folder expanded="1" path="animation-folder/nullZone/" />
+        <folder expanded="1" path="animation-folder/nullEfect/" />
+        <folder expanded="1" path="animation-folder/LifeImput/" />
+        <folder expanded="1" path="animation-folder/battery/" />
+        <folder expanded="1" path="animation-folder/PlatformMobileLVL1/" />
+        <folder expanded="1" path="animation-folder/trap2lvl2/" />
+        <folder expanded="1" path="animation-folder/Spritelvl2/" />
+        <folder expanded="1" path="animation-folder/groundlvl2/" />
+        <folder expanded="1" path="animation-folder/platformlvl2/" />
+        <folder expanded="1" path="animation-folder/trap1lvl2/" />
+        <folder expanded="1" path="animation-folder/movingplatform2/" />
+        <folder expanded="1" path="animation-folder/movingplatform1/" />
+        <folder expanded="1" path="animation-folder/ItemU2/" />
+        <folder expanded="1" path="animation-folder/movingplatform3/" />
+        <folder expanded="1" path="animation-folder/movingplatform4/" />
+        <folder expanded="1" path="animation-folder/hint/" />
+        <folder expanded="1" path="animation-folder/CartelFondo/" />
+        <folder expanded="1" path="animation-folder/popUp/" />
+        <folder expanded="1" path="animation-folder/Referance1/" />
+        <folder expanded="1" path="animation-folder/Referance2/" />
+        <folder expanded="1" path="animation-folder/Referance3/" />
+        <folder expanded="1" path="animation-folder/Referance4/" />
+        <folder expanded="1" path="animation-folder/Referance5/" />
+        <folder expanded="1" path="animation-folder/Referance6/" />
+        <folder expanded="1" path="animation-folder/Referance7/" />
+        <folder expanded="1" path="animation-folder/Referance8/" />
+        <folder expanded="1" path="animation-folder/Object1/" />
+        <folder expanded="1" path="animation-folder/Object2/" />
+        <folder expanded="1" path="animation-folder/Object3/" />
+        <folder expanded="1" path="animation-folder/Object4/" />
+        <folder expanded="1" path="animation-folder/Object5/" />
+        <folder expanded="1" path="animation-folder/Object6/" />
+        <folder expanded="1" path="animation-folder/Object7/" />
+        <folder expanded="1" path="animation-folder/Object8/" />
+        <folder expanded="1" path="animation-folder/Line/" />
+    </folders-expanded>
+</c2uistate>

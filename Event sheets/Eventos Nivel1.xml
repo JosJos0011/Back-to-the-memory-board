@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Nivel1</name>
     <events>
+        <variable comment="Variable que indica que referencia lleva Reff en mano" constant="0" name="Reff_InHand_ID" sid="583930249885678" static="0" type="number">-1</variable>
         <variable comment="Esto es para levantar la vista del popUp" constant="0" name="popUpActivo" sid="841385143283468" static="0" type="number">0</variable>
         <variable comment="Quien lleva la cuenta cuantas referencias se han resuelto" constant="0" name="RefferencesLocated" sid="375786782945882" static="0" type="number">0</variable>
         <variable comment="Es el temporizador del nivel" constant="0" name="Temporizador" sid="423897483368405" static="0" type="number">180</variable>
@@ -39,10 +40,7 @@
                             <param id="0" name="X">ViewportLeft(&quot;Foreground&quot;) + 40</param>
                             <param id="1" name="Y">ViewportTop(&quot;Foreground&quot;) + 100</param>
                         </action>
-                        <action id="-9" name="Set value" sid="792008824206003" type="System">
-                            <param id="0" name="Variable">Temporizador</param>
-                            <param id="1" name="Value">180</param>
-                        </action>
+                        <action id="-21" name="Reset global variables" sid="587983859787424" type="System" />
                         <action id="4" name="Set animation" sid="122696373022201" type="Reff_PJ">
                             <param id="0" name="Animation">&quot;Idle&quot;</param>
                             <param id="1" name="From">1</param>
@@ -81,6 +79,9 @@
                         <action id="0" name="Set text" sid="263478839582628" type="TextoVidasLvl1">
                             <param id="0" name="Text">Reff_PJ.Vidas</param>
                         </action>
+                        <action id="0" name="Set text" sid="316350611255925" type="TextoReferenciasObtenidas">
+                            <param id="0" name="Text">RefferencesLocated</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="937402716523905">
@@ -117,6 +118,7 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">60</param>
                         </condition>
+                        <condition id="-4" name="Trigger once while true" sid="914640815841099" type="System" />
                     </conditions>
                     <actions>
                         <action behavior="Platform" id="13" name="Set double-jump" sid="295492783331350" type="Reff_PJ">
@@ -381,11 +383,23 @@
                 <event-block sid="502448494600669">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="213458569684035" type="Reff_PJ">
-                            <param id="0" name="Object">RedGem</param>
+                            <param id="0" name="Object">FamObject</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="809788312491918" type="System">
+                            <param id="0" name="Variable">Reff_InHand_ID</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="333144876224179" type="FamObject">
+                            <param id="0" name="Instance variable">Conectado</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="882576132030497" type="FamObject">
+                            <param id="0" name="Instance variable">Id</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Reff_InHand_ID</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="328662877070504" type="RedGem" />
                         <action id="-10" name="Add to" sid="525794500299345" type="System">
                             <param id="0" name="Variable">RefferencesLocated</param>
                             <param id="1" name="Value">1</param>
@@ -402,64 +416,116 @@
                         <action id="6" name="Stop" sid="205439198597431" type="Audio">
                             <param id="0" name="Tag">&quot;Correcto&quot;</param>
                         </action>
+                        <action id="-13" name="Set boolean" sid="730113206658336" type="FamObject">
+                            <param id="0" name="Instance variable">Conectado</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="740827780365776" type="System">
+                            <param id="0" name="Variable">Reff_InHand_ID</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="993575677940529" type="System">
+                            <param id="0" name="Object to create">Line</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">FamObject.X</param>
+                            <param id="3" name="Y">FamObject.Y</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="380214117220719" type="Line">
+                            <param id="0" name="Angle">angle(Line.X,Line.Y,FamReference.X, FamReference.Y)</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="814515227553150" type="Line">
+                            <param id="0" name="Width">distance(Line.X,Line.Y,FamReference.X, FamReference.Y)</param>
+                        </action>
                     </actions>
                 </event-block>
-                <event-block sid="384444911610892">
+                <event-block sid="569554020954779">
                     <conditions>
-                        <condition id="6" name="On object clicked" sid="180054565681319" type="Mouse">
+                        <condition id="0" name="On collision with another object" sid="816350462146031" type="Reff_PJ">
+                            <param id="0" name="Object">FamReference</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="815295769579158" type="System">
+                            <param id="0" name="Variable">Reff_InHand_ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="752406786923222" type="FamReference">
+                            <param id="0" name="Instance variable">Conectado</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="551649856543356" type="System">
+                            <param id="0" name="Variable">Reff_InHand_ID</param>
+                            <param id="1" name="Value">FamReference.Id</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="466120444782319" type="FamReference">
+                            <param id="0" name="Opacity">70</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="947636933055317" type="FamReference">
+                            <param id="0" name="Instance variable">Conectado</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="430167391276826" title="Game Hint Mechanics">
+            <sub-events>
+                <event-block sid="733081890677122">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="402034826218058" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
                             <param id="2" name="Object clicked">hint</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Set value" sid="172398275172666" type="System">
+                        <action id="-9" name="Set value" sid="201158729372089" type="System">
                             <param id="0" name="Variable">popUpActivo</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-4" name="Set layer visible" sid="887423861978169" type="System">
+                        <action id="-4" name="Set layer visible" sid="101888245173907" type="System">
                             <param id="0" name="Layer">3</param>
                             <param id="1" name="Visibility">1</param>
                         </action>
-                        <action id="-13" name="Set time scale" sid="629016548450622" type="System">
+                        <action id="-13" name="Set time scale" sid="842331634335998" type="System">
                             <param id="0" name="Time scale">0</param>
                         </action>
-                        <action id="0" name="Set text" sid="726848056209092" type="HintText">
+                        <action id="0" name="Set text" sid="395071409336930" type="HintText">
                             <param id="0" name="Text">&quot;En Java, una referencia es como una dirección... bla bla bla&quot;</param>
                         </action>
-                        <action id="-3" name="Set position" sid="156411475431440" type="HintText">
+                        <action id="-3" name="Set position" sid="321643808406902" type="HintText">
                             <param id="0" name="X">ViewportLeft(&quot;Foreground&quot;) + 620</param>
                             <param id="1" name="Y">ViewportTop(&quot;Foreground&quot;) + 450</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="426529290658272" type="HintText">
+                        <action id="-15" name="Set visible" sid="444962160476363" type="HintText">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="3" name="Set volume" sid="163271195200542" type="Audio">
+                        <action id="3" name="Set volume" sid="562533842428157" type="Audio">
                             <param id="0" name="Tag">&quot;&quot;</param>
                             <param id="1" name="dB">-10</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="633673285755051">
+                <event-block sid="708706013568980">
                     <conditions>
-                        <condition id="0" name="On clicked" sid="527091204477032" type="BtnOk" />
+                        <condition id="0" name="On clicked" sid="725052178194953" type="BtnOk" />
                     </conditions>
                     <actions>
-                        <action id="-9" name="Set value" sid="892090435585700" type="System">
+                        <action id="-9" name="Set value" sid="321079331029227" type="System">
                             <param id="0" name="Variable">popUpActivo</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                        <action id="-4" name="Set layer visible" sid="903999113396687" type="System">
+                        <action id="-4" name="Set layer visible" sid="894909263115467" type="System">
                             <param id="0" name="Layer">&quot;PopUp&quot;</param>
                             <param id="1" name="Visibility">0</param>
                         </action>
-                        <action id="-13" name="Set time scale" sid="929139031051758" type="System">
+                        <action id="-13" name="Set time scale" sid="902550965950479" type="System">
                             <param id="0" name="Time scale">1</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="108917265629704" type="HintText">
+                        <action id="-15" name="Set visible" sid="437489531575954" type="HintText">
                             <param id="0" name="Visibility">0</param>
                         </action>
-                        <action id="3" name="Set volume" sid="313075259641674" type="Audio">
+                        <action id="3" name="Set volume" sid="677027592792844" type="Audio">
                             <param id="0" name="Tag">&quot;&quot;</param>
                             <param id="1" name="dB">0</param>
                         </action>

@@ -158,7 +158,17 @@
                             <param id="2" name="Object clicked">HitBoxTVLvL2</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="223096856232522" type="System">
+                            <param id="0" name="Layout">Nivel2</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="556611322228081" type="System">
+                            <param id="0" name="Object to create">Negro</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="812961689445832">
                     <conditions>
