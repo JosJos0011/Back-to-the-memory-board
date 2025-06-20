@@ -24,7 +24,7 @@
                             <param id="0" name="Tag">&quot;&quot;</param>
                         </action>
                         <action id="0" name="Play" sid="632778067211707" type="Audio">
-                            <param id="0" name="Audio file">Reff-The-Tireless-One</param>
+                            <param id="0" name="Audio file">The-Tireless-One-_Instrumental_</param>
                             <param id="2" name="Loop">1</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
@@ -41,14 +41,6 @@
                             <param id="1" name="Y">ViewportTop(&quot;Foreground&quot;) + 100</param>
                         </action>
                         <action id="-21" name="Reset global variables" sid="587983859787424" type="System" />
-                        <action id="-9" name="Set value" sid="954539703302444" type="System">
-                            <param id="0" name="Variable">NivelActual</param>
-                            <param id="1" name="Value">&quot;Nivel1&quot;</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="268463776691773" type="HintText">
-                            <param id="0" name="Instance variable">NumHint</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
                         <action id="4" name="Set animation" sid="122696373022201" type="Reff_PJ">
                             <param id="0" name="Animation">&quot;Idle&quot;</param>
                             <param id="1" name="From">1</param>
@@ -243,6 +235,10 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="239726125167316" type="Reff_PJ" />
+                        <action id="-9" name="Set value" sid="971800713572471" type="System">
+                            <param id="0" name="Variable">NivelActual</param>
+                            <param id="1" name="Value">&quot;Nivel1&quot;</param>
+                        </action>
                         <action id="-2" name="Go to layout" sid="843738765515682" type="System">
                             <param id="0" name="Layout">GameOver</param>
                         </action>
@@ -259,6 +255,10 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="454099741690200" type="Reff_PJ" />
+                        <action id="-9" name="Set value" sid="112567888026163" type="System">
+                            <param id="0" name="Variable">NivelActual</param>
+                            <param id="1" name="Value">&quot;Nivel1&quot;</param>
+                        </action>
                         <action id="-2" name="Go to layout" sid="330301663935090" type="System">
                             <param id="0" name="Layout">GameOver</param>
                         </action>
@@ -491,7 +491,7 @@
                             <param id="0" name="Time scale">0</param>
                         </action>
                         <action id="0" name="Set text" sid="395071409336930" type="HintText">
-                            <param id="0" name="Text">&quot;En Java, cuando creas un objeto, lo que guardas en una variable no es el objeto en sí, sino una referencia a ese objeto.&#x0D;&#x0A;&#x0D;&#x0A;Una referencia funciona como una flecha o una etiqueta que apunta hacia el lugar donde está guardado el objeto en la memoria.&quot;</param>
+                            <param id="0" name="Text">&quot;En Java, una referencia es como una dirección... bla bla bla&quot;</param>
                         </action>
                         <action id="-3" name="Set position" sid="321643808406902" type="HintText">
                             <param id="0" name="X">ViewportLeft(&quot;Foreground&quot;) + 620</param>
@@ -503,55 +503,6 @@
                         <action id="3" name="Set volume" sid="562533842428157" type="Audio">
                             <param id="0" name="Tag">&quot;&quot;</param>
                             <param id="1" name="dB">-10</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="892622449684442" type="HintText">
-                            <param id="0" name="Instance variable">NumHint</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block disabled="1" sid="485447347054851">
-                    <conditions>
-                        <condition id="6" name="On object clicked" sid="183797906655855" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">hint</param>
-                        </condition>
-                        <condition id="-7" name="Compare instance variable" sid="190268539882629" type="HintText">
-                            <param id="0" name="Instance variable">NumHint</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="782067210171721" type="System">
-                            <param id="0" name="Variable">popUpActivo</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="421766140632338" type="System">
-                            <param id="0" name="Layer">3</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-13" name="Set time scale" sid="717501332713837" type="System">
-                            <param id="0" name="Time scale">0</param>
-                        </action>
-                        <action id="0" name="Set text" sid="459414472064728" type="HintText">
-                            <param id="0" name="Text">&quot;Por ejemplo:&#x0D;&#x0A;&#x0D;&#x0A;Usuario miUsuario = new Usuario();&#x0D;&#x0A;&#x0D;&#x0A;miUsuario no contiene al usuario directamente. Solo apunta al espacio en memoria donde vive el objeto Usuario.&quot;</param>
-                        </action>
-                        <action id="-3" name="Set position" sid="541955409563182" type="HintText">
-                            <param id="0" name="X">ViewportLeft(&quot;Foreground&quot;) + 620</param>
-                            <param id="1" name="Y">ViewportTop(&quot;Foreground&quot;) + 450</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="504220122375181" type="HintText">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="3" name="Set volume" sid="537255489671029" type="Audio">
-                            <param id="0" name="Tag">&quot;&quot;</param>
-                            <param id="1" name="dB">-10</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="633110423285808" type="HintText">
-                            <param id="0" name="Instance variable">NumHint</param>
-                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>

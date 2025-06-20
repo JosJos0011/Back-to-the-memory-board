@@ -5,167 +5,134 @@
     <events>
         <variable constant="0" name="Liveslvl2" sid="154074016071596" static="0" type="number">4</variable>
         <variable constant="0" name="Timerlvl2" sid="910863775657643" static="0" type="number">120</variable>
-        <event-group description="" sid="974100399839771" title="Initial Setting">
-            <sub-events>
-                <event-block sid="653030321642576">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="668165390487674" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Create object" sid="382262313096985" type="System">
-                            <param id="0" name="Object to create">Negro</param>
-                            <param id="1" name="Layer">2</param>
-                            <param id="2" name="X">0</param>
-                            <param id="3" name="Y">0</param>
-                        </action>
-                        <action id="-21" name="Reset global variables" sid="326875546452887" type="System" />
-                        <action id="-9" name="Set value" sid="264132211186371" type="System">
-                            <param id="0" name="Variable">NivelActual</param>
-                            <param id="1" name="Value">&quot;Nivel2&quot;</param>
-                        </action>
-                        <action id="6" name="Stop" sid="788833125349860" type="Audio">
-                            <param id="0" name="Tag">&quot;&quot;</param>
-                        </action>
-                        <action id="0" name="Play" sid="726160474466456" type="Audio">
-                            <param id="0" name="Audio file">Object_and_Rhyme</param>
-                            <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="408345435452862">
-                    <conditions>
-                        <condition id="-11" name="For Each" sid="846672334259545" type="System">
-                            <param id="0" name="Object">ItemU2</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-5" name="Set width" sid="134552745480152" type="ItemTextNivel2">
-                            <param id="0" name="Width">ItemU2.Width + 20</param>
-                        </action>
-                        <action id="-6" name="Set height" sid="434760752636970" type="ItemTextNivel2">
-                            <param id="0" name="Height">ItemU2.Height + 20</param>
-                        </action>
-                        <action id="-1" name="Set X" sid="434914978198017" type="ItemTextNivel2">
-                            <param id="0" name="X">ItemU2.X -80</param>
-                        </action>
-                        <action id="-2" name="Set Y" sid="723894836590302" type="ItemTextNivel2">
-                            <param id="0" name="Y">ItemU2.Y + 5</param>
-                        </action>
-                        <action id="0" name="Set text" sid="883247332885918" type="ItemTextNivel2">
-                            <param id="0" name="Text">ItemU2.itemText</param>
-                        </action>
-                        <action id="-24" name="Move to top" sid="567417794977125" type="ItemTextNivel2" />
-                        <action id="-24" name="Move to top" sid="841392309543203" type="Spritelvl2" />
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="127732077820629" title="Time events">
-            <sub-events>
-                <event-block sid="300635542096702">
-                    <conditions>
-                        <condition id="-1" name="Every tick" sid="399496524772573" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set text" sid="252142313956546" type="TimeTextlvl2">
-                            <param id="0" name="Text">int(Timerlvl2 / 60) &amp; &quot;:&quot; &amp; right(&quot;0&quot; &amp; (Timerlvl2 % 60), 2)</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="301477021756584">
-                    <conditions>
-                        <condition id="-6" name="Every X seconds" sid="859161690709531" type="System">
-                            <param id="0" name="Interval (seconds)">1.0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-11" name="Subtract from" sid="866777532460651" type="System">
-                            <param id="0" name="Variable">Timerlvl2</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="935680324607048">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="796845558264111" type="System">
-                            <param id="0" name="Variable">Timerlvl2</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-2" name="Go to layout" sid="781456871882202" type="System">
-                            <param id="0" name="Layout">GameOver</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="285446391274319" title="Health Events">
-            <sub-events>
-                <event-block sid="346401243442822">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="800167172920339" type="Reff_PJ">
-                            <param id="0" name="Object">ItemU2</param>
-                        </condition>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="606141887800613" type="ItemU2">
-                            <param id="0" name="Instance variable">isCorrect</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Set value" sid="410197778910528" type="Reff_PJ">
-                            <param id="0" name="Instance variable">Inmune</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-11" name="Subtract from" sid="989110263370706" type="System">
-                            <param id="0" name="Variable">Liveslvl2</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="358142183115482" type="Reff_PJ">
-                            <param id="0" name="Instance variable">Inmune</param>
-                            <param id="1" name="Value">2.5</param>
-                        </action>
-                        <action behavior="Flash" id="0" name="Flash" sid="367735317806585" type="Reff_PJ">
-                            <param id="0" name="&apos;On&apos; time">0.2</param>
-                            <param id="1" name="&apos;Off&apos; time">0.2</param>
-                            <param id="2" name="Duration">1.5</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="608024146578031" type="System">
-                            <param id="0" name="Seconds">1.5</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="684138656796634" type="Reff_PJ">
-                            <param id="0" name="Instance variable">Inmune</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="212510693640182">
-                    <conditions>
-                        <condition id="-1" name="Every tick" sid="195885016822386" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set text" sid="284506323992285" type="Livestextlvl2">
-                            <param id="0" name="Text">Liveslvl2</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="346413411472765">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="484737682065983" type="System">
-                            <param id="0" name="Variable">Liveslvl2</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-2" name="Go to layout" sid="568191609424211" type="System">
-                            <param id="0" name="Layout">GameOver</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
+        <event-group description="" sid="974100399839771" title="Initial Setting" />
+        <event-block sid="930466436711401">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="317433186366713" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="328028280063625">
+            <conditions>
+                <condition id="-11" name="For Each" sid="594564509355992" type="System">
+                    <param id="0" name="Object">ItemU2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="979899645092823" type="ItemTextNivel2">
+                    <param id="0" name="Width">ItemU2.Width + 20</param>
+                </action>
+                <action id="-6" name="Set height" sid="827008665700042" type="ItemTextNivel2">
+                    <param id="0" name="Height">ItemU2.Height + 20</param>
+                </action>
+                <action id="-1" name="Set X" sid="875596534083184" type="ItemTextNivel2">
+                    <param id="0" name="X">ItemU2.X -80</param>
+                </action>
+                <action id="-2" name="Set Y" sid="639564233577282" type="ItemTextNivel2">
+                    <param id="0" name="Y">ItemU2.Y + 5</param>
+                </action>
+                <action id="0" name="Set text" sid="698788684071160" type="ItemTextNivel2">
+                    <param id="0" name="Text">ItemU2.itemText</param>
+                </action>
+                <action id="-24" name="Move to top" sid="871855409386919" type="ItemTextNivel2" />
+                <action id="-24" name="Move to top" sid="289762071786663" type="Spritelvl2" />
+            </actions>
+        </event-block>
+        <event-group description="" sid="127732077820629" title="Time events" />
+        <event-block sid="836182207148269">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="319895561199796" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="395067907482467" type="TimeTextlvl2">
+                    <param id="0" name="Text">int(Timerlvl2 / 60) &amp; &quot;:&quot; &amp; right(&quot;0&quot; &amp; (Timerlvl2 % 60), 2)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="270444295399376">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="959272412591875" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="304177739688020" type="System">
+                    <param id="0" name="Variable">Timerlvl2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="577434985975722">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="617130247452268" type="System">
+                    <param id="0" name="Variable">Timerlvl2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="176782393706189" type="System">
+                    <param id="0" name="Layout">GameOver</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="285446391274319" title="Health Events" />
+        <event-block sid="369965382915469">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="913932207868260" type="Spritelvl2">
+                    <param id="0" name="Object">ItemU2</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="190670572930684" type="ItemU2">
+                    <param id="0" name="Instance variable">isCorrect</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="924185326412939" type="System">
+                    <param id="0" name="Variable">Liveslvl2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="507158112586115" type="Spritelvl2">
+                    <param id="0" name="Instance variable">IsInmune</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="327075652343170" type="Spritelvl2">
+                    <param id="0" name="Opacity">50</param>
+                </action>
+                <action id="-16" name="Wait" sid="391003453823492" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="775738974634841" type="Spritelvl2">
+                    <param id="0" name="Instance variable">IsInmune</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="328738794553689" type="Spritelvl2">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="119720631710306">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="230895926033906" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="877827201756787" type="Livestextlvl2">
+                    <param id="0" name="Text">Liveslvl2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="483989103185182">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="105676782511470" type="System">
+                    <param id="0" name="Variable">Liveslvl2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="271324812655616" type="System">
+                    <param id="0" name="Layout">GameOver</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
