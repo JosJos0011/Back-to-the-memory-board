@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Title" uid="3">
+                <instance type="GameTitle" uid="3">
                     <properties>
                         <text>Back to the Random Access Memory</text>
                         <initial-visibility>Visible</initial-visibility>

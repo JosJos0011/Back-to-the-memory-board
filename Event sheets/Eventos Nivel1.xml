@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Nivel1</name>
     <events>
+        <variable comment="Esto es para levantar la vista del popUp" constant="0" name="popUpActivo" sid="841385143283468" static="0" type="number">0</variable>
+        <variable comment="Quien lleva la cuenta cuantas referencias se han resuelto" constant="0" name="RefferencesLocated" sid="375786782945882" static="0" type="number">0</variable>
         <variable comment="Es el temporizador del nivel" constant="0" name="Temporizador" sid="423897483368405" static="0" type="number">180</variable>
         <event-group description="" sid="630313337647197" title="Start of layout">
             <sub-events>
@@ -119,6 +121,18 @@
                     <actions>
                         <action behavior="Platform" id="13" name="Set double-jump" sid="295492783331350" type="Reff_PJ">
                             <param id="0" name="State">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="822089535738564" type="TextoPoder">
+                            <param id="0" name="Text">&quot;Permiso &apos;Salto en cascada&apos; activado: ahora puedes hacer doble salto&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="937327116195095" type="TextoPoder">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="269762735235779" type="System">
+                            <param id="0" name="Seconds">3.5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="924947452135371" type="TextoPoder">
+                            <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -327,40 +341,131 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="997686262304450">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="988122518635195" type="Reff_PJ">
+                            <param id="0" name="Object">nullZone</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="234036467027603" type="Reff_PJ">
+                            <param id="0" name="Instance variable">Inmune</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="447573530959420" type="Reff_PJ">
+                            <param id="0" name="Instance variable">Vidas</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="245132557729022" type="Reff_PJ">
+                            <param id="0" name="Instance variable">Inmune</param>
+                            <param id="1" name="Value">1.5</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="685795349102930" type="Reff_PJ">
+                            <param id="0" name="&apos;On&apos; time">0.2</param>
+                            <param id="1" name="&apos;Off&apos; time">0.2</param>
+                            <param id="2" name="Duration">1.5</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="695863704587491" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="812691634821665" type="Reff_PJ">
+                            <param id="0" name="Instance variable">Inmune</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="963718850335054">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="401329366999374" type="Reff_PJ">
-                    <param id="0" name="Object">nullZone</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-10" name="Set value" sid="724749583831095" type="Reff_PJ">
-                    <param id="0" name="Instance variable">Inmune</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-                <action id="-12" name="Subtract from" sid="876345447666020" type="Reff_PJ">
-                    <param id="0" name="Instance variable">Vidas</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="-10" name="Set value" sid="124219384207377" type="Reff_PJ">
-                    <param id="0" name="Instance variable">Inmune</param>
-                    <param id="1" name="Value">1.5</param>
-                </action>
-                <action behavior="Flash" id="0" name="Flash" sid="218250348635078" type="Reff_PJ">
-                    <param id="0" name="&apos;On&apos; time">0.2</param>
-                    <param id="1" name="&apos;Off&apos; time">0.2</param>
-                    <param id="2" name="Duration">1.5</param>
-                </action>
-                <action id="-16" name="Wait" sid="718287304256066" type="System">
-                    <param id="0" name="Seconds">1.5</param>
-                </action>
-                <action id="-10" name="Set value" sid="996435396848410" type="Reff_PJ">
-                    <param id="0" name="Instance variable">Inmune</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="672833579169517" title="Game Mechanics">
+            <sub-events>
+                <event-block sid="502448494600669">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="213458569684035" type="Reff_PJ">
+                            <param id="0" name="Object">RedGem</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="328662877070504" type="RedGem" />
+                        <action id="-10" name="Add to" sid="525794500299345" type="System">
+                            <param id="0" name="Variable">RefferencesLocated</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="540734840530794" type="Audio">
+                            <param id="0" name="Audio file">Correcto</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="904922880739641" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="6" name="Stop" sid="205439198597431" type="Audio">
+                            <param id="0" name="Tag">&quot;Correcto&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="384444911610892">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="180054565681319" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">hint</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="172398275172666" type="System">
+                            <param id="0" name="Variable">popUpActivo</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="887423861978169" type="System">
+                            <param id="0" name="Layer">3</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="629016548450622" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="726848056209092" type="HintText">
+                            <param id="0" name="Text">&quot;En Java, una referencia es como una dirección... bla bla bla&quot;</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="156411475431440" type="HintText">
+                            <param id="0" name="X">ViewportLeft(&quot;Foreground&quot;) + 620</param>
+                            <param id="1" name="Y">ViewportTop(&quot;Foreground&quot;) + 450</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="426529290658272" type="HintText">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="3" name="Set volume" sid="163271195200542" type="Audio">
+                            <param id="0" name="Tag">&quot;&quot;</param>
+                            <param id="1" name="dB">-10</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="633673285755051">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="527091204477032" type="BtnOk" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="892090435585700" type="System">
+                            <param id="0" name="Variable">popUpActivo</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="903999113396687" type="System">
+                            <param id="0" name="Layer">&quot;PopUp&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="929139031051758" type="System">
+                            <param id="0" name="Time scale">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="108917265629704" type="HintText">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="3" name="Set volume" sid="313075259641674" type="Audio">
+                            <param id="0" name="Tag">&quot;&quot;</param>
+                            <param id="1" name="dB">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

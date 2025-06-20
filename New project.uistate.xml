@@ -11,14 +11,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Main Menu</layout>
-        <layout order="1">Nivel1</layout>
+        <layout active="1" order="1">Nivel1</layout>
         <layout order="3">Nivel3</layout>
         <layout order="5">GameOver</layout>
         <layout order="7">Nivel2</layout>
+        <layout order="9">InfoDump</layout>
         <event-sheet order="2">Eventos Nivel1</event-sheet>
         <event-sheet order="4">Eventos Nivel3</event-sheet>
         <event-sheet order="6">Eventos GameOver</event-sheet>
-        <event-sheet active="1" order="8">Eventos nivel2</event-sheet>
+        <event-sheet order="8">Eventos nivel2</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -28,12 +29,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <families-expanded root="1" />
     <folders-expanded>
-        <folder expanded="0" path="object-folder/" />
+        <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="0" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
-        <folder expanded="0" path="music-folder/" />
+        <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/Backgound/" />
         <folder expanded="1" path="animation-folder/nivel1/" />
@@ -44,7 +45,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/HitBoxTVLvL3/" />
         <folder expanded="1" path="animation-folder/Negro/" />
         <folder expanded="1" path="animation-folder/BackgrondLvl/" />
-        <folder expanded="1" path="animation-folder/UI_Cartel/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/GameOverBackgrond/" />
         <folder expanded="1" path="animation-folder/ZonaNull/" />
@@ -79,5 +79,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/ItemU2/" />
         <folder expanded="1" path="animation-folder/movingplatform3/" />
         <folder expanded="1" path="animation-folder/movingplatform4/" />
+        <folder expanded="1" path="animation-folder/hint/" />
+        <folder expanded="1" path="animation-folder/CartelFondo/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
     </folders-expanded>
 </c2uistate>

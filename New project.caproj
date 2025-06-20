@@ -11,6 +11,7 @@
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -125,7 +126,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Title" sid="123182066908600">
+        <object-type name="GameTitle" sid="123182066908600">
             <plugin id="Text" />
         </object-type>
         <object-type name="nivel1" sid="394829643540506">
@@ -205,24 +206,6 @@
                 </behavior-type>
             </behaviors>
         </object-type>
-        <object-type name="UI_Cartel" sid="191577856976099">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="308089863149792" speed="5">
-                    <frame duration="1" hotspotX="0.490057" hotspotY="0.5" original-source="C:\Users\josjo\OneDrive\Escritorio\Multi Proyecto Juego\Assets\Nivel 1\UI_Cartel.png">
-                        <collision-poly>
-                            <point x="0.0880686" y="0.144352" />
-                            <point x="0.839488" y="0.221757" />
-                            <point x="0.913353" y="0.5" />
-                            <point x="0.849432" y="0.792887" />
-                            <point x="0.490057" y="0.887029" />
-                            <point x="0.0894887" y="0.853557" />
-                            <point x="0.012784" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="TextoPoder" sid="495674232873637">
             <plugin id="Text" />
         </object-type>
@@ -242,7 +225,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Text" sid="834336455963485">
+        <object-type name="TextoReintentar" sid="834336455963485">
             <plugin id="Text" />
         </object-type>
         <object-type name="ZonaNull" sid="188733055666428">
@@ -1334,6 +1317,59 @@
         <object-type name="Livestextlvl2" sid="205404252916116">
             <plugin id="Text" />
         </object-type>
+        <object-type name="hint" sid="205201503239946">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="334482061102029" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\josjo\OneDrive\Escritorio\Multi Proyecto Juego\Assets\Nivel 1\hint.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CartelFondo" sid="112282622359523">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="871837389179413" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\josjo\OneDrive\Escritorio\Multi Proyecto Juego\CartelFondo.png">
+                        <collision-poly>
+                            <point x="0.105405" y="0.151751" />
+                            <point x="0.5" y="0.14786" />
+                            <point x="0.931081" y="0.0992218" />
+                            <point x="0.989189" y="0.5" />
+                            <point x="0.916216" y="0.879377" />
+                            <point x="0.118919" y="0.828794" />
+                            <point x="0.0459459" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="462476482203748">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="116555421184294" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\josjo\OneDrive\Escritorio\Multi Proyecto Juego\CartelFondo.png">
+                        <collision-poly>
+                            <point x="0.105405" y="0.151751" />
+                            <point x="0.5" y="0.14786" />
+                            <point x="0.931081" y="0.0992218" />
+                            <point x="0.989189" y="0.5" />
+                            <point x="0.916216" y="0.879377" />
+                            <point x="0.118919" y="0.828794" />
+                            <point x="0.0459459" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BtnOk" sid="757946786049852">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="HintText" sid="631620617783805">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Btn_InfoDump" sid="604615871584729">
+            <plugin id="Button" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1342,6 +1378,7 @@
         <layout>GameOver.xml</layout>
         <layout>Nivel3.xml</layout>
         <layout>Nivel2.xml</layout>
+        <layout>InfoDump.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Eventos Main Menu.xml</event-sheet>
@@ -1349,6 +1386,7 @@
         <event-sheet>Eventos GameOver.xml</event-sheet>
         <event-sheet>Eventos Nivel3.xml</event-sheet>
         <event-sheet>Eventos nivel2.xml</event-sheet>
+        <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="0" />
@@ -1374,6 +1412,8 @@
         <file name="The-Tireless-One-_Instrumental_.ogg" />
         <file name="MattOglseby - 1.m4a" />
         <file name="MattOglseby - 1.ogg" />
+        <file name="Correcto.ogg" />
+        <file name="SystemDown(No_tyr_catch).ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">

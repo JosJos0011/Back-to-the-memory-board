@@ -10,7 +10,7 @@
                         <condition id="-2" name="On start of layout" sid="598532079056925" type="System" />
                     </conditions>
                     <actions>
-                        <action id="5" name="Set web font" sid="565966791531831" type="Text">
+                        <action id="5" name="Set web font" sid="565966791531831" type="TextoReintentar">
                             <param id="0" name="Family name">&quot;Joystix monospace&quot;</param>
                             <param id="1" name="CSS URL">&quot;http://&quot;</param>
                         </action>
@@ -20,8 +20,12 @@
                             <param id="2" name="X">0</param>
                             <param id="3" name="Y">0</param>
                         </action>
-                        <action id="6" name="Stop" sid="229166503144131" type="Audio">
-                            <param id="0" name="Tag">&quot;&quot;</param>
+                        <action id="33" name="Stop all" sid="229166503144131" type="Audio" />
+                        <action id="0" name="Play" sid="305620571021712" type="Audio">
+                            <param id="0" name="Audio file">SystemDown(No_tyr_catch)</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;Sound of failure&quot;</param>
                         </action>
                     </actions>
                 </event-block>

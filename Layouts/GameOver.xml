@@ -70,7 +70,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Text" uid="68">
+                <instance type="TextoReintentar" uid="68">
                     <properties>
                         <text>PRECIONE ESPACIO PARA REINTENTAR</text>
                         <initial-visibility>Visible</initial-visibility>
