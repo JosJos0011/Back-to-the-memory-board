@@ -469,8 +469,9 @@
                 </event-block>
                 <event-block sid="866687975904553">
                     <conditions>
+                        <condition id="-1" name="Every tick" sid="463616152772508" type="System" />
                         <condition id="1" name="Is overlapping another object" sid="291208892087144" type="SensorIzq">
-                            <param id="0" name="Object">TilemapSolid</param>
+                            <param id="0" name="Object">Wall</param>
                         </condition>
                         <condition behavior="Platform" id="2" inverted="1" name="Is on floor" sid="464437182388361" type="Reff_PJ" />
                         <condition id="2" name="Key is down" sid="906006709956596" type="Keyboard">
@@ -490,8 +491,9 @@
                 </event-block>
                 <event-block sid="658922702369585">
                     <conditions>
+                        <condition id="-1" name="Every tick" sid="758738271052576" type="System" />
                         <condition id="1" name="Is overlapping another object" sid="441359233687454" type="SensorDer">
-                            <param id="0" name="Object">TilemapSolid</param>
+                            <param id="0" name="Object">Wall</param>
                         </condition>
                         <condition behavior="Platform" id="2" inverted="1" name="Is on floor" sid="301115074453462" type="Reff_PJ" />
                         <condition id="2" name="Key is down" sid="369135482267880" type="Keyboard">

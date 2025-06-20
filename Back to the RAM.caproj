@@ -1530,6 +1530,19 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Wall" sid="593437511908498">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="180984792260277">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="534767392680384" speed="5">
+                    <frame duration="1" hotspotX="0.74" hotspotY="0.527426" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="FamReference" plugin-id="Sprite" sid="177368928108616">
