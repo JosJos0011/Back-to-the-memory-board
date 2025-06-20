@@ -24,7 +24,7 @@
                             <param id="0" name="Tag">&quot;&quot;</param>
                         </action>
                         <action id="0" name="Play" sid="632778067211707" type="Audio">
-                            <param id="0" name="Audio file">The-Tireless-One-_Instrumental_</param>
+                            <param id="0" name="Audio file">Reff-The-Tireless-One</param>
                             <param id="2" name="Loop">1</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
@@ -41,6 +41,10 @@
                             <param id="1" name="Y">ViewportTop(&quot;Foreground&quot;) + 100</param>
                         </action>
                         <action id="-21" name="Reset global variables" sid="587983859787424" type="System" />
+                        <action id="-9" name="Set value" sid="954539703302444" type="System">
+                            <param id="0" name="Variable">NivelActual</param>
+                            <param id="1" name="Value">&quot;Nivel1&quot;</param>
+                        </action>
                         <action id="4" name="Set animation" sid="122696373022201" type="Reff_PJ">
                             <param id="0" name="Animation">&quot;Idle&quot;</param>
                             <param id="1" name="From">1</param>
@@ -235,10 +239,6 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="239726125167316" type="Reff_PJ" />
-                        <action id="-9" name="Set value" sid="971800713572471" type="System">
-                            <param id="0" name="Variable">NivelActual</param>
-                            <param id="1" name="Value">&quot;Nivel1&quot;</param>
-                        </action>
                         <action id="-2" name="Go to layout" sid="843738765515682" type="System">
                             <param id="0" name="Layout">GameOver</param>
                         </action>
@@ -255,10 +255,6 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="454099741690200" type="Reff_PJ" />
-                        <action id="-9" name="Set value" sid="112567888026163" type="System">
-                            <param id="0" name="Variable">NivelActual</param>
-                            <param id="1" name="Value">&quot;Nivel1&quot;</param>
-                        </action>
                         <action id="-2" name="Go to layout" sid="330301663935090" type="System">
                             <param id="0" name="Layout">GameOver</param>
                         </action>
