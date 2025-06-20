@@ -999,6 +999,8 @@
                     <instance-variables>
                         <Vidas>3</Vidas>
                         <Inmune>0</Inmune>
+                        <EnPared>0</EnPared>
+                        <WallDirection></WallDirection>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="BoundToLayout">
@@ -1026,6 +1028,11 @@
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="Flash" />
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>

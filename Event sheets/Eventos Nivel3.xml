@@ -400,8 +400,8 @@
                             <param id="0" name="Variable">popUpActivo</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-4" name="Set layer visible" sid="651170527634369" type="System">
-                            <param id="0" name="Layer">3</param>
+                        <action id="-4" name="Set layer visible" sid="136415343770077" type="System">
+                            <param id="0" name="Layer">&quot;PopUp&quot;</param>
                             <param id="1" name="Visibility">1</param>
                         </action>
                         <action id="-13" name="Set time scale" sid="244875745536302" type="System">
@@ -445,6 +445,106 @@
                         <action id="3" name="Set volume" sid="334961197343641" type="Audio">
                             <param id="0" name="Tag">&quot;&quot;</param>
                             <param id="1" name="dB">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Mecánica para que el jugador se pegue a la pared" sid="964395226358190" title="Lvl3WallMechanic">
+            <sub-events>
+                <event-block sid="569830648430142">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="689374535694697" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="497818940842494" type="SensorIzq">
+                            <param id="0" name="X">Reff_PJ.X-(Reff_PJ.Width/2)-(SensorIzq.Width/2) - 1</param>
+                            <param id="1" name="Y">Reff_PJ.Y</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="253801517595400" type="SensorDer">
+                            <param id="0" name="X">Reff_PJ.X + (Reff_PJ.Width / 2) + (SensorDer.Width / 2) + 1</param>
+                            <param id="1" name="Y">Reff_PJ.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="866687975904553">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="291208892087144" type="SensorIzq">
+                            <param id="0" name="Object">TilemapSolid</param>
+                        </condition>
+                        <condition behavior="Platform" id="2" inverted="1" name="Is on floor" sid="464437182388361" type="Reff_PJ" />
+                        <condition id="2" name="Key is down" sid="906006709956596" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="766792820437732" type="Reff_PJ">
+                            <param id="0" name="Instance variable">EnPared</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="228622905366293" type="Reff_PJ">
+                            <param id="0" name="Instance variable">WallDirection</param>
+                            <param id="1" name="Value">&quot;izquierda&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="658922702369585">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="441359233687454" type="SensorDer">
+                            <param id="0" name="Object">TilemapSolid</param>
+                        </condition>
+                        <condition behavior="Platform" id="2" inverted="1" name="Is on floor" sid="301115074453462" type="Reff_PJ" />
+                        <condition id="2" name="Key is down" sid="369135482267880" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="941493875455899" type="Reff_PJ">
+                            <param id="0" name="Instance variable">EnPared</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="337539414876246" type="Reff_PJ">
+                            <param id="0" name="Instance variable">WallDirection</param>
+                            <param id="1" name="Value">&quot;derecha&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="813653812083560">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="835008956504802" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="543893157246188" type="Reff_PJ">
+                            <param id="0" name="Instance variable">EnPared</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="681428217794055">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="669273133174597" type="Reff_PJ">
+                            <param id="0" name="Instance variable">EnPared</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="6" name="Set max fall speed" sid="220953360101987" type="Reff_PJ">
+                            <param id="0" name="Max fall speed">70</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="425702619420513">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="839295707038880" type="Reff_PJ">
+                            <param id="0" name="Instance variable">EnPared</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="6" name="Set max fall speed" sid="393872804389460" type="Reff_PJ">
+                            <param id="0" name="Max fall speed">1200</param>
                         </action>
                     </actions>
                 </event-block>
