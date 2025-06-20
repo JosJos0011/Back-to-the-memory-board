@@ -548,6 +548,41 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="880632203038246">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="178970332769164" type="Reff_PJ">
+                            <param id="0" name="Instance variable">EnPared</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="874256413598134" type="Keyboard">
+                            <param id="0" name="Key">38</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="9" name="Set vector Y" sid="983130260453096" type="Reff_PJ">
+                            <param id="0" name="Vector Y">-800</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="293116325448904" type="Reff_PJ">
+                            <param id="0" name="Instance variable">WallDirection</param>
+                            <param id="1" name="Value">&quot;izquierda&quot;</param>
+                        </action>
+                        <action behavior="Platform" id="8" name="Set vector X" sid="105870608768941" type="Reff_PJ">
+                            <param id="0" name="Vector X">400</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="387132802012167" type="Reff_PJ">
+                            <param id="0" name="Instance variable">WallDirection</param>
+                            <param id="1" name="Value">&quot;derecha&quot;</param>
+                        </action>
+                        <action behavior="Platform" id="8" name="Set vector X" sid="192270774988856" type="Reff_PJ">
+                            <param id="0" name="Vector X">-400</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="741409017040595" type="Reff_PJ">
+                            <param id="0" name="Instance variable">EnPared</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
     </events>
