@@ -462,6 +462,45 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="450588868193465">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="101181881607617" type="Reff_PJ">
+                            <param id="0" name="Object">Referance1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="879965687027046" type="System">
+                            <param id="0" name="Variable">Reff_InHand_ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="901038623018981" type="System">
+                            <param id="0" name="Variable">popUpActivo</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="791990957115999" type="System">
+                            <param id="0" name="Layer">3</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="598908837848226" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="408378469196390" type="HintText">
+                            <param id="0" name="Text">&quot;Acabas de encontrar la referencia &apos;null&apos; de una variable Scanner.....&#x0D;&#x0A;¡Rapido! Encuentra el objeto en memoria para que la instancia no quede en &apos;null&apos; y dé un error.&quot;</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="583146613839479" type="HintText">
+                            <param id="0" name="X">ViewportLeft(&quot;Foreground&quot;) + 620</param>
+                            <param id="1" name="Y">ViewportTop(&quot;Foreground&quot;) + 450</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="278573267992266" type="HintText">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="3" name="Set volume" sid="114900240089915" type="Audio">
+                            <param id="0" name="Tag">&quot;&quot;</param>
+                            <param id="1" name="dB">-10</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="430167391276826" title="Game Hint Mechanics">

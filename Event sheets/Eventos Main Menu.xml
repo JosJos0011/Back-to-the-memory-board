@@ -143,8 +143,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-9" name="Set value" sid="387332735209905" type="System">
+                            <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                         <action id="-2" name="Go to layout" sid="326799591762891" type="System">
-                            <param id="0" name="Layout">Nivel1</param>
+                            <param id="0" name="Layout">InfoDump</param>
                         </action>
                         <action id="-3" name="Create object" sid="892205527605170" type="System">
                             <param id="0" name="Object to create">Negro</param>
