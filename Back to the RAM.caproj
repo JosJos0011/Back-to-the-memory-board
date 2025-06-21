@@ -726,13 +726,13 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="154621425795944" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\platform.png">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\josjo\OneDrive\Escritorio\Multi Proyecto Juego\Assets\Nivel 1\True_Platform.png">
                         <collision-poly>
-                            <point x="0.0164835" y="0.107143" />
-                            <point x="0.5" y="0.0892857" />
-                            <point x="0.979396" y="0.133929" />
-                            <point x="0.98489" y="0.901786" />
-                            <point x="0.0178571" y="0.883929" />
+                            <point x="0" y="0.0865385" />
+                            <point x="0.5" y="0.0865385" />
+                            <point x="1" y="0.0865385" />
+                            <point x="1" y="0.961538" />
+                            <point x="0" y="0.961538" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1064,13 +1064,13 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="709110239115305" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\platform.png">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\josjo\OneDrive\Escritorio\Multi Proyecto Juego\Assets\Nivel 1\True_Platform.png">
                         <collision-poly>
-                            <point x="0.0164835" y="0.107143" />
-                            <point x="0.5" y="0.0892857" />
-                            <point x="0.979396" y="0.133929" />
-                            <point x="0.98489" y="0.901786" />
-                            <point x="0.0178571" y="0.883929" />
+                            <point x="0" y="0.0961538" />
+                            <point x="0.5" y="0.0961538" />
+                            <point x="1" y="0.0961538" />
+                            <point x="1" y="0.961538" />
+                            <point x="0" y="0.961539" />
                         </collision-poly>
                     </frame>
                 </animation>
