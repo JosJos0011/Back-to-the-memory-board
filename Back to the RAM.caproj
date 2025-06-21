@@ -1367,6 +1367,11 @@
             <instance-variables>
                 <instance-variable comment="Maneja lo que se ve en la pantalla InfoDump" name="Next_InfoDump" sid="233016291645643" type="number" />
             </instance-variables>
+            <behaviors>
+                <behavior-type name="Sine" sid="860507673529381">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
         </object-type>
         <object-type name="Referance1" sid="804964051967419">
             <plugin id="Sprite" />
@@ -1607,6 +1612,14 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="TextoBoton" sid="260507681419226">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Sine" sid="622438299054935">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
         </object-type>
     </object-folder>
     <families>

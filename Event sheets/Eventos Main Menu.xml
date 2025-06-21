@@ -28,6 +28,10 @@
                         <action id="10" name="Request fullscreen" sid="920177046500566" type="Browser">
                             <param id="0" name="Mode">0</param>
                         </action>
+                        <action id="-10" name="Set value" sid="559520503742557" type="Btn_InfoDump">
+                            <param id="0" name="Instance variable">Next_InfoDump</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
