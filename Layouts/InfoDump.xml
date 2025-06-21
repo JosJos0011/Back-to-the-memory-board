@@ -32,7 +32,7 @@
                 <instance type="Btn_InfoDump" uid="277">
                     <properties>
                         <type>Button</type>
-                        <text>OK</text>
+                        <text>Siguiente</text>
                         <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
                         <enabled>Yes</enabled>
@@ -40,17 +40,47 @@
                         <id-optional></id-optional>
                         <checked>No</checked>
                     </properties>
+                    <instance-variables>
+                        <Next_InfoDump>0</Next_InfoDump>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1709</x>
-                        <y>989</y>
+                        <x>1724</x>
+                        <y>981</y>
                         <z>0</z>
-                        <width>72</width>
-                        <height>24</height>
+                        <width>131</width>
+                        <height>36</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+                <instance type="Texto_InfoDump" uid="315">
+                    <properties>
+                        <text>Text</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-26.4,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>67</x>
+                        <y>55</y>
+                        <z>0</z>
+                        <width>1775</width>
+                        <height>851</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>

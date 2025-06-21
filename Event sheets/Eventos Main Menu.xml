@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Main Menu</name>
     <events>
+        <variable comment="Para manejar que se muestra en el InfoDump" constant="0" name="Nivel_Seleccionado_InfoDump" sid="249963700923092" static="0" type="number">0</variable>
         <variable comment="Variable global para recordar en cuál nivel se está jugando" constant="0" name="NivelActual" sid="662477618618652" static="0" type="text"></variable>
         <event-group description="" sid="434328976559056" title="Start of game">
             <sub-events>

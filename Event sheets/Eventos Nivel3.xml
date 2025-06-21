@@ -12,6 +12,13 @@
                         <condition id="-2" name="On start of layout" sid="320690208976935" type="System" />
                     </conditions>
                     <actions>
+                        <action id="-9" name="Destroy" sid="675898625929423" type="Reff_PJ" />
+                        <action id="-3" name="Create object" sid="781567701277893" type="System">
+                            <param id="0" name="Object to create">Reff_PJ</param>
+                            <param id="1" name="Layer">&quot;Player&quot;</param>
+                            <param id="2" name="X">437</param>
+                            <param id="3" name="Y">863</param>
+                        </action>
                         <action id="-21" name="Reset global variables" sid="343671748855875" type="System" />
                         <action id="-10" name="Set value" sid="824779268392706" type="Reff_PJ">
                             <param id="0" name="Instance variable">Vidas</param>

@@ -1085,15 +1085,12 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="367352299452616" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Anthony\Desktop\plataforma.png">
+                    <frame duration="1" hotspotX="0.557692" hotspotY="0.479167" original-source="C:\Users\Anthony\Desktop\plataforma.png">
                         <collision-poly>
-                            <point x="0.542969" y="0.457031" />
-                            <point x="0.53418" y="0.5" />
-                            <point x="0.542969" y="0.542969" />
-                            <point x="0.5" y="0.862305" />
-                            <point x="0.445313" y="0.554688" />
-                            <point x="0.445313" y="0.445313" />
-                            <point x="0.5" y="0.168945" />
+                            <point x="0.0192308" y="0.00277778" />
+                            <point x="0.855769" y="0.00138889" />
+                            <point x="0.903846" y="0.995833" />
+                            <point x="0.0192308" y="0.997222" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1158,15 +1155,12 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="628433164499987" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Anthony\Desktop\plataforma.png">
+                    <frame duration="1" hotspotX="0.479167" hotspotY="0.442308" original-source="C:\Users\Anthony\Desktop\plataforma.png">
                         <collision-poly>
-                            <point x="0.457031" y="0.457031" />
-                            <point x="0.5" y="0.46582" />
-                            <point x="0.542969" y="0.457031" />
-                            <point x="0.862305" y="0.5" />
-                            <point x="0.554688" y="0.554688" />
-                            <point x="0.445313" y="0.554688" />
-                            <point x="0.168945" y="0.5" />
+                            <point x="0" y="0.0865385" />
+                            <point x="0.997222" y="0.0961538" />
+                            <point x="0.997222" y="0.980769" />
+                            <point x="0.00277778" y="0.980769" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1176,15 +1170,12 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="804857450693830" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Anthony\Desktop\plataforma.png">
+                    <frame duration="1" hotspotX="0.479167" hotspotY="0.442308" original-source="C:\Users\Anthony\Desktop\plataforma.png">
                         <collision-poly>
-                            <point x="0.457031" y="0.457031" />
-                            <point x="0.5" y="0.46582" />
-                            <point x="0.542969" y="0.457031" />
-                            <point x="0.862305" y="0.5" />
-                            <point x="0.554688" y="0.554688" />
-                            <point x="0.445313" y="0.554688" />
-                            <point x="0.168945" y="0.5" />
+                            <point x="0.00138889" y="0.105769" />
+                            <point x="1" y="0.105769" />
+                            <point x="0.997222" y="0.980769" />
+                            <point x="0.00277778" y="0.980769" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1202,15 +1193,12 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="261728738069418" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Anthony\Desktop\plataforma.png">
+                    <frame duration="1" hotspotX="0.479167" hotspotY="0.442308" original-source="C:\Users\Anthony\Desktop\plataforma.png">
                         <collision-poly>
-                            <point x="0.457031" y="0.457031" />
-                            <point x="0.5" y="0.46582" />
-                            <point x="0.542969" y="0.457031" />
-                            <point x="0.862305" y="0.5" />
-                            <point x="0.554688" y="0.554688" />
-                            <point x="0.445313" y="0.554688" />
-                            <point x="0.168945" y="0.5" />
+                            <point x="0.00277778" y="0.0961538" />
+                            <point x="0.997222" y="0.115385" />
+                            <point x="0.997222" y="0.980769" />
+                            <point x="0.00277778" y="0.980769" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1228,15 +1216,12 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="192378870394596" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Anthony\Desktop\plataforma.png">
+                    <frame duration="1" hotspotX="0.479167" hotspotY="0.442308" original-source="C:\Users\Anthony\Desktop\plataforma.png">
                         <collision-poly>
-                            <point x="0.457031" y="0.457031" />
-                            <point x="0.5" y="0.46582" />
-                            <point x="0.542969" y="0.457031" />
-                            <point x="0.862305" y="0.5" />
-                            <point x="0.554688" y="0.554688" />
-                            <point x="0.445313" y="0.554688" />
-                            <point x="0.168945" y="0.5" />
+                            <point x="0.00416667" y="0.105769" />
+                            <point x="1" y="0.0961538" />
+                            <point x="0.997222" y="0.980769" />
+                            <point x="0.00277778" y="0.980769" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1254,7 +1239,17 @@
             </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="629812405310367" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.502959" hotspotY="0.314286">
+                        <collision-poly>
+                            <point x="0.0251479" y="0.0428571" />
+                            <point x="0.505917" y="0.0428571" />
+                            <point x="0.982249" y="0.0428571" />
+                            <point x="0.983728" y="0.492857" />
+                            <point x="0.983727" y="0.896429" />
+                            <point x="0.02071" y="0.882143" />
+                            <point x="0.0207101" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -1270,15 +1265,12 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="664167439240432" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Anthony\Desktop\plataforma.png">
+                    <frame duration="1" hotspotX="0.479167" hotspotY="0.442308" original-source="C:\Users\Anthony\Desktop\plataforma.png">
                         <collision-poly>
-                            <point x="0.457031" y="0.457031" />
-                            <point x="0.5" y="0.46582" />
-                            <point x="0.542969" y="0.457031" />
-                            <point x="0.862305" y="0.5" />
-                            <point x="0.554688" y="0.554688" />
-                            <point x="0.445313" y="0.554688" />
-                            <point x="0.168945" y="0.5" />
+                            <point x="0.00416667" y="0.105769" />
+                            <point x="1" y="0.115385" />
+                            <point x="0.997222" y="0.980769" />
+                            <point x="0.00277778" y="0.980769" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1296,15 +1288,12 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="903389485330949" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Anthony\Desktop\plataforma.png">
+                    <frame duration="1" hotspotX="0.479167" hotspotY="0.442308" original-source="C:\Users\Anthony\Desktop\plataforma.png">
                         <collision-poly>
-                            <point x="0.457031" y="0.457031" />
-                            <point x="0.5" y="0.46582" />
-                            <point x="0.542969" y="0.457031" />
-                            <point x="0.862305" y="0.5" />
-                            <point x="0.554688" y="0.554688" />
-                            <point x="0.445313" y="0.554688" />
-                            <point x="0.168945" y="0.5" />
+                            <point x="1.62981e-009" y="0.115385" />
+                            <point x="0.997222" y="0.115385" />
+                            <point x="0.997222" y="0.980769" />
+                            <point x="0.00277778" y="0.980769" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1375,6 +1364,9 @@
         </object-type>
         <object-type name="Btn_InfoDump" sid="604615871584729">
             <plugin id="Button" />
+            <instance-variables>
+                <instance-variable comment="Maneja lo que se ve en la pantalla InfoDump" name="Next_InfoDump" sid="233016291645643" type="number" />
+            </instance-variables>
         </object-type>
         <object-type name="Referance1" sid="804964051967419">
             <plugin id="Sprite" />
@@ -1538,6 +1530,9 @@
         </object-type>
         <object-type name="Browser" sid="970106566385957">
             <plugin id="Browser" />
+        </object-type>
+        <object-type name="Texto_InfoDump" sid="307901426316783">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families>

@@ -2,5 +2,21 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos InfoDump</name>
-    <events />
+    <events>
+        <event-group description="Todos los eventos que pasa si el usuario selecciona el nivel 1" sid="106484704714132" title="InfoDump_Lvl1">
+            <sub-events>
+                <event-block sid="922564669791335">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="429814734771133" type="System">
+                            <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="119051829205086" type="System" />
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
 </c2eventsheet>
