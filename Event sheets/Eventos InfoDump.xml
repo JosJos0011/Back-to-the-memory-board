@@ -6,213 +6,812 @@
         <variable comment="Para cambiar que mensaje se ve" constant="0" name="ShowMessage" sid="706361102344203" static="0" type="number">0</variable>
         <event-group description="Todos los eventos que pasa si el usuario selecciona el nivel 1" sid="106484704714132" title="InfoDump_Lvl1">
             <sub-events>
-                <event-block sid="922564669791335">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="429814734771133" type="System">
-                            <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                        <condition id="-4" name="Trigger once while true" sid="119051829205086" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-21" name="Reset global variables" sid="888257810911466" type="System" />
-                        <action id="33" name="Stop all" sid="716840876556069" type="Audio" />
-                        <action id="-3" name="Create object" sid="645790708456945" type="System">
-                            <param id="0" name="Object to create">Negro</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">0</param>
-                            <param id="3" name="Y">0</param>
-                        </action>
-                        <action id="0" name="Set text" sid="787721049513022" type="Texto_InfoDump">
-                            <param id="0" name="Text">&quot;En Java, cuando creas un objeto, lo que guardas en una variable no es el objeto en sí, sino una referencia a ese objeto.&#x0D;&#x0A;&#x0D;&#x0A;Una referencia funciona como una flecha o una etiqueta que apunta hacia el lugar donde está guardado el objeto en la memoria: Ejemplo&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;Que esta pasando ahi:&#x0D;&#x0A;1- crea un objeto de la clase Cuenta llamado miCuenta&#x0D;&#x0A;2- Luego asigna a la variable miCuenta una referencia a ese objeto Cuenta. &quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="463628373537962">
-                    <conditions>
-                        <condition id="0" name="On clicked" sid="439806734820485" type="Btn_InfoDump" />
-                        <condition id="-1" name="Every tick" sid="552031105093589" type="System" />
-                    </conditions>
-                    <actions />
+                <event-group description="Aca estan todas las condiciones y acciones para que se muestren los mensajes 1 por 1" sid="307596245317888" title="Control_All_Messages">
                     <sub-events>
-                        <event-block sid="147848927996130">
+                        <event-block sid="747490831664479">
                             <conditions>
-                                <condition id="-14" name="Compare variable" sid="620004711527705" type="System">
-                                    <param id="0" name="Variable">ShowMessage</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Create object" sid="870585342953932" type="System">
-                                    <param id="0" name="Object to create">Negro</param>
-                                    <param id="1" name="Layer">0</param>
-                                    <param id="2" name="X">0</param>
-                                    <param id="3" name="Y">0</param>
-                                </action>
-                                <action id="0" name="Set text" sid="808029642251961" type="Texto_InfoDump">
-                                    <param id="0" name="Text">&quot;En este caso, se está declarando la variable &apos;miCuenta&apos; como una referencia, pero NO apunta a ningún objeto real.&#x0D;&#x0A;&#x0D;&#x0A;Es decir, la variable existe, pero NO HAY ningún objeto &apos;Cuenta&apos; en la memoria al que esté conectada. La referencia está vacía, es NULA.&#x0D;&#x0A;&#x0D;&#x0A;➡️ Esto es como tener una etiqueta sin haber creado el paquete.&#x0D;&#x0A;&#x0D;&#x0A;Ejemplo:&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;🚫 Si intentas usar miCuenta sin haber creado el objeto, el programa lanzará un **NullPointerException** &#x0D;&#x0A;&#x0D;&#x0A;           Imaginá que Reff tiene una cuerda (la referencia), pero no está amarrada a nada. &#x0D;&#x0A;           Si intenta enviar datos por esa cuerda... el sistema falla, porque no hay destino.&quot;</param>
-                                </action>
-                                <action id="-10" name="Add to" sid="777347056950780" type="System">
-                                    <param id="0" name="Variable">ShowMessage</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="108108143620560" type="ObjetosReferenciado2">
-                                    <param id="0" name="Visibility">0</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="827526027434341" type="Sprite3">
-                                    <param id="0" name="Visibility">0</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="926498503007857" type="ReferanceNull1">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="454826914786272" type="Reff_PJ">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="710478907069015" type="Line">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="568101022613010">
-                            <conditions>
-                                <condition id="-22" name="Else" sid="564431518533261" type="System" />
-                                <condition id="-14" name="Compare variable" sid="918648890208093" type="System">
-                                    <param id="0" name="Variable">ShowMessage</param>
+                                <condition id="-14" name="Compare variable" sid="868955763356377" type="System">
+                                    <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">1</param>
                                 </condition>
+                                <condition id="-4" name="Trigger once while true" sid="620511228200223" type="System" />
                             </conditions>
                             <actions>
-                                <action id="-3" name="Create object" sid="581966295656788" type="System">
+                                <action id="-21" name="Reset global variables" sid="330959488433168" type="System" />
+                                <action id="33" name="Stop all" sid="831355105483711" type="Audio" />
+                                <action id="-3" name="Create object" sid="932621829792040" type="System">
                                     <param id="0" name="Object to create">Negro</param>
                                     <param id="1" name="Layer">0</param>
                                     <param id="2" name="X">0</param>
                                     <param id="3" name="Y">0</param>
                                 </action>
-                                <action id="0" name="Set text" sid="297496777784955" type="Texto_InfoDump">
-                                    <param id="0" name="Text">&quot;                                                                             🕹️ Introducción del juego&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;En este juego, tú eres Reff, una referencia viviente que habita dentro de la memoria RAM.&#x0D;&#x0A;&#x0D;&#x0A;Tu misión es ayudar al programador a evitar los temidos errores de &apos;NullPointerException&apos; conectando correctamente las referencias a los objetos que les corresponden.&#x0D;&#x0A;&#x0D;&#x0A;Porque en Java, las variables que parecen contener objetos, en realidad contienen referencias a esos objetos. Y si esas referencias no están bien conectadas… el sistema colapsa.&quot;</param>
-                                </action>
-                                <action id="0" name="Set text" sid="611898059349777" type="Texto_InfoDump">
-                                    <param id="0" name="Text">&quot;                                                                             🕹️ Introducción del juego&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;En este juego, tú eres Reff, una referencia viviente que habita dentro de la memoria RAM.&#x0D;&#x0A;&#x0D;&#x0A;Tu misión es ayudar al programador a evitar los temidos errores de &apos;NullPointerException&apos; conectando correctamente las referencias a los objetos que les corresponden.&#x0D;&#x0A;&#x0D;&#x0A;Porque en Java, las variables que parecen contener objetos, en realidad contienen referencias a esos objetos. Y si esas referencias no están bien conectadas… el sistema colapsa.&quot;</param>
-                                </action>
-                                <action id="-10" name="Add to" sid="418749247157765" type="System">
-                                    <param id="0" name="Variable">ShowMessage</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="928547335546470" type="ReferanceNull1">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action id="-3" name="Set position" sid="721453106496910" type="ReferanceNull1">
-                                    <param id="0" name="X">1068</param>
-                                    <param id="1" name="Y">973</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="800939758210783" type="Line">
-                                    <param id="0" name="Visibility">0</param>
-                                </action>
-                                <action id="-3" name="Set position" sid="850719277474588" type="Sprite3">
-                                    <param id="0" name="X">307</param>
-                                    <param id="1" name="Y"> 917</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="134908786629237" type="Sprite3">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action id="-11" name="Add to" sid="632444496419570" type="Reff_PJ">
-                                    <param id="0" name="Instance variable">Inmune</param>
-                                    <param id="1" name="Value">1</param>
+                                <action id="0" name="Set text" sid="369107431798982" type="Texto_InfoDump">
+                                    <param id="0" name="Text">&quot;En Java, cuando creas un objeto, lo que guardas en una variable no es el objeto en sí, sino una referencia a ese objeto.&#x0D;&#x0A;&#x0D;&#x0A;Una referencia funciona como una flecha o una etiqueta que apunta hacia el lugar donde está guardado el objeto en la memoria: &#x0D;&#x0A;&#x0D;&#x0A;Ejemplo&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;Que esta pasando ahi:&#x0D;&#x0A;1- crea un objeto de la clase Cuenta llamado miCuenta&#x0D;&#x0A;2- Luego asigna a la variable miCuenta una referencia a ese objeto Cuenta. &quot;</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="381130363953570">
+                        <event-block sid="614373893719944">
                             <conditions>
-                                <condition id="-22" name="Else" sid="722833754765659" type="System" />
-                                <condition id="-14" name="Compare variable" sid="628743960325540" type="System">
+                                <condition id="0" name="On clicked" sid="859106955272649" type="Btn_InfoDump" />
+                                <condition id="-1" name="Every tick" sid="435614836019376" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="899740280634590">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="414762473003472" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="468516033283912" type="System">
+                                            <param id="0" name="Object to create">Negro</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">0</param>
+                                            <param id="3" name="Y">0</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="144383322660142" type="Texto_InfoDump">
+                                            <param id="0" name="Text">&quot;En este caso, se está declarando la variable &apos;miCuenta&apos; como una referencia, pero NO apunta a ningún objeto real.&#x0D;&#x0A;&#x0D;&#x0A;Es decir, la variable existe, pero NO HAY ningún objeto &apos;Cuenta&apos; en la memoria al que esté conectada. La referencia está vacía, es NULA.&#x0D;&#x0A;&#x0D;&#x0A;➡️ Esto es como tener una etiqueta sin haber creado el paquete.&#x0D;&#x0A;&#x0D;&#x0A;Ejemplo:&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;🚫 Si intentas usar miCuenta sin haber creado el objeto, el programa lanzará un **NullPointerException** &#x0D;&#x0A;&#x0D;&#x0A;           Imaginá que Reff tiene una cuerda (la referencia), pero no está amarrada a nada. &#x0D;&#x0A;           Si intenta enviar datos por esa cuerda... el sistema falla, porque no hay destino.&quot;</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="578021075643958" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="497694898361884" type="ObjetosReferenciado2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="170624132306291" type="Sprite3">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="233879995507842" type="ReferanceNull1">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="291534529045698" type="Reff_PJ">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="719501572930965" type="Line">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="800744233478961">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="125921354846661" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="420102228679134" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="263474861952759" type="System">
+                                            <param id="0" name="Object to create">Negro</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">0</param>
+                                            <param id="3" name="Y">0</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="523455719266060" type="Texto_InfoDump">
+                                            <param id="0" name="Text">&quot;&#x0D;&#x0A;                                                 🕹️ Introducción del juego&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;En este juego, tú eres Reff, una referencia viviente que habita dentro de la memoria RAM.&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;Tu misión es ayudar al programador a evitar los temidos errores de &apos;NullPointerException&apos; conectando correctamente las referencias a los objetos que les corresponden.&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;Porque en Java, las variables que parecen contener objetos, en realidad contienen referencias a esos objetos. Y si esas referencias no están bien conectadas… el sistema colapsa..&#x0D;&#x0A;&#x0D;&#x0A;&quot;</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="558486440112622" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="174909616676398" type="Line" />
+                                        <action id="-3" name="Set position" sid="126257320165052" type="ReferanceNull1">
+                                            <param id="0" name="X">1050</param>
+                                            <param id="1" name="Y">970</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="149372010143240" type="Sprite3">
+                                            <param id="0" name="X">305</param>
+                                            <param id="1" name="Y"> 945</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="449451766393396" type="ReferanceNull1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="603082654488736">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="988380035845425" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="107307613515070" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="518678636509539" type="System">
+                                            <param id="0" name="Object to create">Negro</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">0</param>
+                                            <param id="3" name="Y">0</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="360864678726333" type="Texto_InfoDump">
+                                            <param id="0" name="Text">&quot;                                                 ⚙️ ¿Qué debes hacer?&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;Explora el nivel y recoge referencias como cuenta, conexionDB, o scanner.&#x0D;&#x0A;&#x0D;&#x0A;Busca su objeto asociado en la memoria digital (representado por íconos como bases de datos, consolas, usuarios, etc).&#x0D;&#x0A;&#x0D;&#x0A;Si logras hacer una conexión correcta, se activará una línea de energía verde entre ambos y ganarás puntos.&quot;</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="160833180840886" type="ReferanceNull1">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="814579526772350" type="Sprite3">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="656418115483851" type="System">
+                                            <param id="0" name="Seconds">2</param>
+                                        </action>
+                                        <action id="-11" name="Add to" sid="970841353514354" type="Reff_PJ">
+                                            <param id="0" name="Instance variable">Inmune</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="158035162117167" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="389011751313349">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="851238274709181" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="652360036552949" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="230793425538060" type="System">
+                                            <param id="0" name="Object to create">Negro</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">0</param>
+                                            <param id="3" name="Y">0</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="839379014609034" type="Line" />
+                                        <action id="-9" name="Destroy" sid="340429347339980" type="Reff_PJ" />
+                                        <action id="-9" name="Destroy" sid="554056655263128" type="Sprite3" />
+                                        <action id="-9" name="Destroy" sid="419181591067018" type="ReferanceNull1" />
+                                        <action id="-9" name="Destroy" sid="741771842261600" type="ObjetosReferenciado2" />
+                                        <action id="-10" name="Add to" sid="566223180866335" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="703267269494670" type="Texto_InfoDump">
+                                            <param id="0" name="Text">&quot;                                                        ⚠️ Null en memoria&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;¡Cuidado! : si chocas con alguna referencia o tocas una &apos;zona corrompida&apos; por referencias nulas, el sistema puede lanzar errores y perderás vidas.&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;                                                        ❌ Zonas Corrompidas &#x0D;&#x0A;&#x0D;&#x0A;¡Si Reff entra en una de estas zonas, morirá y el sistema lanza un NullPointerException fatal!&quot;</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="796566089463338" type="ZonaNull">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="269733983337505" type="nullZone">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="901772688566310" type="nullEfect">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="900066499075144" type="NullWraith">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="288102502544825">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="800242757341405" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="587439017339692" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="560810435140007" type="System">
+                                            <param id="0" name="Object to create">Negro</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">0</param>
+                                            <param id="3" name="Y">0</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="192946783480125" type="Reff_PJ">
+                                            <param id="0" name="Instance variable">Inmune</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="321438041742046" type="ZonaNull" />
+                                        <action id="-9" name="Destroy" sid="755398410296837" type="nullZone" />
+                                        <action id="-9" name="Destroy" sid="325169126991874" type="nullEfect" />
+                                        <action id="-9" name="Destroy" sid="983852721667127" type="NullWraith" />
+                                        <action id="-10" name="Add to" sid="650476300096834" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="293288204298444" type="Texto_InfoDump">
+                                            <param id="0" name="Text">&quot;                                                        🧠 Consejo del Sistema&#x0D;&#x0A;&#x0D;&#x0A;A lo largo del nivel encontrarás carteles especiales llamados System.help (Hints).&#x0D;&#x0A;&#x0D;&#x0A;Estos carteles contienen información valiosa sobre cómo funcionan las referencias en Java, ejemplos prácticos y advertencias sobre errores comunes.&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;                        📌 Haz clic sobre ellos para pausar el juego y leer tranquilamente.&#x0D;&#x0A;&#x0D;&#x0A;                                             ¡Explora, aprende y conecta con seguridad!&quot;</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="177508554988453" type="hint">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="476450313259205" type="TextoBoton">
+                                            <param id="0" name="Text">&quot;COMENZAR&quot;</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="310704620559100" type="Btn_InfoDump">
+                                            <param id="0" name="Text">&quot;COMENZAR&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="904797135179021">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="582774705959491" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="654148666474130" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">6</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="973824528656320" type="hint" />
+                                        <action id="-9" name="Destroy" sid="465734672986379" type="Reff_PJ" />
+                                        <action id="-21" name="Reset global variables" sid="361861003624379" type="System" />
+                                        <action id="-2" name="Go to layout" sid="606754435776219" type="System">
+                                            <param id="0" name="Layout">Nivel1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="Aca estan las condiciones y acciones para que Reff de un ejemplo automatico de como hacer la mecanica" sid="768665071438123" title="Control_Visual_Events">
+                    <sub-events>
+                        <event-block sid="824640899788934">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="268119630932320" type="System" />
+                                <condition id="-7" name="Compare instance variable" sid="671836290913829" type="Reff_PJ">
+                                    <param id="0" name="Instance variable">Inmune</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="875130578650150" type="System">
                                     <param id="0" name="Variable">ShowMessage</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">2</param>
+                                    <param id="2" name="Value">3</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-3" name="Create object" sid="840171383170439" type="System">
-                                    <param id="0" name="Object to create">Negro</param>
-                                    <param id="1" name="Layer">0</param>
-                                    <param id="2" name="X">0</param>
-                                    <param id="3" name="Y">0</param>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="309340231165637" type="Reff_PJ">
+                                    <param id="0" name="Control">1</param>
                                 </action>
-                                <action id="0" name="Set text" sid="525580372867674" type="Texto_InfoDump">
-                                    <param id="0" name="Text">ShowMessage</param>
+                            </actions>
+                        </event-block>
+                        <event-block sid="556302835117933">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="504073166611461" type="Reff_PJ">
+                                    <param id="0" name="Object">ReferanceNull1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="273210424879374" type="System">
+                                    <param id="0" name="Variable">ShowMessage</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="233515844829697" type="Reff_PJ">
+                                    <param id="0" name="Instance variable">Inmune</param>
+                                    <param id="1" name="Value">2</param>
                                 </action>
-                                <action id="-10" name="Add to" sid="352646834674031" type="System">
+                                <action behavior="Platform" id="7" name="Simulate control" sid="901249222007364" type="Reff_PJ">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="623097900484419">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="400349814401564" type="System" />
+                                <condition id="-7" name="Compare instance variable" sid="605816741442789" type="Reff_PJ">
+                                    <param id="0" name="Instance variable">Inmune</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="493875103181043" type="System">
+                                    <param id="0" name="Variable">ShowMessage</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="856209870204053" type="Reff_PJ">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="510366143805772" type="Reff_PJ">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="868109708134287">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="112227820320184" type="Reff_PJ">
+                                    <param id="0" name="Object">Sprite3</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="972901736575462" type="System">
+                                    <param id="0" name="Variable">ShowMessage</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="386130466572323" type="Reff_PJ">
+                                    <param id="0" name="Instance variable">Inmune</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="937960562482684" type="System">
+                                    <param id="0" name="Object to create">Line</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">ReferanceNull1.X</param>
+                                    <param id="3" name="Y">ReferanceNull1.Y</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="843791176325899" type="Line">
+                                    <param id="0" name="Angle">angle(Line.X,Line.Y,Sprite3.X, Sprite3.Y)</param>
+                                </action>
+                                <action id="-5" name="Set width" sid="130464329654393" type="Line">
+                                    <param id="0" name="Width">distance(Line.X,Line.Y,Sprite3.X, Sprite3.Y)</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="761278647426169" type="ObjetosReferenciado2">
+                                    <param id="0" name="X">ReferanceNull1.X + 30</param>
+                                    <param id="1" name="Y">ReferanceNull1.Y</param>
+                                </action>
+                                <action id="-7" name="Set size" sid="520509945949044" type="ObjetosReferenciado2">
+                                    <param id="0" name="Width">ReferanceNull1.Width + 20</param>
+                                    <param id="1" name="Height">ReferanceNull1.Height</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="220320265689913" type="ObjetosReferenciado2">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="359074701802606" type="ReferanceNull1">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="968557508027496" type="System">
                                     <param id="0" name="Variable">ShowMessage</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
-                </event-block>
-                <event-block sid="537514204243628">
-                    <conditions>
-                        <condition id="-1" name="Every tick" sid="668314132199259" type="System" />
-                        <condition id="-7" name="Compare instance variable" sid="212918646411742" type="Reff_PJ">
-                            <param id="0" name="Instance variable">Inmune</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="954568845688248" type="Reff_PJ">
-                            <param id="0" name="Control">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="946686924465913">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="905757778398709" type="Reff_PJ">
-                            <param id="0" name="Object">ReferanceNull1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Set value" sid="285706052684759" type="Reff_PJ">
-                            <param id="0" name="Instance variable">Inmune</param>
-                            <param id="1" name="Value">2</param>
-                        </action>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="214470195318740" type="Reff_PJ">
-                            <param id="0" name="Control">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="543690125938025">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="404399237317564" type="Reff_PJ">
-                            <param id="0" name="Object">Sprite3</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Set value" sid="235455485108009" type="Reff_PJ">
-                            <param id="0" name="Instance variable">Inmune</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="119018172529428">
-                    <conditions>
-                        <condition id="-1" name="Every tick" sid="411658220789461" type="System" />
-                        <condition id="-7" name="Compare instance variable" sid="942638324569816" type="Reff_PJ">
-                            <param id="0" name="Instance variable">Inmune</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">2</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="7" name="Set mirrored" sid="913113645594029" type="Reff_PJ">
-                            <param id="0" name="State">0</param>
-                        </action>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="971727131343407" type="Reff_PJ">
-                            <param id="0" name="Control">0</param>
-                        </action>
-                    </actions>
-                </event-block>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="Todos los eventos que pasa si el usuario selecciona el nivel 2" sid="887826001006885" title="InfoDump_Lvl2">
+            <sub-events>
+                <event-group description="Aca estan todas las condiciones y acciones para que se muestren los mensajes 1 por 1" sid="733331723043479" title="Control_All_Messages2">
+                    <sub-events>
+                        <event-block sid="848798926190799">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="941044672954480" type="System">
+                                    <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="899470040285067" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-21" name="Reset global variables" sid="424631337174799" type="System" />
+                                <action id="33" name="Stop all" sid="116133774265406" type="Audio" />
+                                <action id="-3" name="Create object" sid="601785000090517" type="System">
+                                    <param id="0" name="Object to create">Negro</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="X">0</param>
+                                    <param id="3" name="Y">0</param>
+                                </action>
+                                <action id="0" name="Set text" sid="568671045608982" type="Texto_InfoDump">
+                                    <param id="0" name="Text">&quot;bla bla bla &quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="927967438270522">
+                            <conditions>
+                                <condition id="0" name="On clicked" sid="214939925952746" type="Btn_InfoDump" />
+                                <condition id="-1" name="Every tick" sid="145644487033107" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="364920520183390">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="175766211030253" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="549171947435270" type="System">
+                                            <param id="0" name="Object to create">Negro</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">0</param>
+                                            <param id="3" name="Y">0</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="162375744838602" type="Texto_InfoDump">
+                                            <param id="0" name="Text">&quot;bla bla bla &#x0D;&#x0A;bla bla bla &quot;</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="117855408107853" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="463279953577807">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="408609611741724" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="262054059356058" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="554910325132353" type="System">
+                                            <param id="0" name="Object to create">Negro</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">0</param>
+                                            <param id="3" name="Y">0</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="598586897005743" type="Texto_InfoDump">
+                                            <param id="0" name="Text">&quot;bla bla bla &#x0D;&#x0A;bla bla bla &#x0D;&#x0A;bla bla bla &#x0D;&#x0A;bla bla bla &quot;</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="903309635641787" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="216728066644225">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="937126777969433" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="201372170264220" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="849615828246096" type="System">
+                                            <param id="0" name="Object to create">Negro</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">0</param>
+                                            <param id="3" name="Y">0</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="473860096280262" type="Texto_InfoDump">
+                                            <param id="0" name="Text">&quot;bla bla bla &#x0D;&#x0A;bla bla bla &#x0D;&#x0A;bla bla bla &#x0D;&#x0A;bla bla bla &#x0D;&#x0A;UGH&quot;</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="965444273182492" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="720906174950362">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="263343379385400" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="986307174066037" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="413072097325990" type="System">
+                                            <param id="0" name="Object to create">Negro</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">0</param>
+                                            <param id="3" name="Y">0</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="687865600789062" type="Texto_InfoDump">
+                                            <param id="0" name="Text">&quot;bla bla bla &#x0D;&#x0A;UGH IACK BFFFF &#x0D;&#x0A;UGH&quot;</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="293506732017812" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="237808958545842">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="484521683241380" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="595653851729404" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="664504975364272" type="System">
+                                            <param id="0" name="Object to create">Negro</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">0</param>
+                                            <param id="3" name="Y">0</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="771967436364632" type="Texto_InfoDump">
+                                            <param id="0" name="Text">&quot;UYAAAAAAAAAAAAAAAAAAAAAAAAA HEEEEEEEE&quot;</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="840798607291350" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="350201391181777" type="TextoBoton">
+                                            <param id="0" name="Text">&quot;COMENZAR&quot;</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="201350667407255" type="Btn_InfoDump">
+                                            <param id="0" name="Text">&quot;COMENZAR&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="121432093447391">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="505298514847512" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="567773718044942" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">6</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-21" name="Reset global variables" sid="719982502748379" type="System" />
+                                        <action id="-2" name="Go to layout" sid="405966976489718" type="System">
+                                            <param id="0" name="Layout">Nivel2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="Aca estan las condiciones y acciones para que Reff de un ejemplo automatico de como hacer la mecanica" sid="913132705063376" title="Control_Visual_Events2">
+                    <sub-events>
+                        <event-block sid="683871427517880">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="348543011815531" type="System" />
+                                <condition id="-14" name="Compare variable" sid="831450017512490" type="System">
+                                    <param id="0" name="Variable">ShowMessage</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block sid="705629745014485">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="780548692830905" type="Reff_PJ">
+                                    <param id="0" name="Object">Negro</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="268851996783153" type="System">
+                                    <param id="0" name="Variable">ShowMessage</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="750133097291166" type="System">
+                                    <param id="0" name="Variable">ShowMessage</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="Todos los eventos que pasa si el usuario selecciona el nivel 3" sid="397436841001860" title="InfoDump_Lvl3">
+            <sub-events>
+                <event-group description="Aca estan todas las condiciones y acciones para que se muestren los mensajes 1 por 1" sid="994401800721811" title="Control_All_Messages3">
+                    <sub-events>
+                        <event-block sid="671416753061148">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="530718351245500" type="System">
+                                    <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="988112767864278" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-21" name="Reset global variables" sid="424554104712543" type="System" />
+                                <action id="33" name="Stop all" sid="829461086294168" type="Audio" />
+                                <action id="-3" name="Create object" sid="678579375187151" type="System">
+                                    <param id="0" name="Object to create">Negro</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="X">0</param>
+                                    <param id="3" name="Y">0</param>
+                                </action>
+                                <action id="0" name="Set text" sid="288212145116932" type="Texto_InfoDump">
+                                    <param id="0" name="Text">&quot;bla bla bla &quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="962388212287618">
+                            <conditions>
+                                <condition id="0" name="On clicked" sid="995915080167154" type="Btn_InfoDump" />
+                                <condition id="-1" name="Every tick" sid="940948965906402" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="875316753644406">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="999667907559174" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="332095555981833" type="System">
+                                            <param id="0" name="Object to create">Negro</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">0</param>
+                                            <param id="3" name="Y">0</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="897773427307537" type="Texto_InfoDump">
+                                            <param id="0" name="Text">&quot;bla bla bla &#x0D;&#x0A;bla bla bla &quot;</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="109388791642338" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="506188876080301">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="622864091576384" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="165911679890431" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="850883417697669" type="System">
+                                            <param id="0" name="Object to create">Negro</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">0</param>
+                                            <param id="3" name="Y">0</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="761876659592584" type="Texto_InfoDump">
+                                            <param id="0" name="Text">&quot;bla bla bla &#x0D;&#x0A;bla bla bla &#x0D;&#x0A;bla bla bla &#x0D;&#x0A;bla bla bla &quot;</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="671662579676510" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="542717212053908">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="479657217453959" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="439546798098081" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="840278893626746" type="System">
+                                            <param id="0" name="Object to create">Negro</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">0</param>
+                                            <param id="3" name="Y">0</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="438136496671325" type="Texto_InfoDump">
+                                            <param id="0" name="Text">&quot;bla bla bla &#x0D;&#x0A;bla bla bla &#x0D;&#x0A;bla bla bla &#x0D;&#x0A;bla bla bla &#x0D;&#x0A;UGH&quot;</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="610024543862906" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="310357480981583">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="612260443964211" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="332974103999140" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="148966231993171" type="System">
+                                            <param id="0" name="Object to create">Negro</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">0</param>
+                                            <param id="3" name="Y">0</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="854953769366321" type="Texto_InfoDump">
+                                            <param id="0" name="Text">&quot;bla bla bla &#x0D;&#x0A;UGH IACK BFFFF &#x0D;&#x0A;UGH&quot;</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="745050264118390" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="390319228703268">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="307495647104585" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="848002057084627" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="874908072670800" type="System">
+                                            <param id="0" name="Object to create">Negro</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">0</param>
+                                            <param id="3" name="Y">0</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="976213854749273" type="Texto_InfoDump">
+                                            <param id="0" name="Text">&quot;UYAAAAAAAAAAAAAAAAAAAAAAAAA HEEEEEEEE&quot;</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="444863371050371" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="606906436985218" type="TextoBoton">
+                                            <param id="0" name="Text">&quot;COMENZAR&quot;</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="531325090012241" type="Btn_InfoDump">
+                                            <param id="0" name="Text">&quot;COMENZAR&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="201475445950914">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="625950822424669" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="605003257657055" type="System">
+                                            <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">6</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-21" name="Reset global variables" sid="928504407118541" type="System" />
+                                        <action id="-2" name="Go to layout" sid="558602323563290" type="System">
+                                            <param id="0" name="Layout">Nivel2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="Aca estan las condiciones y acciones para que Reff de un ejemplo automatico de como hacer la mecanica" sid="708299194297575" title="Control_Visual_Events3">
+                    <sub-events>
+                        <event-block sid="864114380796577">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="866420782345593" type="System" />
+                                <condition id="-14" name="Compare variable" sid="385754415715490" type="System">
+                                    <param id="0" name="Variable">ShowMessage</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block sid="193012228605689">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="939730001130413" type="Reff_PJ">
+                                    <param id="0" name="Object">Negro</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="875793065096632" type="System">
+                                    <param id="0" name="Variable">ShowMessage</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="724388452598144" type="System">
+                                    <param id="0" name="Variable">ShowMessage</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
             </sub-events>
         </event-group>
     </events>

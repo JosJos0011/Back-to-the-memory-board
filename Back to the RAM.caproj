@@ -1387,7 +1387,16 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="525110006511840" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\josjo\OneDrive\Escritorio\Multi Proyecto Juego\Assets\Nivel 1\reference2.png">
+                        <collision-poly>
+                            <point x="0.0125523" y="0.2" />
+                            <point x="0.983264" y="0.266667" />
+                            <point x="0.966527" y="0.466667" />
+                            <point x="0.991632" y="0.866667" />
+                            <point x="0.0167364" y="0.733333" />
+                            <point x="0.0041841" y="0.466667" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -1568,7 +1577,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="293330837372061" speed="5">
+                <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="293330837372061" speed="5">
                     <frame duration="1" hotspotX="0.00552486" hotspotY="0.994513" original-source="C:\Users\josjo\OneDrive\Escritorio\Multi Proyecto Juego\Assets\Nivel 1\terminal.gif" />
                     <frame duration="1" hotspotX="0.00552486" hotspotY="0.994513" />
                     <frame duration="1" hotspotX="0.00552486" hotspotY="0.994513" />

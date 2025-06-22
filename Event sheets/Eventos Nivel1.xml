@@ -526,7 +526,7 @@
                             <param id="0" name="Time scale">0</param>
                         </action>
                         <action id="0" name="Set text" sid="395071409336930" type="HintText">
-                            <param id="0" name="Text">&quot;En Java, cuando creas un objeto, lo que guardas en una variable no es el objeto en sí, sino una referencia a ese objeto.&#x0D;&#x0A;&#x0D;&#x0A;Una referencia funciona como una flecha o una etiqueta que apunta hacia el lugar donde está guardado el objeto en la memoria.&quot;</param>
+                            <param id="0" name="Text">&quot;⚠️ Zona Nula Detectada&#x0D;&#x0A;&#x0D;&#x0A;En Java, una referencia que no apunta a un objeto válido (es decir, que vale null) puede causar errores graves durante la ejecución del programa.&#x0D;&#x0A;&#x0D;&#x0A;Reff, al ser una referencia viviente, solo puede existir si está conectada a un objeto válido dentro de la memoria.&#x0D;&#x0A;&#x0D;&#x0A;Estas zonas representan áreas de la RAM donde no existe ninguna instancia activa. Son espacios vacíos, inaccesibles... peligrosos.&#x0D;&#x0A;&#x0D;&#x0A;❌ Si Reff entra en una de estas zonas, será destruido inmediatamente y el sistema lanzará un NullPointerException fatal. &quot;</param>
                         </action>
                         <action id="-3" name="Set position" sid="321643808406902" type="HintText">
                             <param id="0" name="X">ViewportLeft(&quot;Foreground&quot;) + 620</param>
