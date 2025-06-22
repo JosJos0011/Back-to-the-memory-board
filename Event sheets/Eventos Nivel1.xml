@@ -446,7 +446,7 @@
                                 <condition id="0" name="On collision with another object" sid="537581102117620" type="Reff_PJ">
                                     <param id="0" name="Object">Referance2</param>
                                 </condition>
-                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="535922977768467" type="Referance1">
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="535922977768467" type="Referance2">
                                     <param id="0" name="Instance variable">Conectado</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="105584271046183" type="System">
@@ -507,7 +507,7 @@
                                 <condition id="0" name="On collision with another object" sid="727696094609994" type="Reff_PJ">
                                     <param id="0" name="Object">Referance3</param>
                                 </condition>
-                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="345878101787292" type="Referance1">
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="345878101787292" type="Referance3">
                                     <param id="0" name="Instance variable">Conectado</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="906159846361031" type="System">
@@ -568,7 +568,7 @@
                                 <condition id="0" name="On collision with another object" sid="449144947447003" type="Reff_PJ">
                                     <param id="0" name="Object">Referance4</param>
                                 </condition>
-                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="945730026943195" type="Referance1">
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="945730026943195" type="Referance4">
                                     <param id="0" name="Instance variable">Conectado</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="722349078769184" type="System">
@@ -629,7 +629,7 @@
                                 <condition id="0" name="On collision with another object" sid="190645271051138" type="Reff_PJ">
                                     <param id="0" name="Object">Referance5</param>
                                 </condition>
-                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="540247799717844" type="Referance1">
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="540247799717844" type="Referance5">
                                     <param id="0" name="Instance variable">Conectado</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="899882361166884" type="System">
@@ -690,7 +690,7 @@
                                 <condition id="0" name="On collision with another object" sid="144854932455366" type="Reff_PJ">
                                     <param id="0" name="Object">Referance6</param>
                                 </condition>
-                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="599178295800413" type="Referance1">
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="599178295800413" type="Referance6">
                                     <param id="0" name="Instance variable">Conectado</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="981356360985802" type="System">
@@ -751,7 +751,7 @@
                                 <condition id="0" name="On collision with another object" sid="492243542979638" type="Reff_PJ">
                                     <param id="0" name="Object">Referance7</param>
                                 </condition>
-                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="341993389414850" type="Referance1">
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="341993389414850" type="Referance7">
                                     <param id="0" name="Instance variable">Conectado</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="878924678662398" type="System">
@@ -812,7 +812,7 @@
                                 <condition id="0" name="On collision with another object" sid="751627920346319" type="Reff_PJ">
                                     <param id="0" name="Object">Referance8</param>
                                 </condition>
-                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="382691085320362" type="Referance1">
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="382691085320362" type="Referance8">
                                     <param id="0" name="Instance variable">Conectado</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="405806581660059" type="System">
