@@ -188,7 +188,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="323">
+                <instance type="lvl1Introduccion_ob1" uid="323">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -447,7 +447,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ObjetosReferenciado2" uid="320">
+                <instance type="lvl1Introduccion_ob2" uid="320">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

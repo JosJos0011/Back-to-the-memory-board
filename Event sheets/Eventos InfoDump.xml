@@ -60,10 +60,10 @@
                                             <param id="0" name="Variable">ShowMessage</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="497694898361884" type="ObjetosReferenciado2">
+                                        <action id="-15" name="Set visible" sid="497694898361884" type="lvl1Introduccion_ob2">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="170624132306291" type="Sprite3">
+                                        <action id="-15" name="Set visible" sid="170624132306291" type="lvl1Introduccion_ob1">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
                                         <action id="-15" name="Set visible" sid="233879995507842" type="ReferanceNull1">
@@ -105,7 +105,7 @@
                                             <param id="0" name="X">1050</param>
                                             <param id="1" name="Y">970</param>
                                         </action>
-                                        <action id="-3" name="Set position" sid="149372010143240" type="Sprite3">
+                                        <action id="-3" name="Set position" sid="149372010143240" type="lvl1Introduccion_ob1">
                                             <param id="0" name="X">305</param>
                                             <param id="1" name="Y"> 945</param>
                                         </action>
@@ -136,7 +136,7 @@
                                         <action id="-15" name="Set visible" sid="160833180840886" type="ReferanceNull1">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="814579526772350" type="Sprite3">
+                                        <action id="-15" name="Set visible" sid="814579526772350" type="lvl1Introduccion_ob1">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="656418115483851" type="System">
@@ -170,9 +170,9 @@
                                         </action>
                                         <action id="-9" name="Destroy" sid="839379014609034" type="Line" />
                                         <action id="-9" name="Destroy" sid="340429347339980" type="Reff_PJ" />
-                                        <action id="-9" name="Destroy" sid="554056655263128" type="Sprite3" />
+                                        <action id="-9" name="Destroy" sid="554056655263128" type="lvl1Introduccion_ob1" />
                                         <action id="-9" name="Destroy" sid="419181591067018" type="ReferanceNull1" />
-                                        <action id="-9" name="Destroy" sid="741771842261600" type="ObjetosReferenciado2" />
+                                        <action id="-9" name="Destroy" sid="741771842261600" type="lvl1Introduccion_ob2" />
                                         <action id="-10" name="Add to" sid="566223180866335" type="System">
                                             <param id="0" name="Variable">ShowMessage</param>
                                             <param id="1" name="Value">1</param>
@@ -327,7 +327,7 @@
                         <event-block sid="868109708134287">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="112227820320184" type="Reff_PJ">
-                                    <param id="0" name="Object">Sprite3</param>
+                                    <param id="0" name="Object">lvl1Introduccion_ob1</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="972901736575462" type="System">
                                     <param id="0" name="Variable">ShowMessage</param>
@@ -347,20 +347,20 @@
                                     <param id="3" name="Y">ReferanceNull1.Y</param>
                                 </action>
                                 <action id="-8" name="Set angle" sid="843791176325899" type="Line">
-                                    <param id="0" name="Angle">angle(Line.X,Line.Y,Sprite3.X, Sprite3.Y)</param>
+                                    <param id="0" name="Angle">angle(Line.X,Line.Y,lvl1Introduccion_ob1.X, lvl1Introduccion_ob1.Y)</param>
                                 </action>
                                 <action id="-5" name="Set width" sid="130464329654393" type="Line">
-                                    <param id="0" name="Width">distance(Line.X,Line.Y,Sprite3.X, Sprite3.Y)</param>
+                                    <param id="0" name="Width">distance(Line.X,Line.Y,lvl1Introduccion_ob1.X, lvl1Introduccion_ob1.Y)</param>
                                 </action>
-                                <action id="-3" name="Set position" sid="761278647426169" type="ObjetosReferenciado2">
+                                <action id="-3" name="Set position" sid="761278647426169" type="lvl1Introduccion_ob2">
                                     <param id="0" name="X">ReferanceNull1.X + 30</param>
                                     <param id="1" name="Y">ReferanceNull1.Y</param>
                                 </action>
-                                <action id="-7" name="Set size" sid="520509945949044" type="ObjetosReferenciado2">
+                                <action id="-7" name="Set size" sid="520509945949044" type="lvl1Introduccion_ob2">
                                     <param id="0" name="Width">ReferanceNull1.Width + 20</param>
                                     <param id="1" name="Height">ReferanceNull1.Height</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="220320265689913" type="ObjetosReferenciado2">
+                                <action id="-15" name="Set visible" sid="220320265689913" type="lvl1Introduccion_ob2">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
                                 <action id="-15" name="Set visible" sid="359074701802606" type="ReferanceNull1">

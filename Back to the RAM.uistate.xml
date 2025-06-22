@@ -10,12 +10,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="4">Nivel1</layout>
+        <layout order="4">Nivel1</layout>
         <layout order="6">Nivel2</layout>
         <layout order="8">Nivel3</layout>
         <layout order="0">Main Menu</layout>
         <layout order="2">InfoDump</layout>
-        <event-sheet order="5">Eventos Nivel1</event-sheet>
+        <event-sheet active="1" order="5">Eventos Nivel1</event-sheet>
         <event-sheet order="7">Eventos nivel2</event-sheet>
         <event-sheet order="9">Eventos Nivel3</event-sheet>
         <event-sheet order="1">Eventos Main Menu</event-sheet>
@@ -105,8 +105,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Wall/" />
         <folder expanded="1" path="animation-folder/CartesDeObjetos/" />
         <folder expanded="1" path="animation-folder/Object1/" />
-        <folder expanded="1" path="animation-folder/ObjetosReferenciado2/" />
-        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/lvl1Introduccion_ob2/" />
+        <folder expanded="1" path="animation-folder/lvl1Introduccion_ob1/" />
         <folder expanded="1" path="animation-folder/ReferanceNull1/" />
     </folders-expanded>
 </c2uistate>

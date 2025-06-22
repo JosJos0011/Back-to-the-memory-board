@@ -1479,7 +1479,17 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="246026225765329" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.507865" hotspotY="0.475884" original-source="C:\Users\josjo\OneDrive\Escritorio\Multi Proyecto Juego\Assets\Nivel 1\cards-Photoroom.png">
+                        <collision-poly>
+                            <point x="0.278652" y="0.14791" />
+                            <point x="0.507865" y="0.0771704" />
+                            <point x="0.835955" y="0.00643087" />
+                            <point x="0.995506" y="0.475884" />
+                            <point x="0.74382" y="0.813505" />
+                            <point x="0.146067" y="0.993569" />
+                            <point x="0.00449438" y="0.475884" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -1600,7 +1610,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="ObjetosReferenciado2" sid="490018714661419">
+        <object-type name="lvl1Introduccion_ob2" sid="490018714661419">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="314264975159325" speed="5">
@@ -1608,7 +1618,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite3" sid="103498625670590">
+        <object-type name="lvl1Introduccion_ob1" sid="103498625670590">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Sine" sid="797350518570348">
@@ -1647,6 +1657,9 @@
                     <frame duration="1" hotspotX="0" hotspotY="0" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="referenciaEnMano" sid="941823725263714">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families>
