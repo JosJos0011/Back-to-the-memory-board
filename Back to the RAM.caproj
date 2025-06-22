@@ -1379,7 +1379,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="171904276579817" speed="5">
-                    <frame duration="1" hotspotX="0.542373" hotspotY="1.14286" />
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.642857" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1452,7 +1452,18 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="515521119231949" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.501683" hotspotY="0.501299" original-source="C:\Users\josjo\OneDrive\Escritorio\Multi Proyecto Juego\Assets\Nivel 1\true profile.png">
+                        <collision-poly>
+                            <point x="0.191919" y="0.148052" />
+                            <point x="0.498316" y="0.0025974" />
+                            <point x="0.808081" y="0.148052" />
+                            <point x="0.774411" y="0.498701" />
+                            <point x="0.828283" y="0.867532" />
+                            <point x="0.498316" y="0.761039" />
+                            <point x="0.16835" y="0.87013" />
+                            <point x="0.299663" y="0.498701" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -1578,7 +1589,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="293330837372061" speed="5">
-                    <frame duration="1" hotspotX="0.00552486" hotspotY="0.994513" original-source="C:\Users\josjo\OneDrive\Escritorio\Multi Proyecto Juego\Assets\Nivel 1\terminal.gif" />
+                    <frame duration="1" hotspotX="0.619889" hotspotY="0.544582" original-source="C:\Users\josjo\OneDrive\Escritorio\Multi Proyecto Juego\Assets\Nivel 1\terminal.gif" />
                     <frame duration="1" hotspotX="0.00552486" hotspotY="0.994513" />
                     <frame duration="1" hotspotX="0.00552486" hotspotY="0.994513" />
                     <frame duration="1" hotspotX="0.00552486" hotspotY="0.994513" />
@@ -1649,7 +1660,6 @@
                 <member>Referance6</member>
                 <member>Referance7</member>
                 <member>Referance8</member>
-                <member>ReferanceNull1</member>
             </members>
             <instance-variables>
                 <instance-variable comment="El id de cada referencia" name="Id" sid="720121218446352" type="number" />
