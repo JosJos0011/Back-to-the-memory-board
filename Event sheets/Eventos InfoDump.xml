@@ -52,11 +52,26 @@
                                     <param id="3" name="Y">0</param>
                                 </action>
                                 <action id="0" name="Set text" sid="808029642251961" type="Texto_InfoDump">
-                                    <param id="0" name="Text">ShowMessage</param>
+                                    <param id="0" name="Text">&quot;En este caso, se está declarando la variable &apos;miCuenta&apos; como una referencia, pero NO apunta a ningún objeto real.&#x0D;&#x0A;&#x0D;&#x0A;Es decir, la variable existe, pero NO HAY ningún objeto &apos;Cuenta&apos; en la memoria al que esté conectada. La referencia está vacía, es NULA.&#x0D;&#x0A;&#x0D;&#x0A;➡️ Esto es como tener una etiqueta sin haber creado el paquete.&#x0D;&#x0A;&#x0D;&#x0A;Ejemplo:&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;🚫 Si intentas usar miCuenta sin haber creado el objeto, el programa lanzará un **NullPointerException** &#x0D;&#x0A;&#x0D;&#x0A;           Imaginá que Reff tiene una cuerda (la referencia), pero no está amarrada a nada. &#x0D;&#x0A;           Si intenta enviar datos por esa cuerda... el sistema falla, porque no hay destino.&quot;</param>
                                 </action>
                                 <action id="-10" name="Add to" sid="777347056950780" type="System">
                                     <param id="0" name="Variable">ShowMessage</param>
                                     <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="108108143620560" type="ObjetosReferenciado2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="827526027434341" type="Sprite3">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="926498503007857" type="ReferanceNull1">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="454826914786272" type="Reff_PJ">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="710478907069015" type="Line">
+                                    <param id="0" name="Visibility">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -77,10 +92,34 @@
                                     <param id="3" name="Y">0</param>
                                 </action>
                                 <action id="0" name="Set text" sid="297496777784955" type="Texto_InfoDump">
-                                    <param id="0" name="Text">ShowMessage</param>
+                                    <param id="0" name="Text">&quot;                                                                             🕹️ Introducción del juego&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;En este juego, tú eres Reff, una referencia viviente que habita dentro de la memoria RAM.&#x0D;&#x0A;&#x0D;&#x0A;Tu misión es ayudar al programador a evitar los temidos errores de &apos;NullPointerException&apos; conectando correctamente las referencias a los objetos que les corresponden.&#x0D;&#x0A;&#x0D;&#x0A;Porque en Java, las variables que parecen contener objetos, en realidad contienen referencias a esos objetos. Y si esas referencias no están bien conectadas… el sistema colapsa.&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="611898059349777" type="Texto_InfoDump">
+                                    <param id="0" name="Text">&quot;                                                                             🕹️ Introducción del juego&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;En este juego, tú eres Reff, una referencia viviente que habita dentro de la memoria RAM.&#x0D;&#x0A;&#x0D;&#x0A;Tu misión es ayudar al programador a evitar los temidos errores de &apos;NullPointerException&apos; conectando correctamente las referencias a los objetos que les corresponden.&#x0D;&#x0A;&#x0D;&#x0A;Porque en Java, las variables que parecen contener objetos, en realidad contienen referencias a esos objetos. Y si esas referencias no están bien conectadas… el sistema colapsa.&quot;</param>
                                 </action>
                                 <action id="-10" name="Add to" sid="418749247157765" type="System">
                                     <param id="0" name="Variable">ShowMessage</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="928547335546470" type="ReferanceNull1">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="721453106496910" type="ReferanceNull1">
+                                    <param id="0" name="X">1068</param>
+                                    <param id="1" name="Y">973</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="800939758210783" type="Line">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="850719277474588" type="Sprite3">
+                                    <param id="0" name="X">307</param>
+                                    <param id="1" name="Y"> 917</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="134908786629237" type="Sprite3">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-11" name="Add to" sid="632444496419570" type="Reff_PJ">
+                                    <param id="0" name="Instance variable">Inmune</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
@@ -111,6 +150,68 @@
                             </actions>
                         </event-block>
                     </sub-events>
+                </event-block>
+                <event-block sid="537514204243628">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="668314132199259" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="212918646411742" type="Reff_PJ">
+                            <param id="0" name="Instance variable">Inmune</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="954568845688248" type="Reff_PJ">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="946686924465913">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="905757778398709" type="Reff_PJ">
+                            <param id="0" name="Object">ReferanceNull1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="285706052684759" type="Reff_PJ">
+                            <param id="0" name="Instance variable">Inmune</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="214470195318740" type="Reff_PJ">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="543690125938025">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="404399237317564" type="Reff_PJ">
+                            <param id="0" name="Object">Sprite3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="235455485108009" type="Reff_PJ">
+                            <param id="0" name="Instance variable">Inmune</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="119018172529428">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="411658220789461" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="942638324569816" type="Reff_PJ">
+                            <param id="0" name="Instance variable">Inmune</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="913113645594029" type="Reff_PJ">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="971727131343407" type="Reff_PJ">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>

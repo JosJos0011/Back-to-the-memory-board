@@ -30,7 +30,9 @@
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
-    <used-effects />
+    <used-effects>
+        <effect author="Scirra" id="warp">Warp</effect>
+    </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
@@ -1385,7 +1387,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="525110006511840" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1495,6 +1497,11 @@
         </object-type>
         <object-type name="Line" sid="201816491617897">
             <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Warp">
+                    <effect id="warp" />
+                </effect-type>
+            </effects>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="500476715763409" speed="5">
                     <frame duration="1" hotspotX="0" hotspotY="0.6" />
@@ -1530,14 +1537,6 @@
         </object-type>
         <object-type name="Texto_InfoDump" sid="307901426316783">
             <plugin id="Text" />
-        </object-type>
-        <object-type name="Sprite2" sid="574462982084673">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="489112054517026" speed="5">
-                    <frame duration="1" hotspotX="0.528" hotspotY="0.54902" />
-                </animation>
-            </animation-folder>
         </object-type>
         <object-type name="CartesDeObjetos" sid="936791008134864">
             <plugin id="Sprite" />
@@ -1621,6 +1620,14 @@
                 </behavior-type>
             </behaviors>
         </object-type>
+        <object-type name="ReferanceNull1" sid="654578604102471">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="148107714311563" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="FamReference" plugin-id="Sprite" sid="177368928108616">
@@ -1633,6 +1640,7 @@
                 <member>Referance6</member>
                 <member>Referance7</member>
                 <member>Referance8</member>
+                <member>ReferanceNull1</member>
             </members>
             <instance-variables>
                 <instance-variable comment="El id de cada referencia" name="Id" sid="720121218446352" type="number" />

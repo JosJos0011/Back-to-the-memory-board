@@ -4291,11 +4291,11 @@
                         <x>141</x>
                         <y>745</y>
                         <z>0</z>
-                        <width>120</width>
-                        <height>120</height>
+                        <width>84.959999084</width>
+                        <height>6.71999979</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -4463,6 +4463,18 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <effect-instances>
+                        <effect-instance type="Warp">
+                            <parameters>
+                                <x-amplitude>5</x-amplitude>
+                                <x-frequency>25</x-frequency>
+                                <x-speed>1</x-speed>
+                                <y-amplitude>5</y-amplitude>
+                                <y-frequency>25</y-frequency>
+                                <y-speed>1</y-speed>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>1</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>

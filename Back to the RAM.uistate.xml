@@ -103,10 +103,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Line/" />
         <folder expanded="1" path="animation-folder/SensorDer/" />
         <folder expanded="1" path="animation-folder/Wall/" />
-        <folder expanded="1" path="animation-folder/Sprite2/" />
         <folder expanded="1" path="animation-folder/CartesDeObjetos/" />
         <folder expanded="1" path="animation-folder/Object1/" />
         <folder expanded="1" path="animation-folder/ObjetosReferenciado2/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/ReferanceNull1/" />
     </folders-expanded>
 </c2uistate>
