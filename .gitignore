@@ -1,0 +1,17 @@
+# Archivos temporales de Construct
+*.autosave
+*.backup*
+*.capx.backup*
+
+# Archivos temporales de Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Archivos de VSCode (si usas)
+.vscode/
+
+# Archivos de sistema o caché
+.DS_Store
+.idea/
+*.log
