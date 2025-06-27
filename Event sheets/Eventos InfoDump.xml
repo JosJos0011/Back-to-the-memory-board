@@ -18,7 +18,10 @@
                                 <condition id="-4" name="Trigger once while true" sid="620511228200223" type="System" />
                             </conditions>
                             <actions>
-                                <action id="-21" name="Reset global variables" sid="330959488433168" type="System" />
+                                <action id="-9" name="Set value" sid="330959488433168" type="System">
+                                    <param id="0" name="Variable">ShowMessage</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
                                 <action id="33" name="Stop all" sid="831355105483711" type="Audio" />
                                 <action id="-3" name="Create object" sid="932621829792040" type="System">
                                     <param id="0" name="Object to create">Negro</param>
@@ -28,6 +31,12 @@
                                 </action>
                                 <action id="0" name="Set text" sid="369107431798982" type="Texto_InfoDump">
                                     <param id="0" name="Text">&quot;En Java, cuando creas un objeto, lo que guardas en una variable no es el objeto en sí, sino una referencia a ese objeto.&#x0D;&#x0A;&#x0D;&#x0A;Una referencia funciona como una flecha o una etiqueta que apunta hacia el lugar donde está guardado el objeto en la memoria: &#x0D;&#x0A;&#x0D;&#x0A;Ejemplo&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;Que esta pasando ahi:&#x0D;&#x0A;1- crea un objeto de la clase Cuenta llamado miCuenta&#x0D;&#x0A;2- Luego asigna a la variable miCuenta una referencia a ese objeto Cuenta. &quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="696088887564197" type="lvl1Introduccion_ob1">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="341159716091806" type="lvl1Introduccion_ob2">
+                                    <param id="0" name="Visibility">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -44,6 +53,11 @@
                                             <param id="0" name="Variable">ShowMessage</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="299853839362394" type="System">
+                                            <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -85,6 +99,11 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">1</param>
                                         </condition>
+                                        <condition id="-14" name="Compare variable" sid="703995942707514" type="System">
+                                            <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
                                         <action id="-3" name="Create object" sid="263474861952759" type="System">
@@ -121,6 +140,11 @@
                                             <param id="0" name="Variable">ShowMessage</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">2</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="939207355878624" type="System">
+                                            <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -159,6 +183,11 @@
                                             <param id="0" name="Variable">ShowMessage</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">4</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="787434259206990" type="System">
+                                            <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -202,6 +231,11 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">5</param>
                                         </condition>
+                                        <condition id="-14" name="Compare variable" sid="530977662627866" type="System">
+                                            <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
                                         <action id="-3" name="Create object" sid="560810435140007" type="System">
@@ -244,6 +278,11 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">6</param>
                                         </condition>
+                                        <condition id="-14" name="Compare variable" sid="524681732859213" type="System">
+                                            <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
                                         <action id="-9" name="Destroy" sid="973824528656320" type="hint" />
@@ -273,6 +312,11 @@
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">3</param>
                                 </condition>
+                                <condition id="-14" name="Compare variable" sid="159734033203227" type="System">
+                                    <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action behavior="Platform" id="7" name="Simulate control" sid="309340231165637" type="Reff_PJ">
@@ -289,6 +333,11 @@
                                     <param id="0" name="Variable">ShowMessage</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="396523987883311" type="System">
+                                    <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -314,6 +363,11 @@
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">3</param>
                                 </condition>
+                                <condition id="-14" name="Compare variable" sid="153297610157725" type="System">
+                                    <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="7" name="Set mirrored" sid="856209870204053" type="Reff_PJ">
@@ -333,6 +387,11 @@
                                     <param id="0" name="Variable">ShowMessage</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="832117875768894" type="System">
+                                    <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -390,7 +449,10 @@
                                 <condition id="-4" name="Trigger once while true" sid="899470040285067" type="System" />
                             </conditions>
                             <actions>
-                                <action id="-21" name="Reset global variables" sid="424631337174799" type="System" />
+                                <action id="-9" name="Set value" sid="424631337174799" type="System">
+                                    <param id="0" name="Variable">ShowMessage</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
                                 <action id="33" name="Stop all" sid="116133774265406" type="Audio" />
                                 <action id="-3" name="Create object" sid="601785000090517" type="System">
                                     <param id="0" name="Object to create">Negro</param>
@@ -417,6 +479,11 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
+                                        <condition id="-14" name="Compare variable" sid="319457876511094" type="System">
+                                            <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
                                         <action id="-3" name="Create object" sid="549171947435270" type="System">
@@ -442,6 +509,11 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">1</param>
                                         </condition>
+                                        <condition id="-14" name="Compare variable" sid="250479049419148" type="System">
+                                            <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
                                         <action id="-3" name="Create object" sid="554910325132353" type="System">
@@ -464,6 +536,11 @@
                                         <condition id="-22" name="Else" sid="937126777969433" type="System" />
                                         <condition id="-14" name="Compare variable" sid="201372170264220" type="System">
                                             <param id="0" name="Variable">ShowMessage</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="287168093831074" type="System">
+                                            <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">2</param>
                                         </condition>
@@ -492,6 +569,11 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">4</param>
                                         </condition>
+                                        <condition id="-14" name="Compare variable" sid="716220206044230" type="System">
+                                            <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
                                         <action id="-3" name="Create object" sid="413072097325990" type="System">
@@ -516,6 +598,11 @@
                                             <param id="0" name="Variable">ShowMessage</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">5</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="208866450587379" type="System">
+                                            <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -548,6 +635,11 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">6</param>
                                         </condition>
+                                        <condition id="-14" name="Compare variable" sid="881643084558523" type="System">
+                                            <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
                                         <action id="-21" name="Reset global variables" sid="719982502748379" type="System" />
@@ -570,6 +662,11 @@
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">3</param>
                                 </condition>
+                                <condition id="-14" name="Compare variable" sid="499578250102985" type="System">
+                                    <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
                             </conditions>
                             <actions />
                         </event-block>
@@ -582,6 +679,11 @@
                                     <param id="0" name="Variable">ShowMessage</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="199783233914783" type="System">
+                                    <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -604,12 +706,15 @@
                                 <condition id="-14" name="Compare variable" sid="530718351245500" type="System">
                                     <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">2</param>
+                                    <param id="2" name="Value">3</param>
                                 </condition>
                                 <condition id="-4" name="Trigger once while true" sid="988112767864278" type="System" />
                             </conditions>
                             <actions>
-                                <action id="-21" name="Reset global variables" sid="424554104712543" type="System" />
+                                <action id="-9" name="Set value" sid="424554104712543" type="System">
+                                    <param id="0" name="Variable">ShowMessage</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
                                 <action id="33" name="Stop all" sid="829461086294168" type="Audio" />
                                 <action id="-3" name="Create object" sid="678579375187151" type="System">
                                     <param id="0" name="Object to create">Negro</param>
@@ -636,6 +741,11 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
+                                        <condition id="-14" name="Compare variable" sid="757401898580152" type="System">
+                                            <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
                                         <action id="-3" name="Create object" sid="332095555981833" type="System">
@@ -660,6 +770,11 @@
                                             <param id="0" name="Variable">ShowMessage</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="511183606926151" type="System">
+                                            <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -686,6 +801,11 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">2</param>
                                         </condition>
+                                        <condition id="-14" name="Compare variable" sid="361342474780394" type="System">
+                                            <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
                                         <action id="-3" name="Create object" sid="840278893626746" type="System">
@@ -711,6 +831,11 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">4</param>
                                         </condition>
+                                        <condition id="-14" name="Compare variable" sid="410213723678921" type="System">
+                                            <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
                                         <action id="-3" name="Create object" sid="148966231993171" type="System">
@@ -735,6 +860,11 @@
                                             <param id="0" name="Variable">ShowMessage</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">5</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="826830001952021" type="System">
+                                            <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -767,11 +897,16 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">6</param>
                                         </condition>
+                                        <condition id="-14" name="Compare variable" sid="690887261227192" type="System">
+                                            <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
                                         <action id="-21" name="Reset global variables" sid="928504407118541" type="System" />
                                         <action id="-2" name="Go to layout" sid="558602323563290" type="System">
-                                            <param id="0" name="Layout">Nivel2</param>
+                                            <param id="0" name="Layout">Nivel3</param>
                                         </action>
                                     </actions>
                                 </event-block>

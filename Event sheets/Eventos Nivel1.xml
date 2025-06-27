@@ -6,7 +6,7 @@
         <variable comment="Variable que indica que referencia lleva Reff en mano" constant="0" name="Reff_InHand_ID" sid="583930249885678" static="0" type="number">-1</variable>
         <variable comment="Esto es para levantar la vista del popUp" constant="0" name="popUpActivo" sid="841385143283468" static="0" type="number">0</variable>
         <variable comment="Quien lleva la cuenta cuantas referencias se han resuelto" constant="0" name="RefferencesLocated" sid="375786782945882" static="0" type="number">0</variable>
-        <variable comment="Es el temporizador del nivel" constant="0" name="Temporizador" sid="423897483368405" static="0" type="number">180</variable>
+        <variable comment="Es el temporizador del nivel" constant="0" name="Temporizador" sid="423897483368405" static="0" type="number">240</variable>
         <event-group description="" sid="630313337647197" title="Start of layout">
             <sub-events>
                 <event-block sid="967547130646530">
@@ -93,7 +93,7 @@
                         <condition id="-14" name="Compare variable" sid="388780829765411" type="System">
                             <param id="0" name="Variable">Temporizador</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">120</param>
+                            <param id="2" name="Value">180</param>
                         </condition>
                         <condition id="-4" name="Trigger once while true" sid="956605109908009" type="System" />
                     </conditions>
@@ -120,7 +120,7 @@
                         <condition id="-14" name="Compare variable" sid="355350049939674" type="System">
                             <param id="0" name="Variable">Temporizador</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">60</param>
+                            <param id="2" name="Value">90</param>
                         </condition>
                         <condition id="-4" name="Trigger once while true" sid="914640815841099" type="System" />
                     </conditions>
@@ -609,7 +609,7 @@
                                     <param id="0" name="Time scale">0</param>
                                 </action>
                                 <action id="0" name="Set text" sid="554038574246810" type="HintText">
-                                    <param id="0" name="Text">&quot;                     🃏 ¡Referencia encontrada: miManoPoker!&#x0D;&#x0A;&#x0D;&#x0A;En Java, al declarar:&#x0D;&#x0A;PaqueteDeCartas miManoPoker = new PaqueteDeCartas();&#x0D;&#x0A;&#x0D;&#x0A;estás creando un objeto que contiene y maneja cartas, y la referencia miManoPoker te permite barajar, repartir o mostrar la mano.&#x0D;&#x0A;&#x0D;&#x0A;✅ Buscá el objeto con las cartas en el mapa y conectalo para que el sistema funcione correctamente.&quot;</param>
+                                    <param id="0" name="Text">&quot;                     🃏 ¡Referencia encontrada: miManoPoker!&#x0D;&#x0A;&#x0D;&#x0A;En Java, al declarar:&#x0D;&#x0A;PaqueteDeCartas miManoPoker = new PaqueteDeCartas();&#x0D;&#x0A;&#x0D;&#x0A;Se crea un objeto que contiene y maneja cartas, y la referencia miManoPoker te permite acceder a los metodos y datos propios de Poker.&#x0D;&#x0A;&#x0D;&#x0A;✅ Buscá el objeto con las cartas en el mapa y conectalo para que el sistema funcione correctamente.&quot;</param>
                                 </action>
                                 <action id="-3" name="Set position" sid="708550074062989" type="HintText">
                                     <param id="0" name="X">ViewportLeft(&quot;Foreground&quot;) + 620</param>
@@ -670,7 +670,7 @@
                                     <param id="0" name="Time scale">0</param>
                                 </action>
                                 <action id="0" name="Set text" sid="908159626802392" type="HintText">
-                                    <param id="0" name="Text">&quot;Acabas de encontrar la referencia &apos;null&apos; de una variable Scanner.....&#x0D;&#x0A;¡Rapido! Encuentra el objeto en memoria para que la instancia no quede en &apos;null&apos; y dé un error.&quot;</param>
+                                    <param id="0" name="Text">&quot;                     ⚙️ ¡Referencia encontrada: log!&#x0D;&#x0A;&#x0D;&#x0A;Esta es una referencia a una instancia de la clase Logic, usada habitualmente para centralizar la lógica principal o las reglas de negocio de un programa.&#x0D;&#x0A;&#x0D;&#x0A;En Java, al declarar: Logic loc = new Logic();&#x0D;&#x0A;&#x0D;&#x0A;Se crea un nuevo objeto Logic, y la referencia loc te permite invocar métodos que procesan datos, toman decisiones y coordinan el flujo del programa.&quot;</param>
                                 </action>
                                 <action id="-3" name="Set position" sid="332085135826274" type="HintText">
                                     <param id="0" name="X">ViewportLeft(&quot;Foreground&quot;) + 620</param>
@@ -731,7 +731,7 @@
                                     <param id="0" name="Time scale">0</param>
                                 </action>
                                 <action id="0" name="Set text" sid="674112130196243" type="HintText">
-                                    <param id="0" name="Text">&quot;Acabas de encontrar la referencia &apos;null&apos; de una variable Scanner.....&#x0D;&#x0A;¡Rapido! Encuentra el objeto en memoria para que la instancia no quede en &apos;null&apos; y dé un error.&quot;</param>
+                                    <param id="0" name="Text">&quot;                     🎬 ¡Referencia encontrada: myScene!&#x0D;&#x0A;&#x0D;&#x0A;Una Scene en JavaFX es el “escenario” donde se colocan todos los elementos gráficos (botones, imágenes, paneles).&#x0D;&#x0A;&#x0D;&#x0A;En Java, al declarar: Scene myScene = new Scene();&#x0D;&#x0A;&#x0D;&#x0A;myScene gestiona lo que se dibuja y cómo responde a los eventos del usuario.&#x0D;&#x0A;&#x0D;&#x0A;🔧 Misión: encontrá el objeto Escenario (Scene) y conectalo a esta referencia para que los nodos se vean en pantalla.&quot;</param>
                                 </action>
                                 <action id="-3" name="Set position" sid="461883431775754" type="HintText">
                                     <param id="0" name="X">ViewportLeft(&quot;Foreground&quot;) + 620</param>
@@ -791,8 +791,11 @@
                                 <action id="-13" name="Set time scale" sid="945230381487691" type="System">
                                     <param id="0" name="Time scale">0</param>
                                 </action>
+                                <action id="3" name="Set font size" sid="472797443112918" type="HintText">
+                                    <param id="0" name="Size (pt)">18</param>
+                                </action>
                                 <action id="0" name="Set text" sid="618683353059518" type="HintText">
-                                    <param id="0" name="Text">&quot;Acabas de encontrar la referencia &apos;null&apos; de una variable Scanner.....&#x0D;&#x0A;¡Rapido! Encuentra el objeto en memoria para que la instancia no quede en &apos;null&apos; y dé un error.&quot;</param>
+                                    <param id="0" name="Text">&quot;                     🗂️ ¡Referencia encontrada: fTxt!&#x0D;&#x0A;&#x0D;&#x0A;Esta es una referencia a una instancia de la clase FilesTxt, que gestiona archivos de texto plano (.txt).&#x0D;&#x0A;&#x0D;&#x0A;En Java, al declarar: &#x0D;&#x0A;FilesTxt fTxt = new FilesTxt();&#x0D;&#x0A;&#x0D;&#x0A;Se crea un objeto que lee y escribe datos en un archivo .txt, permitiendo guardar información de forma persistente.&#x0D;&#x0A;&#x0D;&#x0A;🔧 Tu misión: localizá el objeto (ícono de hoja .txt) en el mapa y conectalo a esta referencia para habilitar la lectura y escritura de datos.&quot;</param>
                                 </action>
                                 <action id="-3" name="Set position" sid="915833274163796" type="HintText">
                                     <param id="0" name="X">ViewportLeft(&quot;Foreground&quot;) + 620</param>
@@ -853,7 +856,7 @@
                                     <param id="0" name="Time scale">0</param>
                                 </action>
                                 <action id="0" name="Set text" sid="610213300244505" type="HintText">
-                                    <param id="0" name="Text">&quot;Acabas de encontrar la referencia &apos;null&apos; de una variable Scanner.....&#x0D;&#x0A;¡Rapido! Encuentra el objeto en memoria para que la instancia no quede en &apos;null&apos; y dé un error.&quot;</param>
+                                    <param id="0" name="Text">&quot;                     🎛️ ¡Referencia encontrada: controller!&#x0D;&#x0A;&#x0D;&#x0A;En muchas aplicaciones Java, un Controller coordina la lógica: recibe acciones del usuario, actualiza los datos (Modelo) y refresca la vista.&#x0D;&#x0A;&#x0D;&#x0A;En Java, al declarar: &#x0D;&#x0A;Controller controller = new Controller();&#x0D;&#x0A;&#x0D;&#x0A;Se crea una referencia que invoca métodos para  gestionar botones, menús, lógicas y otros eventos de la interfaz.&#x0D;&#x0A;&#x0D;&#x0A;🔧 Tu Misión: buscá el objeto Controlador en el mapa y conectalo a controller para que el programa pueda responder correctamente a las acciones del jugador.&quot;</param>
                                 </action>
                                 <action id="-3" name="Set position" sid="549945961321230" type="HintText">
                                     <param id="0" name="X">ViewportLeft(&quot;Foreground&quot;) + 620</param>
@@ -943,6 +946,11 @@
                             <param id="1" name="Click type">0</param>
                             <param id="2" name="Object clicked">hint</param>
                         </condition>
+                        <condition id="-7" name="Compare instance variable" sid="307768682340226" type="hint">
+                            <param id="0" name="Instance variable">Messagge</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="201158729372089" type="System">
@@ -957,11 +965,11 @@
                             <param id="0" name="Time scale">0</param>
                         </action>
                         <action id="0" name="Set text" sid="395071409336930" type="HintText">
-                            <param id="0" name="Text">&quot;⚠️ Zona Nula Detectada&#x0D;&#x0A;&#x0D;&#x0A;En Java, una referencia que no apunta a un objeto válido (es decir, que vale null) puede causar errores graves durante la ejecución del programa.&#x0D;&#x0A;&#x0D;&#x0A;Reff, al ser una referencia viviente, solo puede existir si está conectada a un objeto válido dentro de la memoria.&#x0D;&#x0A;&#x0D;&#x0A;Estas zonas representan áreas de la RAM donde no existe ninguna instancia activa. Son espacios vacíos, inaccesibles... peligrosos.&#x0D;&#x0A;&#x0D;&#x0A;❌ Si Reff entra en una de estas zonas, será destruido inmediatamente y el sistema lanzará un NullPointerException fatal. &quot;</param>
+                            <param id="0" name="Text">&quot;🚫 Hint 1 – El peligro de null&#x0D;&#x0A;&#x0D;&#x0A;En Java, una referencia que no apunta a un objeto válido (es decir, que vale null) puede causar errores graves durante la ejecución del programa.&#x0D;&#x0A;&#x0D;&#x0A;Reff, al ser una referencia viviente, solo puede existir si está conectada a un objeto válido en memoria.&#x0D;&#x0A;&#x0D;&#x0A;Estas zonas verdes corruptas representan áreas de la RAM donde no existe ninguna instancia activa. Son espacios vacíos, inaccesibles... peligrosos.&#x0D;&#x0A;&#x0D;&#x0A;❌ Si Reff entra en una de estas zonas, será destruido inmediatamente y el sistema lanzará un NullPointerException fatal. &quot;</param>
                         </action>
                         <action id="-3" name="Set position" sid="321643808406902" type="HintText">
                             <param id="0" name="X">ViewportLeft(&quot;Foreground&quot;) + 620</param>
-                            <param id="1" name="Y">ViewportTop(&quot;Foreground&quot;) + 450</param>
+                            <param id="1" name="Y">ViewportTop(&quot;Foreground&quot;) + 360</param>
                         </action>
                         <action id="-15" name="Set visible" sid="444962160476363" type="HintText">
                             <param id="0" name="Visibility">1</param>
@@ -969,6 +977,55 @@
                         <action id="3" name="Set volume" sid="562533842428157" type="Audio">
                             <param id="0" name="Tag">&quot;&quot;</param>
                             <param id="1" name="dB">-10</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="476159966532936" type="hint">
+                            <param id="0" name="Instance variable">Messagge</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="943468465597875">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="973201125222618" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">hint</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="265438523539730" type="hint">
+                            <param id="0" name="Instance variable">Messagge</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="828814739011899" type="System">
+                            <param id="0" name="Variable">popUpActivo</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="238220246689438" type="System">
+                            <param id="0" name="Layer">3</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="203076632927417" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="801403513881492" type="HintText">
+                            <param id="0" name="Text">&quot;🔄 Hint 2 – Dos referencias, un solo Reff&#x0D;&#x0A;&#x0D;&#x0A;En Java, copiar una referencia no clona el objeto: solo crea otra flecha que apunta al mismo lugar.  Ejemplo:&#x0D;&#x0A;&#x0D;&#x0A;Reff reff1 = new Reff();&#x0D;&#x0A;Reff reff2 = reff1; &#x0D;&#x0A;&#x0D;&#x0A;Ahora reff1 y reff2 están conectados al mismo Reff viviente.&#x0D;&#x0A;Cualquier cambio que hagas desde reff2 también afecta a reff1, ¡porque no hay dos Reffs, solo dos caminos hacia el mismo!&#x0D;&#x0A;&#x0D;&#x0A;Es importante comprender cuándo compartir una referencia y cuándo crear una nueva instancia. &#x0D;&#x0A;¡Duplicar flechas no duplica al héroe! &quot;</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="468476515879667" type="HintText">
+                            <param id="0" name="X">ViewportLeft(&quot;Foreground&quot;) + 620</param>
+                            <param id="1" name="Y">ViewportTop(&quot;Foreground&quot;) + 360</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="578019348566080" type="HintText">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="3" name="Set volume" sid="745167158377034" type="Audio">
+                            <param id="0" name="Tag">&quot;&quot;</param>
+                            <param id="1" name="dB">-10</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="266622555024298" type="hint">
+                            <param id="0" name="Instance variable">Messagge</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -994,6 +1051,30 @@
                         <action id="3" name="Set volume" sid="677027592792844" type="Audio">
                             <param id="0" name="Tag">&quot;&quot;</param>
                             <param id="1" name="dB">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="261460766576777">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="189065996519017" title="Game Win Mechanics">
+            <sub-events>
+                <event-block sid="166321946584426">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="283980129818504" type="System">
+                            <param id="0" name="Variable">RefferencesLocated</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                        <condition id="-1" name="Every tick" sid="879942022210337" type="System" />
+                        <condition id="-4" name="Trigger once while true" sid="749040073189789" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="489583908489916" type="System">
+                            <param id="0" name="Layout">YouWin</param>
                         </action>
                     </actions>
                 </event-block>
