@@ -723,7 +723,7 @@
                                     <param id="3" name="Y">0</param>
                                 </action>
                                 <action id="0" name="Set text" sid="288212145116932" type="Texto_InfoDump">
-                                    <param id="0" name="Text">&quot;bla bla bla &quot;</param>
+                                    <param id="0" name="Text">&quot;¿Qué es un Array y por qué importa en programación?&#x0D;&#x0A;En programación, existen dos formas comunes de almacenar datos en una lista: arrays estáticos y arrays dinámicos.&#x0D;&#x0A;&#x0D;&#x0A;Array estático&#x0D;&#x0A;Es una lista de tamaño fijo y solo acepta un tipo de dato. Es rápido y eficiente porque la memoria se reserva de antemano, pero su mayor limitación es que no se puede expandir. Si se llena, no puedes agregar más elementos.&#x0D;&#x0A;&#x0D;&#x0A;ArrayList (array dinámico)&#x0D;&#x0A;Es una lista flexible que puede crecer cuando se llena. Acepta distintos tipos de datos, pero cada vez que necesita más espacio, consume más memoria y hace que el programa sea menos eficiente. Si se abusa de los arrays dinámicos, el rendimiento de la aplicación puede verse afectado.&#x0D;&#x0A;&#x0D;&#x0A;En este nivel, experimentarás en carne propia las ventajas y desventajas de cada estructura y verás cómo tus decisiones afectan directamente la eficiencia del “programa” donde ocurre la aventura.&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -755,7 +755,7 @@
                                             <param id="3" name="Y">0</param>
                                         </action>
                                         <action id="0" name="Set text" sid="897773427307537" type="Texto_InfoDump">
-                                            <param id="0" name="Text">&quot;bla bla bla &#x0D;&#x0A;bla bla bla &quot;</param>
+                                            <param id="0" name="Text">&quot;La historia de Ref&#x0D;&#x0A;Eres Ref, un pequeño explorador digital. Has sido creado para moverte dentro de la memoria de un programa y organizar los datos que allí viven. Pero la memoria no es infinita, y deberás elegir con inteligencia cómo guardar cada elemento que recolectas. ¿Aprovecharás la eficiencia de los arrays estáticos, o te arriesgarás usando la flexibilidad de los arrays dinámicos?&#x0D;&#x0A;&#x0D;&#x0A;Recuerda: ¡cada decisión influye en la estabilidad y el rendimiento del sistema!&quot;</param>
                                         </action>
                                         <action id="-10" name="Add to" sid="109388791642338" type="System">
                                             <param id="0" name="Variable">ShowMessage</param>
@@ -785,7 +785,7 @@
                                             <param id="3" name="Y">0</param>
                                         </action>
                                         <action id="0" name="Set text" sid="761876659592584" type="Texto_InfoDump">
-                                            <param id="0" name="Text">&quot;bla bla bla &#x0D;&#x0A;bla bla bla &#x0D;&#x0A;bla bla bla &#x0D;&#x0A;bla bla bla &quot;</param>
+                                            <param id="0" name="Text">&quot;¿Cómo se juega este nivel?&#x0D;&#x0A;Debes recolectar 15 objetos (de dos tipos: azules y rojos) repartidos por un mundo que representa la memoria de un programa.&#x0D;&#x0A;&#x0D;&#x0A;Cada vez que tomas un objeto, debes decidir si lo guardas en el Array estático (solo acepta azules y tiene 5 espacios) o en el ArrayList (acepta cualquier tipo y empieza con 5 espacios, pero puede crecer hasta 10).&#x0D;&#x0A;&#x0D;&#x0A;Si usas el ArrayList antes de llenar el Array estático, tu velocidad de movimiento bajará (¡hasta quedarte sin moverte!).&#x0D;&#x0A;&#x0D;&#x0A;Cada vez que el ArrayList crece, perderás aún más velocidad, porque el sistema tiene que trabajar más y gastar más memoria.&#x0D;&#x0A;&#x0D;&#x0A;Hay plataformas móviles, puertas lógicas y enemigos digitales (¡cuidado!).&#x0D;&#x0A;&#x0D;&#x0A;También puedes encontrar un power-up especial para recuperar velocidad, pero úsalo con sabiduría.&#x0D;&#x0A;&#x0D;&#x0A;Ganas si logras guardar los 15 objetos y terminas con velocidad mayor a 0%.&#x0D;&#x0A;&#x0D;&#x0A;Pierdes si tu velocidad llega a cero o si no logras recolectar todo.&#x0D;&#x0A;&#x0D;&#x0A; &quot;</param>
                                         </action>
                                         <action id="-10" name="Add to" sid="671662579676510" type="System">
                                             <param id="0" name="Variable">ShowMessage</param>
@@ -793,157 +793,28 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="542717212053908">
+                                <event-block sid="904915724455669">
                                     <conditions>
-                                        <condition id="-22" name="Else" sid="479657217453959" type="System" />
-                                        <condition id="-14" name="Compare variable" sid="439546798098081" type="System">
+                                        <condition id="-22" name="Else" sid="554370934440022" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="521695592840545" type="System">
                                             <param id="0" name="Variable">ShowMessage</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">2</param>
                                         </condition>
-                                        <condition id="-14" name="Compare variable" sid="361342474780394" type="System">
+                                        <condition id="-14" name="Compare variable" sid="116616651193795" type="System">
                                             <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">3</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-3" name="Create object" sid="840278893626746" type="System">
-                                            <param id="0" name="Object to create">Negro</param>
-                                            <param id="1" name="Layer">0</param>
-                                            <param id="2" name="X">0</param>
-                                            <param id="3" name="Y">0</param>
-                                        </action>
-                                        <action id="0" name="Set text" sid="438136496671325" type="Texto_InfoDump">
-                                            <param id="0" name="Text">&quot;bla bla bla &#x0D;&#x0A;bla bla bla &#x0D;&#x0A;bla bla bla &#x0D;&#x0A;bla bla bla &#x0D;&#x0A;UGH&quot;</param>
-                                        </action>
-                                        <action id="-10" name="Add to" sid="610024543862906" type="System">
-                                            <param id="0" name="Variable">ShowMessage</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="310357480981583">
-                                    <conditions>
-                                        <condition id="-22" name="Else" sid="612260443964211" type="System" />
-                                        <condition id="-14" name="Compare variable" sid="332974103999140" type="System">
-                                            <param id="0" name="Variable">ShowMessage</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">4</param>
-                                        </condition>
-                                        <condition id="-14" name="Compare variable" sid="410213723678921" type="System">
-                                            <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">3</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-3" name="Create object" sid="148966231993171" type="System">
-                                            <param id="0" name="Object to create">Negro</param>
-                                            <param id="1" name="Layer">0</param>
-                                            <param id="2" name="X">0</param>
-                                            <param id="3" name="Y">0</param>
-                                        </action>
-                                        <action id="0" name="Set text" sid="854953769366321" type="Texto_InfoDump">
-                                            <param id="0" name="Text">&quot;bla bla bla &#x0D;&#x0A;UGH IACK BFFFF &#x0D;&#x0A;UGH&quot;</param>
-                                        </action>
-                                        <action id="-10" name="Add to" sid="745050264118390" type="System">
-                                            <param id="0" name="Variable">ShowMessage</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="390319228703268">
-                                    <conditions>
-                                        <condition id="-22" name="Else" sid="307495647104585" type="System" />
-                                        <condition id="-14" name="Compare variable" sid="848002057084627" type="System">
-                                            <param id="0" name="Variable">ShowMessage</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">5</param>
-                                        </condition>
-                                        <condition id="-14" name="Compare variable" sid="826830001952021" type="System">
-                                            <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">3</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-3" name="Create object" sid="874908072670800" type="System">
-                                            <param id="0" name="Object to create">Negro</param>
-                                            <param id="1" name="Layer">0</param>
-                                            <param id="2" name="X">0</param>
-                                            <param id="3" name="Y">0</param>
-                                        </action>
-                                        <action id="0" name="Set text" sid="976213854749273" type="Texto_InfoDump">
-                                            <param id="0" name="Text">&quot;UYAAAAAAAAAAAAAAAAAAAAAAAAA HEEEEEEEE&quot;</param>
-                                        </action>
-                                        <action id="-10" name="Add to" sid="444863371050371" type="System">
-                                            <param id="0" name="Variable">ShowMessage</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                        <action id="0" name="Set text" sid="606906436985218" type="TextoBoton">
-                                            <param id="0" name="Text">&quot;COMENZAR&quot;</param>
-                                        </action>
-                                        <action id="0" name="Set text" sid="531325090012241" type="Btn_InfoDump">
-                                            <param id="0" name="Text">&quot;COMENZAR&quot;</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="201475445950914">
-                                    <conditions>
-                                        <condition id="-22" name="Else" sid="625950822424669" type="System" />
-                                        <condition id="-14" name="Compare variable" sid="605003257657055" type="System">
-                                            <param id="0" name="Variable">ShowMessage</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">6</param>
-                                        </condition>
-                                        <condition id="-14" name="Compare variable" sid="690887261227192" type="System">
-                                            <param id="0" name="Variable">Nivel_Seleccionado_InfoDump</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">3</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-21" name="Reset global variables" sid="928504407118541" type="System" />
-                                        <action id="-2" name="Go to layout" sid="558602323563290" type="System">
-                                            <param id="0" name="Layout">Nivel3</param>
+                                        <action id="-21" name="Reset global variables" sid="469440424263957" type="System" />
+                                        <action id="-2" name="Go to layout" sid="554145274054441" type="System">
+                                            <param id="0" name="Layout">Nivel1</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
-                        </event-block>
-                    </sub-events>
-                </event-group>
-                <event-group description="Aca estan las condiciones y acciones para que Reff de un ejemplo automatico de como hacer la mecanica" sid="708299194297575" title="Control_Visual_Events3">
-                    <sub-events>
-                        <event-block sid="864114380796577">
-                            <conditions>
-                                <condition id="-1" name="Every tick" sid="866420782345593" type="System" />
-                                <condition id="-14" name="Compare variable" sid="385754415715490" type="System">
-                                    <param id="0" name="Variable">ShowMessage</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">3</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                        </event-block>
-                        <event-block sid="193012228605689">
-                            <conditions>
-                                <condition id="0" name="On collision with another object" sid="939730001130413" type="Reff_PJ">
-                                    <param id="0" name="Object">Negro</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="875793065096632" type="System">
-                                    <param id="0" name="Variable">ShowMessage</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">3</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Add to" sid="724388452598144" type="System">
-                                    <param id="0" name="Variable">ShowMessage</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
                         </event-block>
                     </sub-events>
                 </event-group>
