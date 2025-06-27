@@ -770,5 +770,42 @@
             </conditions>
             <actions />
         </event-block>
+        <event-block sid="249759902287767">
+            <conditions>
+                <condition id="0" name="On function" sid="837175930414990" type="AgregarADinamicoVerde">
+                    <param id="0" name="Name">&quot;AgregarAEstaticoVerde&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="594558962757401">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="619846387049002" type="System">
+                            <param id="0" name="Variable">EstaticoCount</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="712615528590891" type="System">
+                            <param id="0" name="Variable">EstaticoCount</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="210853112019463">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="172801122301288" type="GreenGem">
+                                    <param id="0" name="Unique ID">GemaSeleccionadaUID</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="335395454006859" type="GreenGem" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>
