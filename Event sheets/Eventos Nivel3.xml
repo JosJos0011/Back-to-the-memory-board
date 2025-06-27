@@ -3,6 +3,10 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Nivel3</name>
     <events>
+        <variable comment="% de velocidad (baja 20 por gema verde en dinámico)" constant="0" name="VelocidadJugador" sid="289263645339509" static="0" type="number">100</variable>
+        <variable comment="Capacidad máxima actual del array dinámico" constant="0" name="DinamicoCapacidad" sid="637019838839456" static="0" type="number">5</variable>
+        <variable comment="Contador del array dinámico" constant="0" name="DinamicoCount" sid="308954676027541" static="0" type="number">0</variable>
+        <variable comment="Contador del array estático" constant="0" name="EstaticoCount" sid="340118236761316" static="0" type="number">0</variable>
         <variable comment="UID de la gema chocada" constant="0" name="GemaSeleccionadaUID" sid="435165354139991" static="0" type="number">0</variable>
         <variable comment="Contador de gemas rojas" constant="0" name="RedGemsCount" sid="462794560276677" static="0" type="number">0</variable>
         <variable comment="Contador de gemas verdes" constant="0" name="GreenGemsCount" sid="216400122679484" static="0" type="number">0</variable>
@@ -758,5 +762,13 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="593234547390989">
+            <conditions>
+                <condition id="0" name="On function" sid="550770303626574" type="AgregarADinamicoVerde">
+                    <param id="0" name="Name">&quot;AgregarADinamicoVerde&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
     </events>
 </c2eventsheet>

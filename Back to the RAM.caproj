@@ -13,6 +13,7 @@
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -3525,6 +3526,9 @@
         <object-type name="debug" sid="953520912464145">
             <plugin id="Text" />
         </object-type>
+        <object-type name="AgregarADinamicoVerde" sid="407329567959026">
+            <plugin id="Function" />
+        </object-type>
     </object-folder>
     <families>
         <family name="FamReference" plugin-id="Sprite" sid="177368928108616">
@@ -3596,6 +3600,7 @@
             </properties>
         </global-instance>
         <global-instance type="Browser" uid="211" />
+        <global-instance type="AgregarADinamicoVerde" uid="351" />
     </global-instances>
     <sounds-folder />
     <music-folder>
