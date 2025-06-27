@@ -4,11 +4,11 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
-        <position-x>1033.77</position-x>
-        <position-y>404.21</position-y>
+        <position-x>899.017</position-x>
+        <position-y>563.65</position-y>
         <position-z>212.587</position-z>
-        <lookat-x>1033.77</lookat-x>
-        <lookat-y>404.21</lookat-y>
+        <lookat-x>899.017</lookat-x>
+        <lookat-y>563.65</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>0</snap-to-grid>
@@ -25,13 +25,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <active-layer name="Player" />
     <layers>
-        <layer locked="0" name="Background" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Platforms" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Hazards" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Enemies" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="Background" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="Platforms" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="Hazards" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="Enemies" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Gameplay" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Player" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="UI" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="PopUp" parallax-in-editor="0" visible="0" />
+        <layer locked="1" name="UI" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="PopUp" parallax-in-editor="0" visible="0" />
+        <layer locked="1" name="PlayerChoises" parallax-in-editor="0" visible="0" />
     </layers>
 </c2uistate>

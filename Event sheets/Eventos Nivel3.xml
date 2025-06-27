@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Nivel3</name>
     <events>
+        <variable comment="UID de la gema chocada" constant="0" name="GemaSeleccionadaUID" sid="435165354139991" static="0" type="number">0</variable>
         <variable comment="Contador de gemas rojas" constant="0" name="RedGemsCount" sid="462794560276677" static="0" type="number">0</variable>
         <variable comment="Contador de gemas verdes" constant="0" name="GreenGemsCount" sid="216400122679484" static="0" type="number">0</variable>
         <event-group description="" sid="578029288323182" title="Start Of Layout3">
@@ -47,6 +48,14 @@
                         <action id="-3" name="Set position" sid="271751580340044" type="TextoTiempoRestante">
                             <param id="0" name="X">ViewportLeft(&quot;Foreground&quot;) + 45</param>
                             <param id="1" name="Y">ViewportTop(&quot;Foreground&quot;) + 27</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="639990030232152" type="Reff_PJ">
+                            <param id="0" name="Width">35</param>
+                            <param id="1" name="Height">45</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="767901621144528" type="System">
+                            <param id="0" name="Layer">8</param>
+                            <param id="1" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -182,7 +191,7 @@
                             <param id="0" name="Instance variable">Inmune</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                        <action id="-12" name="Subtract from" sid="418815332198968" type="Reff_PJ">
+                        <action disabled="1" id="-12" name="Subtract from" sid="418815332198968" type="Reff_PJ">
                             <param id="0" name="Instance variable">Vidas</param>
                             <param id="1" name="Value">1</param>
                         </action>
@@ -215,7 +224,7 @@
                             <param id="0" name="Instance variable">Inmune</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                        <action id="-12" name="Subtract from" sid="912451869059972" type="Reff_PJ">
+                        <action disabled="1" id="-12" name="Subtract from" sid="912451869059972" type="Reff_PJ">
                             <param id="0" name="Instance variable">Vidas</param>
                             <param id="1" name="Value">1</param>
                         </action>
@@ -253,6 +262,7 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <variable comment="Tipo de gema" constant="0" name="TipoGemaSeleccionada" sid="756212325444124" static="0" type="number">0</variable>
         <event-group description="" sid="575994201907566" title="Lvl3Gems">
             <sub-events>
                 <event-block sid="267297601146165">
@@ -262,13 +272,23 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="426389324909110" type="RedGem" />
-                        <action id="-10" name="Add to" sid="898884874180567" type="System">
-                            <param id="0" name="Variable">RedGemsCount</param>
-                            <param id="1" name="Value">1</param>
+                        <action id="-4" name="Set layer visible" sid="143468575534074" type="System">
+                            <param id="0" name="Layer">8</param>
+                            <param id="1" name="Visibility">1</param>
                         </action>
-                        <action id="0" name="Set text" sid="365024568932654" type="TextoGemaRoja">
-                            <param id="0" name="Text">RedGemsCount</param>
+                        <action id="-13" name="Set time scale" sid="984317910271750" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="695487420394319" type="System">
+                            <param id="0" name="Variable">GemaSeleccionadaUID</param>
+                            <param id="1" name="Value">RedGem.UID</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="521900165026050" type="System">
+                            <param id="0" name="Variable">TipoGemaSeleccionada</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="791608722436698" type="debug">
+                            <param id="0" name="Text">TipoGemaSeleccionada</param>
                         </action>
                     </actions>
                 </event-block>
@@ -279,15 +299,203 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="357630712227077" type="GreenGem" />
-                        <action id="-10" name="Add to" sid="621294969101661" type="System">
-                            <param id="0" name="Variable">GreenGemsCount</param>
+                        <action id="-4" name="Set layer visible" sid="250829554290896" type="System">
+                            <param id="0" name="Layer">8</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="275997628902106" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="807860231816985" type="System">
+                            <param id="0" name="Variable">GemaSeleccionadaUID</param>
+                            <param id="1" name="Value">GreenGem.UID</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="217152897143126" type="System">
+                            <param id="0" name="Variable">TipoGemaSeleccionada</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="0" name="Set text" sid="530140974494191" type="TextoGemaVerde">
-                            <param id="0" name="Text">GreenGemsCount</param>
+                        <action id="0" name="Set text" sid="312009346941197" type="debug">
+                            <param id="0" name="Text">TipoGemaSeleccionada</param>
                         </action>
                     </actions>
+                </event-block>
+                <event-block sid="218167710083715">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="320879269906801" type="ButtonDinamic" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="155112576891814">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="424089490446379" type="System">
+                                    <param id="0" name="Variable">TipoGemaSeleccionada</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="577111421714434">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="742985706481305" type="GreenGem">
+                                            <param id="0" name="Unique ID">GemaSeleccionadaUID</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="579480148242182" type="System">
+                                            <param id="0" name="Variable">GreenGemsCount</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="659192997423696" type="GreenGem" />
+                                        <action id="0" name="Set text" sid="251896189719717" type="TextoGemaRoja">
+                                            <param id="0" name="Text">GreenGemsCount</param>
+                                        </action>
+                                        <action id="-13" name="Set time scale" sid="904134890370438" type="System">
+                                            <param id="0" name="Time scale">1</param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="882148009679891" type="System">
+                                            <param id="0" name="Layer">8</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="509070060581738">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="740784879359151" type="System">
+                                    <param id="0" name="Variable">TipoGemaSeleccionada</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="907299948704795">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="423172141366574" type="RedGem">
+                                            <param id="0" name="Unique ID">GemaSeleccionadaUID</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="719447598969293" type="System">
+                                            <param id="0" name="Variable">RedGemsCount</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="275619303113772" type="RedGem" />
+                                        <action id="0" name="Set text" sid="866433336861282" type="TextoGemaRoja">
+                                            <param id="0" name="Text">RedGemsCount</param>
+                                        </action>
+                                        <action id="-13" name="Set time scale" sid="101869017724659" type="System">
+                                            <param id="0" name="Time scale">1</param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="668822581303506" type="System">
+                                            <param id="0" name="Layer">8</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="219121908573441">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="129783305220372" type="ButtonStatic" />
+                        <condition id="-1" name="Every tick" sid="589148729191490" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="955463026482885">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="389723814225682" type="System">
+                                    <param id="0" name="Variable">TipoGemaSeleccionada</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="742031436748479">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="410838131908311" type="GreenGem">
+                                            <param id="0" name="Unique ID">GemaSeleccionadaUID</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="733630993376034" type="System">
+                                            <param id="0" name="Variable">GreenGemsCount</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="510356325111872" type="GreenGem" />
+                                        <action id="0" name="Set text" sid="344678273262237" type="TextoGemaRoja">
+                                            <param id="0" name="Text">GreenGemsCount</param>
+                                        </action>
+                                        <action id="-13" name="Set time scale" sid="695590351176314" type="System">
+                                            <param id="0" name="Time scale">1</param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="787216512372036" type="System">
+                                            <param id="0" name="Layer">8</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="246768511391995">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="268717406442120" type="System">
+                                    <param id="0" name="Variable">TipoGemaSeleccionada</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="941994002285807">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="241550311843319" type="RedGem">
+                                            <param id="0" name="Unique ID">GemaSeleccionadaUID</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-13" name="Set time scale" sid="500362299208251" type="System">
+                                            <param id="0" name="Time scale">1</param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="182310496329088" type="System">
+                                            <param id="0" name="Layer">8</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="114208806559317" type="RedGem" />
+                                        <action id="-10" name="Set value" sid="998318562935736" type="Reff_PJ">
+                                            <param id="0" name="Instance variable">Inmune</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-12" name="Subtract from" sid="533010479089821" type="Reff_PJ">
+                                            <param id="0" name="Instance variable">Vidas</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="986168353353088" type="Reff_PJ">
+                                            <param id="0" name="Instance variable">Inmune</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action behavior="Flash" id="0" name="Flash" sid="792401490624312" type="Reff_PJ">
+                                            <param id="0" name="&apos;On&apos; time">0.2</param>
+                                            <param id="1" name="&apos;Off&apos; time">0.2</param>
+                                            <param id="2" name="Duration">1.0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="112790103832392" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="555010753654550" type="Reff_PJ">
+                                            <param id="0" name="Instance variable">Inmune</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
