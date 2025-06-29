@@ -57,7 +57,6 @@
                     <param id="0" name="Text">ItemU2.itemText</param>
                 </action>
                 <action id="-24" name="Move to top" sid="871855409386919" type="ItemTextNivel2" />
-                <action id="-24" name="Move to top" sid="289762071786663" type="Spritelvl2" />
             </actions>
         </event-block>
         <event-group description="" sid="127732077820629" title="Time events" />
@@ -113,22 +112,8 @@
                     <param id="0" name="Variable">Liveslvl2</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action id="-13" name="Set boolean" sid="507158112586115" type="Spritelvl2">
-                    <param id="0" name="Instance variable">IsInmune</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="-16" name="Set opacity" sid="327075652343170" type="Spritelvl2">
-                    <param id="0" name="Opacity">50</param>
-                </action>
                 <action id="-16" name="Wait" sid="391003453823492" type="System">
                     <param id="0" name="Seconds">1.5</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="775738974634841" type="Spritelvl2">
-                    <param id="0" name="Instance variable">IsInmune</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-                <action id="-16" name="Set opacity" sid="328738794553689" type="Spritelvl2">
-                    <param id="0" name="Opacity">100</param>
                 </action>
             </actions>
         </event-block>

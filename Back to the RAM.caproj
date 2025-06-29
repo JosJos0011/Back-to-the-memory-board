@@ -1081,39 +1081,6 @@
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\Anthony\Desktop\Cosas nivel 3 proyecto Reff\fondo nivel.png" />
         </object-type>
-        <object-type name="Spritelvl2" sid="429973649624724">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="IsInmune" sid="629392302636021" type="boolean" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="ScrollTo" sid="674688910053680">
-                    <behavior id="scrollto" />
-                </behavior-type>
-                <behavior-type name="Platform" sid="912271149205564">
-                    <behavior id="Platform" />
-                </behavior-type>
-                <behavior-type name="BoundToLayout" sid="345178138836306">
-                    <behavior id="bound" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="810953442360220" speed="5">
-                    <frame duration="1" hotspotX="0.502415" hotspotY="0.5" original-source="C:\Users\Anthony\Desktop\000.png">
-                        <collision-poly>
-                            <point x="0.115942" y="0.0821918" />
-                            <point x="0.497585" y="0.010274" />
-                            <point x="0.884058" y="0.0821918" />
-                            <point x="0.743961" y="0.5" />
-                            <point x="0.78744" y="0.849315" />
-                            <point x="0.497585" y="0.797945" />
-                            <point x="0.275362" y="0.804795" />
-                            <point x="0.42029" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="groundlvl2" sid="859258321417623">
             <plugin id="Sprite" />
             <behaviors>
@@ -1689,7 +1656,7 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.490625" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -3557,6 +3524,9 @@
             <plugin id="Text" />
         </object-type>
         <object-type name="debug" sid="613343852343670">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Texto_MenuPrincipal" sid="920844027489352">
             <plugin id="Text" />
         </object-type>
     </object-folder>

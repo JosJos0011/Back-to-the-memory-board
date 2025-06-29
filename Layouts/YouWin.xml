@@ -51,6 +51,33 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Texto_MenuPrincipal" uid="123">
+                    <properties>
+                        <text>PRESIONA ESPACIO PARA VOLVER AL MENÚ PRINCIPAL</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-64,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>26.724609375</x>
+                        <y>823.792724609</y>
+                        <z>0</z>
+                        <width>1825</width>
+                        <height>222</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>

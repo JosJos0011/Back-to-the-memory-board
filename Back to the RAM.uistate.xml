@@ -11,8 +11,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Main Menu</layout>
-        <layout active="1" order="2">Nivel3</layout>
+        <layout order="2">Nivel3</layout>
         <layout order="4">GameOver</layout>
+        <layout active="1" order="8">YouWin</layout>
         <event-sheet order="1">Eventos InfoDump</event-sheet>
         <event-sheet order="3">Eventos Nivel3</event-sheet>
         <event-sheet order="5">Eventos GameOver</event-sheet>
@@ -70,7 +71,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/battery/" />
         <folder expanded="1" path="animation-folder/PlatformMobileLVL1/" />
         <folder expanded="1" path="animation-folder/trap2lvl2/" />
-        <folder expanded="1" path="animation-folder/Spritelvl2/" />
         <folder expanded="1" path="animation-folder/groundlvl2/" />
         <folder expanded="1" path="animation-folder/platformlvl2/" />
         <folder expanded="1" path="animation-folder/trap1lvl2/" />

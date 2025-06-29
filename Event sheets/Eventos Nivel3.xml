@@ -4,7 +4,7 @@
     <name>Eventos Nivel3</name>
     <events>
         <variable comment="Total de gemas rojas y verdes" constant="0" name="TotalGemas" sid="433147309336360" static="0" type="number">14</variable>
-        <variable comment="% de velocidad (baja 20 por gema verde en dinámico)" constant="0" name="VelocidadJugador" sid="289263645339509" static="0" type="number">100</variable>
+        <variable comment="% de velocidad (baja 20 por gema verde en dinámico)" constant="0" name="VelocidadJugador" sid="289263645339509" static="0" type="number">400</variable>
         <variable comment="Capacidad máxima actual del array dinámico" constant="0" name="DinamicoCapacidad" sid="637019838839456" static="0" type="number">5</variable>
         <variable comment="Contador del array dinámico" constant="0" name="DinamicoCount" sid="308954676027541" static="0" type="number">0</variable>
         <variable comment="Contador del array estático" constant="0" name="EstaticoCount" sid="340118236761316" static="0" type="number">0</variable>
@@ -26,8 +26,8 @@
                             <param id="2" name="X">437</param>
                             <param id="3" name="Y">863</param>
                         </action>
-                        <action id="6" name="Set speed" sid="838278495896732" type="Reff_PJ">
-                            <param id="0" name="Speed">VelocidadJugador</param>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="838278495896732" type="Reff_PJ">
+                            <param id="0" name="Max Speed">VelocidadJugador</param>
                         </action>
                         <action id="-21" name="Reset global variables" sid="343671748855875" type="System" />
                         <action id="0" name="Set text" sid="573093434610075" type="GemasTotales">
@@ -389,6 +389,23 @@
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="198949356349830">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="867031135370661" type="System">
+                                    <param id="0" name="Variable">DinamicoCount</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">DinamicoCapacidad</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="134041584627071" type="System">
+                                    <param id="0" name="Variable">DinamicoCapacidad</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="218167710083715">
                     <conditions>
@@ -430,7 +447,10 @@
                                                 </action>
                                                 <action id="-11" name="Subtract from" sid="134466252373681" type="System">
                                                     <param id="0" name="Variable">VelocidadJugador</param>
-                                                    <param id="1" name="Value">20</param>
+                                                    <param id="1" name="Value">50</param>
+                                                </action>
+                                                <action behavior="Platform" id="1" name="Set max speed" sid="253101923205999" type="Reff_PJ">
+                                                    <param id="0" name="Max Speed">VelocidadJugador</param>
                                                 </action>
                                                 <action id="0" name="Set text" sid="469913998410897" type="VelocidadJugadorLvl3">
                                                     <param id="0" name="Text">&quot;Velocidad del jugador = &quot;&amp;VelocidadJugador&amp;&quot;%&quot;</param>
@@ -464,77 +484,6 @@
                                                     <param id="1" name="Parameter {n}"></param>
                                                 </action>
                                             </actions>
-                                        </event-block>
-                                        <event-block sid="978947971239632">
-                                            <conditions>
-                                                <condition id="-22" name="Else" sid="188157777349067" type="System" />
-                                                <condition id="-14" name="Compare variable" sid="475170783116664" type="System">
-                                                    <param id="0" name="Variable">DinamicoCount</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">DinamicoCapacidad</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-10" name="Add to" sid="912419492800917" type="System">
-                                                    <param id="0" name="Variable">DinamicoCapacidad</param>
-                                                    <param id="1" name="Value">5</param>
-                                                </action>
-                                                <action id="-10" name="Add to" sid="224293159408083" type="System">
-                                                    <param id="0" name="Variable">DinamicoCount</param>
-                                                    <param id="1" name="Value">1</param>
-                                                </action>
-                                            </actions>
-                                            <sub-events>
-                                                <event-block sid="350788030087274">
-                                                    <conditions>
-                                                        <condition id="-14" name="Pick by unique ID" sid="794830254538916" type="GreenGem">
-                                                            <param id="0" name="Unique ID">GemaSeleccionadaUID</param>
-                                                        </condition>
-                                                    </conditions>
-                                                    <actions>
-                                                        <action id="-9" name="Destroy" sid="139229087584996" type="GreenGem" />
-                                                        <action id="-11" name="Subtract from" sid="569834649591784" type="System">
-                                                            <param id="0" name="Variable">VelocidadJugador</param>
-                                                            <param id="1" name="Value">20</param>
-                                                        </action>
-                                                        <action id="0" name="Set text" sid="873508361757489" type="VelocidadJugadorLvl3">
-                                                            <param id="0" name="Text">&quot;Velocidad del jugador = &quot;&amp;VelocidadJugador&amp;&quot;%&quot;</param>
-                                                        </action>
-                                                        <action id="-11" name="Subtract from" sid="697329048995894" type="System">
-                                                            <param id="0" name="Variable">VelocidadJugador</param>
-                                                            <param id="1" name="Value">5</param>
-                                                        </action>
-                                                        <action id="-11" name="Subtract from" sid="502928502310307" type="System">
-                                                            <param id="0" name="Variable">TotalGemas</param>
-                                                            <param id="1" name="Value">1</param>
-                                                        </action>
-                                                        <action id="0" name="Set text" sid="309355419316250" type="GemasTotales">
-                                                            <param id="0" name="Text">&quot;Gemas Totales = &quot;&amp;TotalGemas</param>
-                                                        </action>
-                                                        <action id="-10" name="Add to" sid="771010021766176" type="System">
-                                                            <param id="0" name="Variable">GreenGemsCount</param>
-                                                            <param id="1" name="Value">1</param>
-                                                        </action>
-                                                        <action id="0" name="Set text" sid="958180215664342" type="TextoGemaVerde">
-                                                            <param id="0" name="Text">GreenGemsCount</param>
-                                                        </action>
-                                                        <action id="0" name="Set text" sid="173829860604605" type="ArrayDinámico">
-                                                            <param id="0" name="Text">&quot;Capacidad del Array Dinámico = &quot;&amp;DinamicoCount&amp;&quot;/&quot;&amp;DinamicoCapacidad</param>
-                                                        </action>
-                                                        <action id="-13" name="Set time scale" sid="107482399177463" type="System">
-                                                            <param id="0" name="Time scale">1</param>
-                                                        </action>
-                                                        <action id="-4" name="Set layer visible" sid="396956120750172" type="System">
-                                                            <param id="0" name="Layer">8</param>
-                                                            <param id="1" name="Visibility">0</param>
-                                                        </action>
-                                                        <action id="0" name="Call function" sid="995341442791291" type="Function">
-                                                            <param id="0" name="Name">&quot;VerificarFinDelNivel&quot;</param>
-                                                            <param id="1" name="Parameter {n}"></param>
-                                                        </action>
-                                                    </actions>
-                                                </event-block>
-                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>
@@ -669,7 +618,10 @@
                                                 </action>
                                                 <action id="-10" name="Add to" sid="645663779803025" type="System">
                                                     <param id="0" name="Variable">VelocidadJugador</param>
-                                                    <param id="1" name="Value">5</param>
+                                                    <param id="1" name="Value">25</param>
+                                                </action>
+                                                <action behavior="Platform" id="1" name="Set max speed" sid="533768313832251" type="Reff_PJ">
+                                                    <param id="0" name="Max Speed">VelocidadJugador</param>
                                                 </action>
                                                 <action id="0" name="Set text" sid="991746744623047" type="ArrayEstático">
                                                     <param id="0" name="Text">&quot;Capacidad del Array Estático = &quot;&amp;EstaticoCount&amp;&quot;/5&quot;</param>
@@ -853,11 +805,11 @@
                             <param id="0" name="Time scale">0</param>
                         </action>
                         <action id="0" name="Set text" sid="144166926161278" type="HintText">
-                            <param id="0" name="Text">&quot;En Java, el Array estático es eficiente y rápido, pero tiene un tamaño fijo y solo almacena un tipo de dato (por eso solo acepta gemas azules en este nivel). El ArrayList es dinámico y puede crecer, acepta cualquier tipo de objeto, pero expandirlo consume más memoria y hace tu programa menos eficiente.&#x0D;&#x0A;&#x0D;&#x0A;Guardar una gema azul en el Array estático es siempre la opción más rápida.&quot;</param>
+                            <param id="0" name="Text">&quot;En Java, el Array estático es eficiente y rápido, pero tiene un tamaño fijo y solo almacena un tipo de dato (por eso solo acepta gemas azules en este nivel). El ArrayList es dinámico y puede crecer, acepta cualquier tipo de objeto, pero expandirlo consume más memoria y hace tu programa menos eficiente.&#x0D;&#x0A;&#x0D;&#x0A;Guardar una gema azul en el Array estático es siempre la opción más rápida.&#x0D;&#x0A;&#x0D;&#x0A;!Ten cuidado, entre menos velocidad tengas, más difícil se volverá saltar!&quot;</param>
                         </action>
                         <action id="-3" name="Set position" sid="422421835230518" type="HintText">
-                            <param id="0" name="X">ViewportLeft(&quot;PopUp&quot;) + 320</param>
-                            <param id="1" name="Y">ViewportTop(&quot;PopUp&quot;) + 350</param>
+                            <param id="0" name="X">ViewportLeft(&quot;PopUp&quot;) + 540</param>
+                            <param id="1" name="Y">ViewportTop(&quot;PopUp&quot;) + 420</param>
                         </action>
                         <action id="-15" name="Set visible" sid="487647535937612" type="HintText">
                             <param id="0" name="Visibility">1</param>
