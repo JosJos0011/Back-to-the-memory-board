@@ -450,18 +450,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="285615211149065" speed="5">
-                    <frame duration="1" hotspotX="0.475275" hotspotY="0.410714" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\platform.png">
-                        <collision-poly>
-                            <point x="0.421703" y="0.0625" />
-                            <point x="0.475275" y="0.107143" />
-                            <point x="0.535714" y="0.0178571" />
-                            <point x="0.98489" y="0.410714" />
-                            <point x="0.546703" y="0.875" />
-                            <point x="0.475275" y="0.901786" />
-                            <point x="0.401099" y="0.892857" />
-                            <point x="0.00549451" y="0.410714" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.475275" hotspotY="0.410714" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\platform.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -3504,9 +3493,6 @@
         <object-type name="ButtonDinamic" sid="393347565240856">
             <plugin id="Button" />
         </object-type>
-        <object-type name="debug" sid="953520912464145">
-            <plugin id="Text" />
-        </object-type>
         <object-type name="Function" sid="407329567959026">
             <plugin id="Function" />
         </object-type>
@@ -3563,6 +3549,9 @@
             </animation-folder>
         </object-type>
         <object-type name="GemasTotales" sid="242760375024987">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="debug" sid="613343852343670">
             <plugin id="Text" />
         </object-type>
     </object-folder>
