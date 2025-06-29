@@ -991,7 +991,7 @@
             <sub-events>
                 <event-block sid="488547048587355">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="904010819658796" type="Spritelvl2">
+                        <condition id="0" name="On collision with another object" sid="904010819658796" type="Reff_PJ">
                             <param id="0" name="Object">key</param>
                         </condition>
                     </conditions>

@@ -3,6 +3,18 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EventoYouWin</name>
     <events>
+        <event-group description="" sid="396713025733546" title="Start Of You Win Layout">
+            <sub-events>
+                <event-block sid="238084282604165">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="610065719338882" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="370154915192787" type="Audio" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" sid="653815776439363" title="Events2">
             <sub-events>
                 <event-block any="1" sid="604792692908824">
