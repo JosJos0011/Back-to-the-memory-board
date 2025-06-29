@@ -641,6 +641,9 @@
                                             <param id="0" name="Variable">TotalGemas</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
+                                        <action id="0" name="Set text" sid="933108999022757" type="GemasTotales">
+                                            <param id="0" name="Text">&quot;Gemas Totales = &quot;&amp;TotalGemas</param>
+                                        </action>
                                         <action id="0" name="Set text" sid="521870420985483" type="TextoGemaVerde">
                                             <param id="0" name="Text">GreenGemsCount</param>
                                         </action>
@@ -745,6 +748,13 @@
                                     <param id="0" name="Variable">TotalGemas</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
+                                <action id="0" name="Set text" sid="344679094720461" type="GemasTotales">
+                                    <param id="0" name="Text">&quot;Gemas Totales = &quot;&amp;TotalGemas</param>
+                                </action>
+                                <action id="0" name="Call function" sid="747265484100163" type="Function">
+                                    <param id="0" name="Name">&quot;VerificarFinDelNivel&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -790,6 +800,9 @@
                                         <action id="-11" name="Subtract from" sid="926775990220281" type="System">
                                             <param id="0" name="Variable">TotalGemas</param>
                                             <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="415865878165350" type="GemasTotales">
+                                            <param id="0" name="Text">&quot;Gemas Totales = &quot;&amp;TotalGemas</param>
                                         </action>
                                         <action id="-10" name="Add to" sid="136131370952214" type="System">
                                             <param id="0" name="Variable">GreenGemsCount</param>
@@ -850,6 +863,9 @@
                                             <param id="0" name="Variable">TotalGemas</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
+                                        <action id="0" name="Set text" sid="201407404986095" type="GemasTotales">
+                                            <param id="0" name="Text">&quot;Gemas Totales = &quot;&amp;TotalGemas</param>
+                                        </action>
                                         <action id="0" name="Set text" sid="293956266366818" type="TextoGemaVerde">
                                             <param id="0" name="Text">GreenGemsCount</param>
                                         </action>
@@ -908,6 +924,9 @@
                                     <param id="0" name="Variable">TotalGemas</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
+                                <action id="0" name="Set text" sid="668128882097479" type="GemasTotales">
+                                    <param id="0" name="Text">&quot;Gemas Totales = &quot;&amp;TotalGemas</param>
+                                </action>
                                 <action id="-10" name="Add to" sid="896258437858785" type="System">
                                     <param id="0" name="Variable">RedGemsCount</param>
                                     <param id="1" name="Value">1</param>
@@ -953,6 +972,9 @@
                                         <action id="-11" name="Subtract from" sid="607889201729719" type="System">
                                             <param id="0" name="Variable">TotalGemas</param>
                                             <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="687202431906250" type="GemasTotales">
+                                            <param id="0" name="Text">&quot;Gemas Totales = &quot;&amp;TotalGemas</param>
                                         </action>
                                         <action id="-10" name="Add to" sid="373296299111770" type="System">
                                             <param id="0" name="Variable">RedGemsCount</param>
@@ -1009,6 +1031,21 @@
                             </actions>
                         </event-block>
                     </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Mecánica de llave" sid="182926986937413" title="KeyMechanic">
+            <sub-events>
+                <event-block sid="488547048587355">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="904010819658796" type="Spritelvl2">
+                            <param id="0" name="Object">key</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="851070278268294" type="key" />
+                        <action id="-9" name="Destroy" sid="822730649568522" type="LockSprite" />
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
