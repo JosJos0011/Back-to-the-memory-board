@@ -3526,8 +3526,20 @@
         <object-type name="debug" sid="953520912464145">
             <plugin id="Text" />
         </object-type>
-        <object-type name="AgregarADinamicoVerde" sid="407329567959026">
+        <object-type name="Function" sid="407329567959026">
             <plugin id="Function" />
+        </object-type>
+        <object-type name="ArrayEstáticoLleno" sid="539006107926256">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="VelocidadJugadorLvl3" sid="748070572295935">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ArrayEstático" sid="297863674074449">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ArrayDinámico" sid="766046259705701">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families>
@@ -3600,7 +3612,7 @@
             </properties>
         </global-instance>
         <global-instance type="Browser" uid="211" />
-        <global-instance type="AgregarADinamicoVerde" uid="351" />
+        <global-instance type="Function" uid="351" />
     </global-instances>
     <sounds-folder />
     <music-folder>

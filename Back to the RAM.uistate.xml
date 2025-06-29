@@ -11,13 +11,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Main Menu</layout>
-        <layout order="2">Nivel3</layout>
-        <layout order="4">YouWin</layout>
-        <layout order="5">Nivel1</layout>
-        <event-sheet active="1" order="1">Eventos InfoDump</event-sheet>
+        <layout active="1" order="2">Nivel3</layout>
+        <event-sheet order="1">Eventos InfoDump</event-sheet>
         <event-sheet order="3">Eventos Nivel3</event-sheet>
-        <event-sheet order="6">Eventos Nivel1</event-sheet>
-        <event-sheet order="7">Eventos Main Menu</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
