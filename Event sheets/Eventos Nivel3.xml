@@ -430,7 +430,7 @@
                                                 </action>
                                                 <action id="-11" name="Subtract from" sid="134466252373681" type="System">
                                                     <param id="0" name="Variable">VelocidadJugador</param>
-                                                    <param id="1" name="Value">10</param>
+                                                    <param id="1" name="Value">20</param>
                                                 </action>
                                                 <action id="0" name="Set text" sid="469913998410897" type="VelocidadJugadorLvl3">
                                                     <param id="0" name="Text">&quot;Velocidad del jugador = &quot;&amp;VelocidadJugador&amp;&quot;%&quot;</param>
@@ -495,7 +495,7 @@
                                                         <action id="-9" name="Destroy" sid="139229087584996" type="GreenGem" />
                                                         <action id="-11" name="Subtract from" sid="569834649591784" type="System">
                                                             <param id="0" name="Variable">VelocidadJugador</param>
-                                                            <param id="1" name="Value">10</param>
+                                                            <param id="1" name="Value">20</param>
                                                         </action>
                                                         <action id="0" name="Set text" sid="873508361757489" type="VelocidadJugadorLvl3">
                                                             <param id="0" name="Text">&quot;Velocidad del jugador = &quot;&amp;VelocidadJugador&amp;&quot;%&quot;</param>

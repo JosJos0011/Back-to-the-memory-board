@@ -1146,8 +1146,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>390</x>
-                        <y>1001</y>
+                        <x>367</x>
+                        <y>1011</y>
                         <z>0</z>
                         <width>22</width>
                         <height>22</height>
@@ -1362,14 +1362,21 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>390.099395752</x>
-                        <y>991.176391602</y>
+                        <x>410.5</x>
+                        <y>989</y>
                         <z>0</z>
-                        <width>64</width>
-                        <height>64</height>
+                        <width>135</width>
+                        <height>119</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
