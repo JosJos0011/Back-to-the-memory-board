@@ -200,7 +200,7 @@
                             <param id="0" name="Instance variable">Inmune</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                        <action disabled="1" id="-12" name="Subtract from" sid="418815332198968" type="Reff_PJ">
+                        <action id="-12" name="Subtract from" sid="418815332198968" type="Reff_PJ">
                             <param id="0" name="Instance variable">Vidas</param>
                             <param id="1" name="Value">1</param>
                         </action>
@@ -233,7 +233,7 @@
                             <param id="0" name="Instance variable">Inmune</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                        <action disabled="1" id="-12" name="Subtract from" sid="912451869059972" type="Reff_PJ">
+                        <action id="-12" name="Subtract from" sid="912451869059972" type="Reff_PJ">
                             <param id="0" name="Instance variable">Vidas</param>
                             <param id="1" name="Value">1</param>
                         </action>
@@ -430,60 +430,6 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="472013001860563">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="529141569797540" type="System">
-                            <param id="0" name="Variable">Temporizador</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">120</param>
-                        </condition>
-                        <condition id="-4" name="Trigger once while true" sid="815289866230826" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="6" name="Set speed" sid="156059650664903" type="Reff_PJ">
-                            <param id="0" name="Speed">Reff_PJ.Platform.MaxSpeed*1.25</param>
-                        </action>
-                        <action id="0" name="Set text" sid="583605240087422" type="TextoPoder">
-                            <param id="0" name="Text">&quot;¡Permiso otorgado! Prioridad de procesamiento: velocidad +25%&quot;</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="348747548228686" type="TextoPoder">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="164032206207005" type="System">
-                            <param id="0" name="Seconds">3.5</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="135617972719111" type="TextoPoder">
-                            <param id="0" name="Visibility">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="938397770627413">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="499040873726909" type="System">
-                            <param id="0" name="Variable">Temporizador</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">60</param>
-                        </condition>
-                        <condition id="-4" name="Trigger once while true" sid="328849641840576" type="System" />
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" id="13" name="Set double-jump" sid="169087592264996" type="Reff_PJ">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action id="0" name="Set text" sid="809329325673833" type="TextoPoder">
-                            <param id="0" name="Text">&quot;Permiso &apos;Salto en cascada&apos; activado: ahora puedes hacer doble salto&quot;</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="318912772312693" type="TextoPoder">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="152085271364374" type="System">
-                            <param id="0" name="Seconds">3.5</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="134261806754309" type="TextoPoder">
-                            <param id="0" name="Visibility">0</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="415187373229896">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="775322366583870" type="System">
@@ -524,7 +470,7 @@
                             <param id="0" name="Time scale">0</param>
                         </action>
                         <action id="0" name="Set text" sid="144166926161278" type="HintText">
-                            <param id="0" name="Text">&quot;En Java, el Array estático es eficiente y rápido, pero tiene un tamaño fijo y solo almacena un tipo de dato (por eso solo acepta gemas azules en este nivel). El ArrayList es dinámico y puede crecer, acepta cualquier tipo de objeto, pero expandirlo consume más memoria y hace tu programa menos eficiente.&#x0D;&#x0A;&#x0D;&#x0A;Debido a esto, en este nivel:&#x0D;&#x0A;&#x0D;&#x0A;Guardar una gema azul en el Array estático es siempre la opción más rápida.&#x0D;&#x0A;&#x0D;&#x0A;Usar el ArrayList antes de llenar el Array baja tu velocidad.&#x0D;&#x0A;&#x0D;&#x0A;Si el ArrayList se expande, perderás aún más velocidad y el juego se pausará.&#x0D;&#x0A;&#x0D;&#x0A;Llena primero el Array estático para recibir un bonus y moverte más rápido.&quot;</param>
+                            <param id="0" name="Text">&quot;En Java, el Array estático es eficiente y rápido, pero tiene un tamaño fijo y solo almacena un tipo de dato (por eso solo acepta gemas azules en este nivel). El ArrayList es dinámico y puede crecer, acepta cualquier tipo de objeto, pero expandirlo consume más memoria y hace tu programa menos eficiente.&#x0D;&#x0A;&#x0D;&#x0A;Guardar una gema azul en el Array estático es siempre la opción más rápida.&quot;</param>
                         </action>
                         <action id="-3" name="Set position" sid="422421835230518" type="HintText">
                             <param id="0" name="X">ViewportLeft(&quot;PopUp&quot;) + 320</param>

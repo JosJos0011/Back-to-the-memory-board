@@ -105,5 +105,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/trophy/" />
         <folder expanded="1" path="animation-folder/congratulations13773_/" />
         <folder expanded="1" path="animation-folder/Fonfo/" />
+        <folder expanded="1" path="animation-folder/WindowLvl3/" />
     </folders-expanded>
 </c2uistate>
