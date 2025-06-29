@@ -859,6 +859,10 @@
                                             <param id="0" name="Variable">DinamicoCapacidad</param>
                                             <param id="1" name="Value">5</param>
                                         </action>
+                                        <action id="-11" name="Subtract from" sid="885882656390459" type="System">
+                                            <param id="0" name="Variable">VelocidadJugador</param>
+                                            <param id="1" name="Value">5</param>
+                                        </action>
                                         <action id="-11" name="Subtract from" sid="480432496125418" type="System">
                                             <param id="0" name="Variable">TotalGemas</param>
                                             <param id="1" name="Value">1</param>
@@ -982,6 +986,10 @@
                                         </action>
                                         <action id="-10" name="Add to" sid="887832256678333" type="System">
                                             <param id="0" name="Variable">DinamicoCapacidad</param>
+                                            <param id="1" name="Value">5</param>
+                                        </action>
+                                        <action id="-11" name="Subtract from" sid="977069038406331" type="System">
+                                            <param id="0" name="Variable">VelocidadJugador</param>
                                             <param id="1" name="Value">5</param>
                                         </action>
                                         <action id="0" name="Set text" sid="692558751745836" type="TextoGemaRoja">
