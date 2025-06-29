@@ -215,7 +215,7 @@
                             <param id="0" name="Instance variable">Inmune</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                        <action id="-12" name="Subtract from" sid="954631696274115" type="Reff_PJ">
+                        <action disabled="1" id="-12" name="Subtract from" sid="954631696274115" type="Reff_PJ">
                             <param id="0" name="Instance variable">Vidas</param>
                             <param id="1" name="Value">1</param>
                         </action>
@@ -252,7 +252,7 @@
                             <param id="0" name="Instance variable">Inmune</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                        <action id="-12" name="Subtract from" sid="418815332198968" type="Reff_PJ">
+                        <action disabled="1" id="-12" name="Subtract from" sid="418815332198968" type="Reff_PJ">
                             <param id="0" name="Instance variable">Vidas</param>
                             <param id="1" name="Value">1</param>
                         </action>
@@ -285,7 +285,7 @@
                             <param id="0" name="Instance variable">Inmune</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                        <action id="-12" name="Subtract from" sid="912451869059972" type="Reff_PJ">
+                        <action disabled="1" id="-12" name="Subtract from" sid="912451869059972" type="Reff_PJ">
                             <param id="0" name="Instance variable">Vidas</param>
                             <param id="1" name="Value">1</param>
                         </action>
@@ -348,6 +348,23 @@
                             <param id="1" name="Value">0</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="556149987386099">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="228217792946824" type="System">
+                                    <param id="0" name="Variable">DinamicoCount</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">DinamicoCapacidad</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="223506039620362" type="System">
+                                    <param id="0" name="Variable">DinamicoCapacidad</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="917852123390516">
                     <conditions>
@@ -397,12 +414,7 @@
                                             <param id="2" name="Value">DinamicoCapacidad</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="-10" name="Add to" sid="255011434708030" type="System">
-                                            <param id="0" name="Variable">DinamicoCount</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
                                     <sub-events>
                                         <event-block sid="369367449087547">
                                             <conditions>
@@ -412,6 +424,10 @@
                                             </conditions>
                                             <actions>
                                                 <action id="-9" name="Destroy" sid="821156494359301" type="GreenGem" />
+                                                <action id="-10" name="Add to" sid="255011434708030" type="System">
+                                                    <param id="0" name="Variable">DinamicoCount</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
                                                 <action id="-11" name="Subtract from" sid="134466252373681" type="System">
                                                     <param id="0" name="Variable">VelocidadJugador</param>
                                                     <param id="1" name="Value">10</param>
@@ -452,8 +468,17 @@
                                         <event-block sid="978947971239632">
                                             <conditions>
                                                 <condition id="-22" name="Else" sid="188157777349067" type="System" />
+                                                <condition id="-14" name="Compare variable" sid="475170783116664" type="System">
+                                                    <param id="0" name="Variable">DinamicoCount</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">DinamicoCapacidad</param>
+                                                </condition>
                                             </conditions>
                                             <actions>
+                                                <action id="-10" name="Add to" sid="912419492800917" type="System">
+                                                    <param id="0" name="Variable">DinamicoCapacidad</param>
+                                                    <param id="1" name="Value">5</param>
+                                                </action>
                                                 <action id="-10" name="Add to" sid="224293159408083" type="System">
                                                     <param id="0" name="Variable">DinamicoCount</param>
                                                     <param id="1" name="Value">1</param>
@@ -474,10 +499,6 @@
                                                         </action>
                                                         <action id="0" name="Set text" sid="873508361757489" type="VelocidadJugadorLvl3">
                                                             <param id="0" name="Text">&quot;Velocidad del jugador = &quot;&amp;VelocidadJugador&amp;&quot;%&quot;</param>
-                                                        </action>
-                                                        <action id="-10" name="Add to" sid="912419492800917" type="System">
-                                                            <param id="0" name="Variable">DinamicoCapacidad</param>
-                                                            <param id="1" name="Value">5</param>
                                                         </action>
                                                         <action id="-11" name="Subtract from" sid="697329048995894" type="System">
                                                             <param id="0" name="Variable">VelocidadJugador</param>
@@ -537,12 +558,7 @@
                                             <param id="2" name="Value">DinamicoCapacidad</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="-10" name="Add to" sid="939380992002626" type="System">
-                                            <param id="0" name="Variable">DinamicoCount</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
                                     <sub-events>
                                         <event-block sid="269863617222153">
                                             <conditions>
@@ -552,6 +568,10 @@
                                             </conditions>
                                             <actions>
                                                 <action id="-9" name="Destroy" sid="799038018482485" type="RedGem" />
+                                                <action id="-10" name="Add to" sid="939380992002626" type="System">
+                                                    <param id="0" name="Variable">DinamicoCount</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
                                                 <action id="-11" name="Subtract from" sid="412722783998499" type="System">
                                                     <param id="0" name="Variable">TotalGemas</param>
                                                     <param id="1" name="Value">1</param>
@@ -581,65 +601,6 @@
                                                     <param id="1" name="Parameter {n}"></param>
                                                 </action>
                                             </actions>
-                                        </event-block>
-                                        <event-block sid="495172542754781">
-                                            <conditions>
-                                                <condition id="-22" name="Else" sid="151716659126038" type="System" />
-                                            </conditions>
-                                            <actions>
-                                                <action id="-10" name="Add to" sid="624821888872043" type="System">
-                                                    <param id="0" name="Variable">DinamicoCount</param>
-                                                    <param id="1" name="Value">1</param>
-                                                </action>
-                                            </actions>
-                                            <sub-events>
-                                                <event-block sid="545303919506792">
-                                                    <conditions>
-                                                        <condition id="-14" name="Pick by unique ID" sid="905940610838148" type="RedGem">
-                                                            <param id="0" name="Unique ID">GemaSeleccionadaUID</param>
-                                                        </condition>
-                                                    </conditions>
-                                                    <actions>
-                                                        <action id="-9" name="Destroy" sid="222790145670365" type="RedGem" />
-                                                        <action id="-11" name="Subtract from" sid="337719789079210" type="System">
-                                                            <param id="0" name="Variable">TotalGemas</param>
-                                                            <param id="1" name="Value">1</param>
-                                                        </action>
-                                                        <action id="0" name="Set text" sid="576361367749445" type="GemasTotales">
-                                                            <param id="0" name="Text">&quot;Gemas Totales = &quot;&amp;TotalGemas</param>
-                                                        </action>
-                                                        <action id="-10" name="Add to" sid="831853587170640" type="System">
-                                                            <param id="0" name="Variable">RedGemsCount</param>
-                                                            <param id="1" name="Value">1</param>
-                                                        </action>
-                                                        <action id="0" name="Set text" sid="324656120784152" type="TextoGemaRoja">
-                                                            <param id="0" name="Text">RedGemsCount</param>
-                                                        </action>
-                                                        <action id="-10" name="Add to" sid="603754285528652" type="System">
-                                                            <param id="0" name="Variable">DinamicoCapacidad</param>
-                                                            <param id="1" name="Value">5</param>
-                                                        </action>
-                                                        <action id="-11" name="Subtract from" sid="297704972029646" type="System">
-                                                            <param id="0" name="Variable">VelocidadJugador</param>
-                                                            <param id="1" name="Value">5</param>
-                                                        </action>
-                                                        <action id="0" name="Set text" sid="133034440714704" type="ArrayDinámico">
-                                                            <param id="0" name="Text">&quot;Capacidad del Array Dinámico = &quot;&amp;DinamicoCount&amp;&quot;/&quot;&amp;DinamicoCapacidad</param>
-                                                        </action>
-                                                        <action id="-13" name="Set time scale" sid="983794769296708" type="System">
-                                                            <param id="0" name="Time scale">1</param>
-                                                        </action>
-                                                        <action id="-4" name="Set layer visible" sid="534973354336337" type="System">
-                                                            <param id="0" name="Layer">8</param>
-                                                            <param id="1" name="Visibility">0</param>
-                                                        </action>
-                                                        <action id="0" name="Call function" sid="470891269204772" type="Function">
-                                                            <param id="0" name="Name">&quot;VerificarFinDelNivel&quot;</param>
-                                                            <param id="1" name="Parameter {n}"></param>
-                                                        </action>
-                                                    </actions>
-                                                </event-block>
-                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>
@@ -671,12 +632,7 @@
                                             <param id="2" name="Value">5</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="-10" name="Add to" sid="592872956168551" type="System">
-                                            <param id="0" name="Variable">EstaticoCount</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
                                     <sub-events>
                                         <event-block sid="252349196637719">
                                             <conditions>
@@ -686,6 +642,10 @@
                                             </conditions>
                                             <actions>
                                                 <action id="-9" name="Destroy" sid="668799604734417" type="GreenGem" />
+                                                <action id="-10" name="Add to" sid="592872956168551" type="System">
+                                                    <param id="0" name="Variable">EstaticoCount</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
                                                 <action id="-11" name="Subtract from" sid="914159768575692" type="System">
                                                     <param id="0" name="Variable">TotalGemas</param>
                                                     <param id="1" name="Value">1</param>
@@ -725,11 +685,19 @@
                                         </event-block>
                                         <event-block sid="240290415854134">
                                             <conditions>
-                                                <condition id="-22" name="Else" sid="806320936384363" type="System" />
+                                                <condition id="-14" name="Compare variable" sid="498492966726393" type="System">
+                                                    <param id="0" name="Variable">EstaticoCount</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">5</param>
+                                                </condition>
                                             </conditions>
                                             <actions>
                                                 <action id="-15" name="Set visible" sid="365620270909334" type="ArrayEstáticoLleno">
                                                     <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action id="-4" name="Set layer visible" sid="304911940961510" type="System">
+                                                    <param id="0" name="Layer">8</param>
+                                                    <param id="1" name="Visibility">0</param>
                                                 </action>
                                                 <action id="-16" name="Wait" sid="703659298879763" type="System">
                                                     <param id="0" name="Seconds">3.0</param>
@@ -739,10 +707,6 @@
                                                 </action>
                                                 <action id="-13" name="Set time scale" sid="204188696070958" type="System">
                                                     <param id="0" name="Time scale">1</param>
-                                                </action>
-                                                <action id="-4" name="Set layer visible" sid="304911940961510" type="System">
-                                                    <param id="0" name="Layer">8</param>
-                                                    <param id="1" name="Visibility">0</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1010,10 +974,10 @@
                     </conditions>
                     <actions>
                         <action behavior="Platform" id="9" name="Set vector Y" sid="983130260453096" type="Reff_PJ">
-                            <param id="0" name="Vector Y">-800</param>
+                            <param id="0" name="Vector Y">-400</param>
                         </action>
                         <action behavior="Platform" id="8" name="Set vector X" sid="192270774988856" type="Reff_PJ">
-                            <param id="0" name="Vector X">-400</param>
+                            <param id="0" name="Vector X">-200</param>
                         </action>
                         <action id="-10" name="Set value" sid="741409017040595" type="Reff_PJ">
                             <param id="0" name="Instance variable">EnPared</param>

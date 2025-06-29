@@ -3531,6 +3531,11 @@
         </object-type>
         <object-type name="key" sid="591719490129542">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="593272159986592">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="661075058785637" speed="5">
                     <frame duration="1" hotspotX="0.511111" hotspotY="0.511111" original-source="D:\OneDriveUCR\OneDrive - Universidad de Costa Rica\Universidad\Sexto año\Primer Semestre\Multimedios\Proyectos\Juego\platformer-assets\Platformer\Abstract Platformer\PNG\extra\key.png">
