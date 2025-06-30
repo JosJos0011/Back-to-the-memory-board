@@ -461,7 +461,7 @@
                                     <param id="3" name="Y">0</param>
                                 </action>
                                 <action id="0" name="Set text" sid="568671045608982" type="Texto_InfoDump">
-                                    <param id="0" name="Text">&quot;bla bla bla &quot;</param>
+                                    <param id="0" name="Text">&quot;Usar los tipos de datos correctos en Java es fundamental para garantizar eficiencia, seguridad y claridad en el código. Al asignar el tipo adecuado a cada atributo, se optimiza el uso de memoria, se previenen errores en tiempo de compilación y se facilita el mantenimiento del programa. Además, mejora la legibilidad y permite aprovechar al máximo las capacidades del lenguaje.&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -493,7 +493,7 @@
                                             <param id="3" name="Y">0</param>
                                         </action>
                                         <action id="0" name="Set text" sid="162375744838602" type="Texto_InfoDump">
-                                            <param id="0" name="Text">&quot;bla bla bla &#x0D;&#x0A;bla bla bla &quot;</param>
+                                            <param id="0" name="Text">&quot;-¿ Pero porque estoy pensando en asignaciones  y tipos de datos ?  -Pensaba Reff-&#x0D;&#x0A;&#x0D;&#x0A;-Oh, estoy en el laberinto de del missmatch type, que bien...&#x0D;&#x0A;&#x0D;&#x0A;-Vamos a salir de este lugar &#x0D;&#x0A;&quot;</param>
                                         </action>
                                         <action id="-10" name="Add to" sid="117855408107853" type="System">
                                             <param id="0" name="Variable">ShowMessage</param>
@@ -523,7 +523,7 @@
                                             <param id="3" name="Y">0</param>
                                         </action>
                                         <action id="0" name="Set text" sid="598586897005743" type="Texto_InfoDump">
-                                            <param id="0" name="Text">&quot;bla bla bla &#x0D;&#x0A;bla bla bla &#x0D;&#x0A;bla bla bla &#x0D;&#x0A;bla bla bla &quot;</param>
+                                            <param id="0" name="Text">&quot;- Recuerdo que mi abuelo Reffelio mencionó que si algún dia llegaba hasta acá podria salir si podia ubicar las variables asignadas con un tipo correcto.&quot;</param>
                                         </action>
                                         <action id="-10" name="Add to" sid="903309635641787" type="System">
                                             <param id="0" name="Variable">ShowMessage</param>
@@ -553,7 +553,7 @@
                                             <param id="3" name="Y">0</param>
                                         </action>
                                         <action id="0" name="Set text" sid="473860096280262" type="Texto_InfoDump">
-                                            <param id="0" name="Text">&quot;bla bla bla &#x0D;&#x0A;bla bla bla &#x0D;&#x0A;bla bla bla &#x0D;&#x0A;bla bla bla &#x0D;&#x0A;UGH&quot;</param>
+                                            <param id="0" name="Text">&quot;-Pero si me equivoco me voy a descargar y quedar tieso acá para siempre asi que hay que ir seguro&quot;</param>
                                         </action>
                                         <action id="-10" name="Add to" sid="965444273182492" type="System">
                                             <param id="0" name="Variable">ShowMessage</param>
@@ -583,7 +583,7 @@
                                             <param id="3" name="Y">0</param>
                                         </action>
                                         <action id="0" name="Set text" sid="687865600789062" type="Texto_InfoDump">
-                                            <param id="0" name="Text">&quot;bla bla bla &#x0D;&#x0A;UGH IACK BFFFF &#x0D;&#x0A;UGH&quot;</param>
+                                            <param id="0" name="Text">&quot;-Pero bueno, basta de hablar solo y manos a la obra&quot;</param>
                                         </action>
                                         <action id="-10" name="Add to" sid="293506732017812" type="System">
                                             <param id="0" name="Variable">ShowMessage</param>
@@ -613,7 +613,7 @@
                                             <param id="3" name="Y">0</param>
                                         </action>
                                         <action id="0" name="Set text" sid="771967436364632" type="Texto_InfoDump">
-                                            <param id="0" name="Text">&quot;UYAAAAAAAAAAAAAAAAAAAAAAAAA HEEEEEEEE&quot;</param>
+                                            <param id="0" name="Text">&quot;Para ganar el nivel y que Reff se salve se debe recolectar 6 asignaciones correctas.&#x0D;&#x0A;&#x0D;&#x0A;Por cada error Reff sentirá una descarga que daña una de sus baterias, si las cuatro se queman reff se apaga y se pierde el nivel&#x0D;&#x0A;&quot;</param>
                                         </action>
                                         <action id="-10" name="Add to" sid="840798607291350" type="System">
                                             <param id="0" name="Variable">ShowMessage</param>

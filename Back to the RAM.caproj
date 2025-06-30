@@ -276,9 +276,9 @@
                 <animation framecount="1" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="981318508409364" speed="5">
                     <frame duration="1" hotspotX="0.479263" hotspotY="0.51049" />
                 </animation>
-                <animation framecount="2" loop="1" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="470987946297026" speed="5">
-                    <frame duration="1" hotspotX="0.427984" hotspotY="0.48505" />
-                    <frame duration="1" hotspotX="0.390977" hotspotY="0.466454" />
+                <animation framecount="2" loop="1" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="470987946297026" speed="40">
+                    <frame duration="9" hotspotX="0.427984" hotspotY="0.48505" />
+                    <frame duration="8" hotspotX="0.390977" hotspotY="0.466454" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -3528,6 +3528,25 @@
         </object-type>
         <object-type name="Texto_MenuPrincipal" sid="920844027489352">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="correctslvl2" sid="397319494438852">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="check" sid="914035369282369">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="355684831015307" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dogor\Downloads\check.png">
+                        <collision-poly>
+                            <point x="0.4375" y="0.4375" />
+                            <point x="0.5" y="0.375" />
+                            <point x="0.4375" y="0.5" />
+                            <point x="0.5" y="0.4375" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families>
