@@ -207,6 +207,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="654382593252527" type="Audio">
+                            <param id="0" name="Audio file">Correcto</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action id="-10" name="Add to" sid="865838592985976" type="System">
                             <param id="0" name="Variable">Correctslvl2</param>
                             <param id="1" name="Value">1</param>
