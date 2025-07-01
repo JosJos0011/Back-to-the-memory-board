@@ -1018,88 +1018,97 @@
                             <param id="1" name="Click type">0</param>
                             <param id="2" name="Object clicked">hint</param>
                         </condition>
-                        <condition id="-7" name="Compare instance variable" sid="307768682340226" type="hint">
-                            <param id="0" name="Instance variable">Messagge</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
                     </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="201158729372089" type="System">
-                            <param id="0" name="Variable">popUpActivo</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="101888245173907" type="System">
-                            <param id="0" name="Layer">3</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-13" name="Set time scale" sid="842331634335998" type="System">
-                            <param id="0" name="Time scale">0</param>
-                        </action>
-                        <action id="0" name="Set text" sid="395071409336930" type="HintText">
-                            <param id="0" name="Text">&quot;🚫 Hint 1 – El peligro de null&#x0D;&#x0A;&#x0D;&#x0A;En Java, una referencia que no apunta a un objeto válido (es decir, que vale null) puede causar errores graves durante la ejecución del programa.&#x0D;&#x0A;&#x0D;&#x0A;Reff, al ser una referencia viviente, solo puede existir si está conectada a un objeto válido en memoria.&#x0D;&#x0A;&#x0D;&#x0A;Estas zonas verdes corruptas representan áreas de la RAM donde no existe ninguna instancia activa. Son espacios vacíos, inaccesibles... peligrosos.&#x0D;&#x0A;&#x0D;&#x0A;❌ Si Reff entra en una de estas zonas, será destruido inmediatamente y el sistema lanzará un NullPointerException fatal. &quot;</param>
-                        </action>
-                        <action id="-3" name="Set position" sid="321643808406902" type="HintText">
-                            <param id="0" name="X">ViewportLeft(&quot;Foreground&quot;) + 620</param>
-                            <param id="1" name="Y">ViewportTop(&quot;Foreground&quot;) + 360</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="444962160476363" type="HintText">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="3" name="Set volume" sid="562533842428157" type="Audio">
-                            <param id="0" name="Tag">&quot;&quot;</param>
-                            <param id="1" name="dB">-10</param>
-                        </action>
-                        <action id="-11" name="Add to" sid="476159966532936" type="hint">
-                            <param id="0" name="Instance variable">Messagge</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="943468465597875">
-                    <conditions>
-                        <condition id="6" name="On object clicked" sid="973201125222618" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">hint</param>
-                        </condition>
-                        <condition id="-7" name="Compare instance variable" sid="265438523539730" type="hint">
-                            <param id="0" name="Instance variable">Messagge</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="828814739011899" type="System">
-                            <param id="0" name="Variable">popUpActivo</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="238220246689438" type="System">
-                            <param id="0" name="Layer">3</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-13" name="Set time scale" sid="203076632927417" type="System">
-                            <param id="0" name="Time scale">0</param>
-                        </action>
-                        <action id="0" name="Set text" sid="801403513881492" type="HintText">
-                            <param id="0" name="Text">&quot;🔄 Hint 2 – Dos referencias, un solo Reff&#x0D;&#x0A;&#x0D;&#x0A;En Java, copiar una referencia no clona el objeto: solo crea otra flecha que apunta al mismo lugar.  Ejemplo:&#x0D;&#x0A;&#x0D;&#x0A;Reff reff1 = new Reff();&#x0D;&#x0A;Reff reff2 = reff1; &#x0D;&#x0A;&#x0D;&#x0A;Ahora reff1 y reff2 están conectados al mismo Reff viviente.&#x0D;&#x0A;Cualquier cambio que hagas desde reff2 también afecta a reff1, ¡porque no hay dos Reffs, solo dos caminos hacia el mismo!&#x0D;&#x0A;&#x0D;&#x0A;Es importante comprender cuándo compartir una referencia y cuándo crear una nueva instancia. &#x0D;&#x0A;¡Duplicar flechas no duplica al héroe! &quot;</param>
-                        </action>
-                        <action id="-3" name="Set position" sid="468476515879667" type="HintText">
-                            <param id="0" name="X">ViewportLeft(&quot;Foreground&quot;) + 620</param>
-                            <param id="1" name="Y">ViewportTop(&quot;Foreground&quot;) + 360</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="578019348566080" type="HintText">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="3" name="Set volume" sid="745167158377034" type="Audio">
-                            <param id="0" name="Tag">&quot;&quot;</param>
-                            <param id="1" name="dB">-10</param>
-                        </action>
-                        <action id="-11" name="Add to" sid="266622555024298" type="hint">
-                            <param id="0" name="Instance variable">Messagge</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="253846633984106">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="397640345943183" type="hint">
+                                    <param id="0" name="Instance variable">Messagge</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="904134977499306" type="hint">
+                                    <param id="0" name="Instance variable">Messagge</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="423023936893554" type="System">
+                                    <param id="0" name="Variable">popUpActivo</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="890485079259865" type="System">
+                                    <param id="0" name="Layer">3</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-13" name="Set time scale" sid="110007553288259" type="System">
+                                    <param id="0" name="Time scale">0</param>
+                                </action>
+                                <action id="0" name="Set text" sid="340660285133614" type="HintText">
+                                    <param id="0" name="Text">&quot;🚫 Hint 1 – El peligro de null&#x0D;&#x0A;&#x0D;&#x0A;En Java, una referencia que no apunta a un objeto válido (es decir, que vale null) puede causar errores graves durante la ejecución del programa.&#x0D;&#x0A;&#x0D;&#x0A;Reff, al ser una referencia viviente, solo puede existir si está conectada a un objeto válido en memoria.&#x0D;&#x0A;&#x0D;&#x0A;Estas zonas verdes corruptas representan áreas de la RAM donde no existe ninguna instancia activa. Son espacios vacíos, inaccesibles... peligrosos.&#x0D;&#x0A;&#x0D;&#x0A;❌ Si Reff entra en una de estas zonas, será destruido inmediatamente y el sistema lanzará un NullPointerException fatal. &quot;</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="574995807861876" type="HintText">
+                                    <param id="0" name="X">ViewportLeft(&quot;Foreground&quot;) + 620</param>
+                                    <param id="1" name="Y">ViewportTop(&quot;Foreground&quot;) + 360</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="313762210242941" type="HintText">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="3" name="Set volume" sid="349953577749834" type="Audio">
+                                    <param id="0" name="Tag">&quot;&quot;</param>
+                                    <param id="1" name="dB">-10</param>
+                                </action>
+                                <action id="0" name="Set text" sid="348335816869462" type="debug">
+                                    <param id="0" name="Text">hint.Messagge</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="193543514732908">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="673588641388344" type="System" />
+                                <condition id="-7" name="Compare instance variable" sid="764071591746208" type="hint">
+                                    <param id="0" name="Instance variable">Messagge</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="918814406737219" type="System">
+                                    <param id="0" name="Variable">popUpActivo</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="514429100290151" type="System">
+                                    <param id="0" name="Layer">3</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-13" name="Set time scale" sid="103096815046021" type="System">
+                                    <param id="0" name="Time scale">0</param>
+                                </action>
+                                <action id="0" name="Set text" sid="535940356443370" type="HintText">
+                                    <param id="0" name="Text">&quot;🔄 Hint 2 – Dos referencias, un solo Reff&#x0D;&#x0A;&#x0D;&#x0A;En Java, copiar una referencia no clona el objeto: solo crea otra flecha que apunta al mismo lugar.  Ejemplo:&#x0D;&#x0A;&#x0D;&#x0A;Reff reff1 = new Reff();&#x0D;&#x0A;Reff reff2 = reff1; &#x0D;&#x0A;&#x0D;&#x0A;Ahora reff1 y reff2 están conectados al mismo Reff viviente.&#x0D;&#x0A;Cualquier cambio que hagas desde reff2 también afecta a reff1, ¡porque no hay dos Reffs, solo dos caminos hacia el mismo!&#x0D;&#x0A;&#x0D;&#x0A;Es importante comprender cuándo compartir una referencia y cuándo crear una nueva instancia. &#x0D;&#x0A;¡Duplicar flechas no duplica al héroe! &quot;</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="572794448151435" type="HintText">
+                                    <param id="0" name="X">ViewportLeft(&quot;Foreground&quot;) + 620</param>
+                                    <param id="1" name="Y">ViewportTop(&quot;Foreground&quot;) + 360</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="137373439726318" type="HintText">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="3" name="Set volume" sid="414611689101862" type="Audio">
+                                    <param id="0" name="Tag">&quot;&quot;</param>
+                                    <param id="1" name="dB">-10</param>
+                                </action>
+                                <action id="-12" name="Subtract from" sid="592380646692117" type="hint">
+                                    <param id="0" name="Instance variable">Messagge</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="808844603488269" type="debug">
+                                    <param id="0" name="Text">hint.Messagge</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block any="1" sid="708706013568980">
                     <conditions>
