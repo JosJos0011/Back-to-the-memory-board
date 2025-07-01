@@ -1101,9 +1101,12 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="708706013568980">
+                <event-block any="1" sid="708706013568980">
                     <conditions>
                         <condition id="0" name="On clicked" sid="725052178194953" type="BtnOk" />
+                        <condition id="0" name="On key pressed" sid="872248369632660" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="321079331029227" type="System">

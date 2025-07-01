@@ -841,26 +841,29 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="203321181718014">
+                <event-block any="1" sid="879383660109502">
                     <conditions>
-                        <condition id="0" name="On clicked" sid="645543559582711" type="BtnOk" />
+                        <condition id="0" name="On clicked" sid="538729250370314" type="BtnOk" />
+                        <condition id="0" name="On key pressed" sid="139396957893332" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Set value" sid="463593559222956" type="System">
+                        <action id="-9" name="Set value" sid="176638684642199" type="System">
                             <param id="0" name="Variable">popUpActivo</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                        <action id="-4" name="Set layer visible" sid="222652998660291" type="System">
+                        <action id="-4" name="Set layer visible" sid="226315000767767" type="System">
                             <param id="0" name="Layer">&quot;PopUp&quot;</param>
                             <param id="1" name="Visibility">0</param>
                         </action>
-                        <action id="-13" name="Set time scale" sid="744910900592231" type="System">
+                        <action id="-13" name="Set time scale" sid="441749995032639" type="System">
                             <param id="0" name="Time scale">1</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="737340414125325" type="HintText">
+                        <action id="-15" name="Set visible" sid="834547680907367" type="HintText">
                             <param id="0" name="Visibility">0</param>
                         </action>
-                        <action id="3" name="Set volume" sid="334961197343641" type="Audio">
+                        <action id="3" name="Set volume" sid="793651929626467" type="Audio">
                             <param id="0" name="Tag">&quot;&quot;</param>
                             <param id="1" name="dB">0</param>
                         </action>
