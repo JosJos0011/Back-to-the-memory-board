@@ -243,6 +243,50 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Próximamente" uid="375">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1806</x>
+                        <y>223</y>
+                        <z>0</z>
+                        <width>155</width>
+                        <height>75</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501030922</hotspotX>
+                        <hotspotY>0.958932221</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.699999988</opacity>
+                    </world>
+                </instance>
+                <instance type="HitBoxTVProximamente" uid="376">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1802</x>
+                        <y>327</y>
+                        <z>0</z>
+                        <width>141</width>
+                        <height>166</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0.103931881</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>

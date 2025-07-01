@@ -132,6 +132,38 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="405524926976671">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="975095969178660" type="Mouse">
+                            <param id="0" name="Object">HitBoxTVProximamente</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="258506662189692" type="Próximamente">
+                            <param id="0" name="Width">186</param>
+                            <param id="1" name="Height">90</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="926267775918762" type="Próximamente">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="286399205349500">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="138469999811167" type="Mouse">
+                            <param id="0" name="Object">HitBoxTVProximamente</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="354214834568578" type="Próximamente">
+                            <param id="0" name="Width">155</param>
+                            <param id="1" name="Height"> 75</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="982195549199958" type="Próximamente">
+                            <param id="0" name="Opacity">70</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="381509297678740" title="Load Selected Level">

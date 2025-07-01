@@ -15,10 +15,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="4">Nivel3</layout>
         <layout order="7">Main Menu</layout>
         <event-sheet order="1">Eventos Nivel1</event-sheet>
-        <event-sheet active="1" order="3">Eventos nivel2</event-sheet>
+        <event-sheet order="3">Eventos nivel2</event-sheet>
         <event-sheet order="5">Eventos Nivel3</event-sheet>
-        <event-sheet order="6">Eventos Main Menu</event-sheet>
-        <event-sheet order="8">Eventos InfoDump</event-sheet>
+        <event-sheet active="1" order="6">Eventos Main Menu</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -31,11 +30,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="1" name="FamObject" />
     </families-expanded>
     <folders-expanded>
-        <folder expanded="0" path="object-folder/" />
-        <folder expanded="1" path="layout-folder/" />
-        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="layout-folder/" />
+        <folder expanded="0" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
-        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="0" path="sound-folder/" />
         <folder expanded="0" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/Backgound/" />
@@ -112,5 +111,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/key/" />
         <folder expanded="1" path="animation-folder/check/" />
         <folder expanded="1" path="animation-folder/arrow/" />
+        <folder expanded="1" path="animation-folder/Próximamente/" />
+        <folder expanded="1" path="animation-folder/HitBoxTVProximamente/" />
     </folders-expanded>
 </c2uistate>
