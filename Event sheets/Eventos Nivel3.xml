@@ -209,13 +209,20 @@
                         <condition id="0" name="On collision with another object" sid="201953015299444" type="Reff_PJ">
                             <param id="0" name="Object">spikesLow</param>
                         </condition>
+                        <condition id="-7" name="Compare instance variable" sid="104657312371740" type="Reff_PJ">
+                            <param id="0" name="Instance variable">Inmune</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions>
-                        <action id="-10" name="Set value" sid="380018686408338" type="Reff_PJ">
-                            <param id="0" name="Instance variable">Inmune</param>
-                            <param id="1" name="Value">0</param>
+                        <action id="0" name="Play" sid="132604619535067" type="Audio">
+                            <param id="0" name="Audio file">error</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
-                        <action disabled="1" id="-12" name="Subtract from" sid="954631696274115" type="Reff_PJ">
+                        <action id="-12" name="Subtract from" sid="954631696274115" type="Reff_PJ">
                             <param id="0" name="Instance variable">Vidas</param>
                             <param id="1" name="Value">1</param>
                         </action>
@@ -223,13 +230,13 @@
                             <param id="0" name="Instance variable">Inmune</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action behavior="Flash" id="0" name="Flash" sid="996992588674952" type="Reff_PJ">
+                        <action behavior="Flash" id="0" name="Flash" sid="494436535474266" type="Reff_PJ">
                             <param id="0" name="&apos;On&apos; time">0.2</param>
                             <param id="1" name="&apos;Off&apos; time">0.2</param>
-                            <param id="2" name="Duration">1.0</param>
+                            <param id="2" name="Duration">2.0</param>
                         </action>
-                        <action id="-16" name="Wait" sid="840491807675282" type="System">
-                            <param id="0" name="Seconds">1.0</param>
+                        <action id="-16" name="Wait" sid="530984244758778" type="System">
+                            <param id="0" name="Seconds">2.0</param>
                         </action>
                         <action id="-10" name="Set value" sid="393738212825302" type="Reff_PJ">
                             <param id="0" name="Instance variable">Inmune</param>
@@ -246,13 +253,20 @@
                         <condition id="0" name="On collision with another object" sid="431243606814741" type="Reff_PJ">
                             <param id="0" name="Object">enemyFloating_1</param>
                         </condition>
+                        <condition id="-7" name="Compare instance variable" sid="885464110261930" type="Reff_PJ">
+                            <param id="0" name="Instance variable">Inmune</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions>
-                        <action id="-10" name="Set value" sid="240264008120537" type="Reff_PJ">
-                            <param id="0" name="Instance variable">Inmune</param>
-                            <param id="1" name="Value">0</param>
+                        <action id="0" name="Play" sid="884381195091153" type="Audio">
+                            <param id="0" name="Audio file">error</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
-                        <action disabled="1" id="-12" name="Subtract from" sid="418815332198968" type="Reff_PJ">
+                        <action id="-12" name="Subtract from" sid="418815332198968" type="Reff_PJ">
                             <param id="0" name="Instance variable">Vidas</param>
                             <param id="1" name="Value">1</param>
                         </action>
@@ -263,10 +277,10 @@
                         <action behavior="Flash" id="0" name="Flash" sid="273430200204309" type="Reff_PJ">
                             <param id="0" name="&apos;On&apos; time">0.2</param>
                             <param id="1" name="&apos;Off&apos; time">0.2</param>
-                            <param id="2" name="Duration">1.0</param>
+                            <param id="2" name="Duration">2.0</param>
                         </action>
                         <action id="-16" name="Wait" sid="286602023318012" type="System">
-                            <param id="0" name="Seconds">1.0</param>
+                            <param id="0" name="Seconds">2.0</param>
                         </action>
                         <action id="-10" name="Set value" sid="828363333171446" type="Reff_PJ">
                             <param id="0" name="Instance variable">Inmune</param>
@@ -279,13 +293,20 @@
                         <condition id="0" name="On collision with another object" sid="272671477364230" type="Reff_PJ">
                             <param id="0" name="Object">enemyFlying_1</param>
                         </condition>
+                        <condition id="-7" name="Compare instance variable" sid="419925834607946" type="Reff_PJ">
+                            <param id="0" name="Instance variable">Inmune</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions>
-                        <action id="-10" name="Set value" sid="973965896048896" type="Reff_PJ">
-                            <param id="0" name="Instance variable">Inmune</param>
-                            <param id="1" name="Value">0</param>
+                        <action id="0" name="Play" sid="214253513807655" type="Audio">
+                            <param id="0" name="Audio file">error</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
-                        <action disabled="1" id="-12" name="Subtract from" sid="912451869059972" type="Reff_PJ">
+                        <action id="-12" name="Subtract from" sid="912451869059972" type="Reff_PJ">
                             <param id="0" name="Instance variable">Vidas</param>
                             <param id="1" name="Value">1</param>
                         </action>
@@ -296,10 +317,10 @@
                         <action behavior="Flash" id="0" name="Flash" sid="633519863021398" type="Reff_PJ">
                             <param id="0" name="&apos;On&apos; time">0.2</param>
                             <param id="1" name="&apos;Off&apos; time">0.2</param>
-                            <param id="2" name="Duration">1.0</param>
+                            <param id="2" name="Duration">2.0</param>
                         </action>
                         <action id="-16" name="Wait" sid="355069616532453" type="System">
-                            <param id="0" name="Seconds">1.0</param>
+                            <param id="0" name="Seconds">2.0</param>
                         </action>
                         <action id="-10" name="Set value" sid="497670100172671" type="Reff_PJ">
                             <param id="0" name="Instance variable">Inmune</param>
