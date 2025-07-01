@@ -27,7 +27,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <layers>
         <layer locked="1" name="Background" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Platforms" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="Hazards" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Hazards" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Enemies" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Gameplay" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Player" parallax-in-editor="0" visible="1" />

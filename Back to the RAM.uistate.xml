@@ -12,12 +12,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Nivel1</layout>
         <layout order="2">Nivel2</layout>
-        <layout order="4">Nivel3</layout>
+        <layout active="1" order="4">Nivel3</layout>
         <layout order="7">Main Menu</layout>
-        <event-sheet active="1" order="1">Eventos Nivel1</event-sheet>
+        <event-sheet order="1">Eventos Nivel1</event-sheet>
         <event-sheet order="3">Eventos nivel2</event-sheet>
         <event-sheet order="5">Eventos Nivel3</event-sheet>
         <event-sheet order="6">Eventos Main Menu</event-sheet>
+        <event-sheet order="8">Eventos InfoDump</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -30,7 +31,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="1" name="FamObject" />
     </families-expanded>
     <folders-expanded>
-        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/" />
         <folder expanded="0" path="layout-folder/" />
         <folder expanded="0" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />

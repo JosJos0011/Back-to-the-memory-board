@@ -704,6 +704,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="795976114777126" type="Audio">
+                                            <param id="0" name="Audio file">error</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                         <action id="-13" name="Set time scale" sid="373516918214200" type="System">
                                             <param id="0" name="Time scale">1</param>
                                         </action>
