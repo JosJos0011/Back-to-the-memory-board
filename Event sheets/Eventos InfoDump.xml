@@ -157,6 +157,12 @@
                                             <param id="2" name="X">0</param>
                                             <param id="3" name="Y">0</param>
                                         </action>
+                                        <action id="2" name="Set visible" sid="759282328540796" type="Btn_InfoDump">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="964893188557199" type="TextoBoton">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
                                         <action id="0" name="Set text" sid="360864678726333" type="Texto_InfoDump">
                                             <param id="0" name="Text">&quot;                                                 ⚙️ ¿Qué debes hacer?&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;Explora el nivel y recoge referencias como cuenta, conexionDB, o scanner.&#x0D;&#x0A;&#x0D;&#x0A;Busca su objeto asociado en la memoria digital (representado por íconos como bases de datos, consolas, usuarios, etc).&#x0D;&#x0A;&#x0D;&#x0A;Si logras hacer una conexión correcta, se activará una línea de energía verde entre ambos y ganarás puntos.&quot;</param>
                                         </action>
@@ -431,6 +437,15 @@
                                 <action id="-10" name="Add to" sid="968557508027496" type="System">
                                     <param id="0" name="Variable">ShowMessage</param>
                                     <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="651519499542760" type="System">
+                                    <param id="0" name="Seconds">1.5</param>
+                                </action>
+                                <action id="2" name="Set visible" sid="522945209074957" type="Btn_InfoDump">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="151508252946652" type="TextoBoton">
+                                    <param id="0" name="Visibility">1</param>
                                 </action>
                             </actions>
                         </event-block>
