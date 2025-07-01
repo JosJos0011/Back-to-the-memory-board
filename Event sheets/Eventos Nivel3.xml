@@ -47,7 +47,7 @@
                         </action>
                         <action id="-10" name="Set value" sid="824779268392706" type="Reff_PJ">
                             <param id="0" name="Instance variable">Vidas</param>
-                            <param id="1" name="Value">3</param>
+                            <param id="1" name="Value">6</param>
                         </action>
                         <action id="4" name="Set animation" sid="421872102531884" type="Reff_PJ">
                             <param id="0" name="Animation">&quot;Idle&quot;</param>

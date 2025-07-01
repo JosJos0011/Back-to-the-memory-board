@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Nivel1</name>
     <events>
+        <variable constant="0" name="targetUID" sid="634279250439485" static="0" type="number">0</variable>
         <variable comment="Variable que indica que referencia lleva Reff en mano" constant="0" name="Reff_InHand_ID" sid="583930249885678" static="0" type="number">-1</variable>
         <variable comment="Esto es para levantar la vista del popUp" constant="0" name="popUpActivo" sid="841385143283468" static="0" type="number">0</variable>
         <variable comment="Quien lleva la cuenta cuantas referencias se han resuelto" constant="0" name="RefferencesLocated" sid="375786782945882" static="0" type="number">0</variable>
@@ -51,7 +52,64 @@
                         </action>
                         <action id="-10" name="Set value" sid="282627705321103" type="Reff_PJ">
                             <param id="0" name="Instance variable">Vidas</param>
-                            <param id="1" name="Value">3</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="883813353979119" type="hint">
+                            <param id="0" name="Instance variable">Messagge</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="1" name="Set size" sid="477618652992730" type="ListaObjetivos">
+                            <param id="0" name="Width">8</param>
+                            <param id="1" name="Height">1</param>
+                            <param id="2" name="Depth">1</param>
+                        </action>
+                        <action id="4" name="Set at XYZ" sid="792524728059608" type="ListaObjetivos">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Z">0</param>
+                            <param id="3" name="Value">7</param>
+                        </action>
+                        <action id="4" name="Set at XYZ" sid="417237415586076" type="ListaObjetivos">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Z">0</param>
+                            <param id="3" name="Value">2</param>
+                        </action>
+                        <action id="4" name="Set at XYZ" sid="839838020988931" type="ListaObjetivos">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Z">0</param>
+                            <param id="3" name="Value">6</param>
+                        </action>
+                        <action id="4" name="Set at XYZ" sid="819894850402270" type="ListaObjetivos">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Z">0</param>
+                            <param id="3" name="Value">5</param>
+                        </action>
+                        <action id="4" name="Set at XYZ" sid="536317807678542" type="ListaObjetivos">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Z">0</param>
+                            <param id="3" name="Value">4</param>
+                        </action>
+                        <action id="4" name="Set at XYZ" sid="677959440877967" type="ListaObjetivos">
+                            <param id="0" name="X">5</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Z">0</param>
+                            <param id="3" name="Value">3</param>
+                        </action>
+                        <action id="4" name="Set at XYZ" sid="115055952944033" type="ListaObjetivos">
+                            <param id="0" name="X">6</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Z">0</param>
+                            <param id="3" name="Value">1</param>
+                        </action>
+                        <action id="4" name="Set at XYZ" sid="567059777442011" type="ListaObjetivos">
+                            <param id="0" name="X">7</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Z">0</param>
+                            <param id="3" name="Value">8</param>
                         </action>
                     </actions>
                 </event-block>
@@ -120,7 +178,7 @@
                         <condition id="-14" name="Compare variable" sid="355350049939674" type="System">
                             <param id="0" name="Variable">Temporizador</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">90</param>
+                            <param id="2" name="Value">120</param>
                         </condition>
                         <condition id="-4" name="Trigger once while true" sid="914640815841099" type="System" />
                     </conditions>
@@ -311,19 +369,26 @@
                         <condition id="0" name="On collision with another object" sid="436463398241221" type="Reff_PJ">
                             <param id="0" name="Object">NullWraith</param>
                         </condition>
+                        <condition id="-7" name="Compare instance variable" sid="114190752106287" type="Reff_PJ">
+                            <param id="0" name="Instance variable">Inmune</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions>
-                        <action id="-10" name="Set value" sid="546010701936561" type="Reff_PJ">
-                            <param id="0" name="Instance variable">Inmune</param>
-                            <param id="1" name="Value">0</param>
+                        <action id="0" name="Play" sid="820941495941191" type="Audio">
+                            <param id="0" name="Audio file">error</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
-                        <action id="-12" name="Subtract from" sid="359308448396351" type="Reff_PJ">
+                        <action id="-12" name="Subtract from" sid="330854020315257" type="Reff_PJ">
                             <param id="0" name="Instance variable">Vidas</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-10" name="Set value" sid="673684413177523" type="Reff_PJ">
+                        <action id="-10" name="Set value" sid="849436164650585" type="Reff_PJ">
                             <param id="0" name="Instance variable">Inmune</param>
-                            <param id="1" name="Value">1.5</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                         <action behavior="Flash" id="0" name="Flash" sid="309581947507329" type="Reff_PJ">
                             <param id="0" name="&apos;On&apos; time">0.2</param>
@@ -344,11 +409,18 @@
                         <condition id="0" name="On collision with another object" sid="988122518635195" type="Reff_PJ">
                             <param id="0" name="Object">nullZone</param>
                         </condition>
+                        <condition id="-7" name="Compare instance variable" sid="271032951705352" type="Reff_PJ">
+                            <param id="0" name="Instance variable">Inmune</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions>
-                        <action id="-10" name="Set value" sid="234036467027603" type="Reff_PJ">
-                            <param id="0" name="Instance variable">Inmune</param>
-                            <param id="1" name="Value">0</param>
+                        <action id="0" name="Play" sid="396848505530520" type="Audio">
+                            <param id="0" name="Audio file">error</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action id="-12" name="Subtract from" sid="447573530959420" type="Reff_PJ">
                             <param id="0" name="Instance variable">Vidas</param>
@@ -356,7 +428,7 @@
                         </action>
                         <action id="-10" name="Set value" sid="245132557729022" type="Reff_PJ">
                             <param id="0" name="Instance variable">Inmune</param>
-                            <param id="1" name="Value">1.5</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                         <action behavior="Flash" id="0" name="Flash" sid="685795349102930" type="Reff_PJ">
                             <param id="0" name="&apos;On&apos; time">0.2</param>
@@ -1078,6 +1150,1160 @@
                         </action>
                     </actions>
                 </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="996920535821863" title="Game Objects Layout">
+            <sub-events>
+                <event-group description="" sid="654276778167738" title="Order Mechanic">
+                    <sub-events>
+                        <event-block sid="533094280357442">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="130735081351477" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="255246985954724">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="470699539929502" type="System">
+                                            <param id="0" name="Variable">Reff_InHand_ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">-1</param>
+                                        </condition>
+                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="979584633404161" type="Referance7">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="181762723750051" type="Object1">
+                                            <param id="0" name="Unique ID">373</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="804184923324364" type="Object2">
+                                            <param id="0" name="Unique ID">368</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="585498770606988" type="Object3">
+                                            <param id="0" name="Unique ID">372</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="119265880117444" type="Object4">
+                                            <param id="0" name="Unique ID">371</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="624970302698281" type="Object5">
+                                            <param id="0" name="Unique ID">370</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="155164464693387" type="Object6">
+                                            <param id="0" name="Unique ID">369</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="584789305851992" type="Object7">
+                                            <param id="0" name="Unique ID">366</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="606318039900864" type="Object8">
+                                            <param id="0" name="Unique ID">374</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="904923637022649" type="Object1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="332034941926696" type="Object2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="828591906000533" type="Object3">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="814370472290325" type="Object4">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="343213508715973" type="Object5">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="887497689208833" type="Object6">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="479248874676639" type="Object7">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="747890866802458" type="Object8">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="791380075292141">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="270541133975780" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="116551890954500" type="System">
+                                            <param id="0" name="Variable">Reff_InHand_ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">-1</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="518139739400065" type="Referance7">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="923600190361091" type="Referance2">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="410477852436576" type="Object1">
+                                            <param id="0" name="Unique ID">373</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="789276436176235" type="Object2">
+                                            <param id="0" name="Unique ID">368</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="835455075124825" type="Object3">
+                                            <param id="0" name="Unique ID">372</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="564598769077246" type="Object4">
+                                            <param id="0" name="Unique ID">371</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="472049048475139" type="Object5">
+                                            <param id="0" name="Unique ID">370</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="226753036114994" type="Object6">
+                                            <param id="0" name="Unique ID">369</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="326671136923053" type="Object7">
+                                            <param id="0" name="Unique ID">366</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="909637169699987" type="Object8">
+                                            <param id="0" name="Unique ID">374</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="174747737187885" type="Object1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="999190862193513" type="Object2">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="961013461066503" type="Object3">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="527928829690970" type="Object4">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="588394859740928" type="Object5">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="942127040461297" type="Object6">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="280046325159713" type="Object7">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="108479232083153" type="Object8">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="730771747320453">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="373386290869059" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="251919941715298" type="System">
+                                            <param id="0" name="Variable">Reff_InHand_ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">-1</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="363350468568250" type="Referance7">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="922188949177793" type="Referance2">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="235858446197818" type="Referance6">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="737926744758207" type="Object1">
+                                            <param id="0" name="Unique ID">373</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="565099345331580" type="Object2">
+                                            <param id="0" name="Unique ID">368</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="864247974070679" type="Object3">
+                                            <param id="0" name="Unique ID">372</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="308585244343735" type="Object4">
+                                            <param id="0" name="Unique ID">371</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="247958599661348" type="Object5">
+                                            <param id="0" name="Unique ID">370</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="972111849957085" type="Object6">
+                                            <param id="0" name="Unique ID">369</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="456879833800648" type="Object7">
+                                            <param id="0" name="Unique ID">366</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="641922137767919" type="Object8">
+                                            <param id="0" name="Unique ID">374</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="115264765823222" type="Object1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="152924884913245" type="Object2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="113748940008826" type="Object3">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="358905290313931" type="Object4">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="875575381862467" type="Object5">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="519601320322497" type="Object6">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="556392020093092" type="Object7">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="715989531689366" type="Object8">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="526992849342151">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="179827804033676" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="772619642052509" type="System">
+                                            <param id="0" name="Variable">Reff_InHand_ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">-1</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="984244996723493" type="Referance7">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="154918253361211" type="Referance2">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="362714253226656" type="Referance6">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="532990867280700" type="Referance5">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="900854427685854" type="Object1">
+                                            <param id="0" name="Unique ID">373</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="478001441526419" type="Object2">
+                                            <param id="0" name="Unique ID">368</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="997901102085120" type="Object3">
+                                            <param id="0" name="Unique ID">372</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="945449127659287" type="Object4">
+                                            <param id="0" name="Unique ID">371</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="507325343795422" type="Object5">
+                                            <param id="0" name="Unique ID">370</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="914568115578772" type="Object6">
+                                            <param id="0" name="Unique ID">369</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="500930457358316" type="Object7">
+                                            <param id="0" name="Unique ID">366</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="933687242538747" type="Object8">
+                                            <param id="0" name="Unique ID">374</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="382890959125347" type="Object1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="520185098236987" type="Object2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="429023456193831" type="Object3">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="976526251292896" type="Object4">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="139842291032278" type="Object5">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="449714078311962" type="Object6">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="395332298041064" type="Object7">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="974357156120462" type="Object8">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="172956208454180">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="481062081926706" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="161902768249146" type="System">
+                                            <param id="0" name="Variable">Reff_InHand_ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">-1</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="839202474939774" type="Referance7">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="919902841205109" type="Referance2">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="906853903350867" type="Referance6">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="637042662977429" type="Referance5">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="440316307115972" type="Referance4">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="812453611014852" type="Object1">
+                                            <param id="0" name="Unique ID">373</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="953185156637664" type="Object2">
+                                            <param id="0" name="Unique ID">368</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="310961119698316" type="Object3">
+                                            <param id="0" name="Unique ID">372</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="176084803216411" type="Object4">
+                                            <param id="0" name="Unique ID">371</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="504549780633846" type="Object5">
+                                            <param id="0" name="Unique ID">370</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="377105608473562" type="Object6">
+                                            <param id="0" name="Unique ID">369</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="877520452243067" type="Object7">
+                                            <param id="0" name="Unique ID">366</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="642992875511538" type="Object8">
+                                            <param id="0" name="Unique ID">374</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="202161044802755" type="Object1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="886683405248094" type="Object2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="476082542343712" type="Object3">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="344615622218206" type="Object4">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="128698652887893" type="Object5">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="214945799465741" type="Object6">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="603444721575201" type="Object7">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="525653737711517" type="Object8">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="762245686389407">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="607397636510502" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="402264832248672" type="System">
+                                            <param id="0" name="Variable">Reff_InHand_ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">-1</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="525074080592370" type="Referance7">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="756624179728967" type="Referance2">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="506166700648006" type="Referance6">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="483236247117137" type="Referance5">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="171922271743854" type="Referance4">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="631717979815896" type="Referance3">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="802221195418953" type="Object1">
+                                            <param id="0" name="Unique ID">373</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="633743127469312" type="Object2">
+                                            <param id="0" name="Unique ID">368</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="148077538245031" type="Object3">
+                                            <param id="0" name="Unique ID">372</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="717303853460186" type="Object4">
+                                            <param id="0" name="Unique ID">371</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="388825718906026" type="Object5">
+                                            <param id="0" name="Unique ID">370</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="462754235816993" type="Object6">
+                                            <param id="0" name="Unique ID">369</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="953446950573661" type="Object7">
+                                            <param id="0" name="Unique ID">366</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="627555476460749" type="Object8">
+                                            <param id="0" name="Unique ID">374</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="324386938849038" type="Object1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="213322562032043" type="Object2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="475878298854513" type="Object3">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="534256762929582" type="Object4">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="250186117136025" type="Object5">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="324907507644492" type="Object6">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="685515684551481" type="Object7">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="214344845691856" type="Object8">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="978507581315395">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="159009133035002" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="890479960635601" type="System">
+                                            <param id="0" name="Variable">Reff_InHand_ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">-1</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="896711036881923" type="Referance7">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="574669807307514" type="Referance2">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="467079985072042" type="Referance6">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="438104708252403" type="Referance5">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="187762453220310" type="Referance4">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="314778273306857" type="Referance3">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="787630477556533" type="Referance1">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="638757678359222" type="Object1">
+                                            <param id="0" name="Unique ID">373</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="272137009600118" type="Object2">
+                                            <param id="0" name="Unique ID">368</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="661831494528830" type="Object3">
+                                            <param id="0" name="Unique ID">372</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="278962274822480" type="Object4">
+                                            <param id="0" name="Unique ID">371</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="886727970863758" type="Object5">
+                                            <param id="0" name="Unique ID">370</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="889668547849448" type="Object6">
+                                            <param id="0" name="Unique ID">369</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="286197596536667" type="Object7">
+                                            <param id="0" name="Unique ID">366</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="471869595757812" type="Object8">
+                                            <param id="0" name="Unique ID">374</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="313983092304124" type="Object1">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="645669149993609" type="Object2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="956007310159162" type="Object3">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="865175112802723" type="Object4">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="847654522175085" type="Object5">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="138881769822640" type="Object6">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="660680763003259" type="Object7">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="847289452439456" type="Object8">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="136847381085961">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="224391963416152" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="318395111585655" type="System">
+                                            <param id="0" name="Variable">Reff_InHand_ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">-1</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="583123657828135" type="Referance7">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="674306960679248" type="Referance2">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="554556609607080" type="Referance6">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="365085902268159" type="Referance5">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="500671327315841" type="Referance4">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="739032230869034" type="Referance3">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="395686795486807" type="Referance1">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="908016324607927" type="Referance8">
+                                            <param id="0" name="Instance variable">Conectado</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="351717230173279" type="Object1">
+                                            <param id="0" name="Unique ID">373</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="232313348424924" type="Object2">
+                                            <param id="0" name="Unique ID">368</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="960923336017175" type="Object3">
+                                            <param id="0" name="Unique ID">372</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="144201901927219" type="Object4">
+                                            <param id="0" name="Unique ID">371</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="837110397330497" type="Object5">
+                                            <param id="0" name="Unique ID">370</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="693575957446437" type="Object6">
+                                            <param id="0" name="Unique ID">369</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="248034927716282" type="Object7">
+                                            <param id="0" name="Unique ID">366</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="394206483926343" type="Object8">
+                                            <param id="0" name="Unique ID">374</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="106092400056834" type="Object1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="390506108445684" type="Object2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="595100667612275" type="Object3">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="600158811753806" type="Object4">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="471981328532234" type="Object5">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="971027120169173" type="Object6">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="699425106952638" type="Object7">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="480356558695958" type="Object8">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="681942778302392">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="666910282458646" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="102485850654958" type="System">
+                                            <param id="0" name="Variable">Reff_InHand_ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">-1</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="787573115990878" type="Object1">
+                                            <param id="0" name="Unique ID">373</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="642074852036094" type="Object2">
+                                            <param id="0" name="Unique ID">368</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="517859493040224" type="Object3">
+                                            <param id="0" name="Unique ID">372</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="352966923227649" type="Object4">
+                                            <param id="0" name="Unique ID">371</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="178949119530948" type="Object5">
+                                            <param id="0" name="Unique ID">370</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="934091903499225" type="Object6">
+                                            <param id="0" name="Unique ID">369</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="890684670676023" type="Object7">
+                                            <param id="0" name="Unique ID">366</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="560186112274048" type="Object8">
+                                            <param id="0" name="Unique ID">374</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="720909310890318" type="Object1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="923677283360943" type="Object2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="591557909211241" type="Object3">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="173412749962349" type="Object4">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="290521116396020" type="Object5">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="771516358690364" type="Object6">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="409729484223455" type="Object7">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="587209855758969" type="Object8">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="500216633042898" title="Object Mechanic">
+                    <sub-events>
+                        <event-block sid="756640066645113">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="120607572105174" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="573145989982842">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="385607570421133" type="System">
+                                            <param id="0" name="Variable">Reff_InHand_ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="493760026872917" type="Object1">
+                                            <param id="0" name="Unique ID">373</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="989411129197141" type="Object2">
+                                            <param id="0" name="Unique ID">368</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="673934992728247" type="Object3">
+                                            <param id="0" name="Unique ID">372</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="612065100990541" type="Object4">
+                                            <param id="0" name="Unique ID">371</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="695779842354825" type="Object5">
+                                            <param id="0" name="Unique ID">370</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="427161155576600" type="Object6">
+                                            <param id="0" name="Unique ID">369</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="728384575339013" type="Object7">
+                                            <param id="0" name="Unique ID">366</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="830835553459019" type="Object8">
+                                            <param id="0" name="Unique ID">374</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="195128536999869" type="Object1">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="235969234008999" type="Object2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="645556268242697" type="Object3">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="956183434335533" type="Object4">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="838002274820265" type="Object5">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="405460052668312" type="Object6">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="884992989397607" type="Object7">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="642161277592196" type="Object8">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="675476901192904">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="388469545472351" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="219966074705626" type="System">
+                                            <param id="0" name="Variable">Reff_InHand_ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="941763118030465" type="Object1">
+                                            <param id="0" name="Unique ID">373</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="420519392630500" type="Object2">
+                                            <param id="0" name="Unique ID">368</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="792709972563645" type="Object3">
+                                            <param id="0" name="Unique ID">372</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="761604844402936" type="Object4">
+                                            <param id="0" name="Unique ID">371</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="282113675831977" type="Object5">
+                                            <param id="0" name="Unique ID">370</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="144109946220120" type="Object6">
+                                            <param id="0" name="Unique ID">369</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="979084968276004" type="Object7">
+                                            <param id="0" name="Unique ID">366</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="702661526511838" type="Object8">
+                                            <param id="0" name="Unique ID">374</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="414394258402496" type="Object1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="218751568745261" type="Object2">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="903814201961576" type="Object3">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="479125731261347" type="Object4">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="345527456972286" type="Object5">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="430856757177463" type="Object6">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="362146650167401" type="Object7">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="624401313690089" type="Object8">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="974148589821195">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="406234466094588" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="105203640223513" type="System">
+                                            <param id="0" name="Variable">Reff_InHand_ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="428264507231898" type="Object1">
+                                            <param id="0" name="Unique ID">373</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="880072923572288" type="Object2">
+                                            <param id="0" name="Unique ID">368</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="747686879848263" type="Object3">
+                                            <param id="0" name="Unique ID">372</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="211368984190884" type="Object4">
+                                            <param id="0" name="Unique ID">371</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="777012512587994" type="Object5">
+                                            <param id="0" name="Unique ID">370</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="922401294251079" type="Object6">
+                                            <param id="0" name="Unique ID">369</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="745594535754396" type="Object7">
+                                            <param id="0" name="Unique ID">366</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="242679710880429" type="Object8">
+                                            <param id="0" name="Unique ID">374</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="597523522803431" type="Object1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="594041729441163" type="Object2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="672826492608851" type="Object3">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="923280926697722" type="Object4">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="207535047254026" type="Object5">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="226505145981762" type="Object6">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="115827594544433" type="Object7">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="317551853567635" type="Object8">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="916921931797655">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="817990956514258" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="745143732513366" type="System">
+                                            <param id="0" name="Variable">Reff_InHand_ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="967831070868513" type="Object1">
+                                            <param id="0" name="Unique ID">373</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="124706282678809" type="Object2">
+                                            <param id="0" name="Unique ID">368</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="862228747563680" type="Object3">
+                                            <param id="0" name="Unique ID">372</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="582843310006497" type="Object4">
+                                            <param id="0" name="Unique ID">371</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="693354468890381" type="Object5">
+                                            <param id="0" name="Unique ID">370</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="730625561994314" type="Object6">
+                                            <param id="0" name="Unique ID">369</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="881730189696729" type="Object7">
+                                            <param id="0" name="Unique ID">366</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="853533584824897" type="Object8">
+                                            <param id="0" name="Unique ID">374</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="915416821620985" type="Object1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="960803356431593" type="Object2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="895246840596216" type="Object3">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="506476349851752" type="Object4">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="404792781747607" type="Object5">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="794659620079165" type="Object6">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="543462961807460" type="Object7">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="908599183093380" type="Object8">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="408129958547888">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="306851163443318" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="917595750360020" type="System">
+                                            <param id="0" name="Variable">Reff_InHand_ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="794206731078724" type="Object1">
+                                            <param id="0" name="Unique ID">373</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="576692898557403" type="Object2">
+                                            <param id="0" name="Unique ID">368</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="536345703742255" type="Object3">
+                                            <param id="0" name="Unique ID">372</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="504637021054836" type="Object4">
+                                            <param id="0" name="Unique ID">371</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="675738946831448" type="Object5">
+                                            <param id="0" name="Unique ID">370</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="197585716191223" type="Object6">
+                                            <param id="0" name="Unique ID">369</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="997364787992401" type="Object7">
+                                            <param id="0" name="Unique ID">366</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="828458574633712" type="Object8">
+                                            <param id="0" name="Unique ID">374</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="907554006999536" type="Object1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="149446330036072" type="Object2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="139309491338254" type="Object3">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="161899921198416" type="Object4">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="154943443055472" type="Object5">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="119831880197275" type="Object6">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="910541258075967" type="Object7">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="368904341929223" type="Object8">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="933824483492236">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="501479547823217" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="140981912502215" type="System">
+                                            <param id="0" name="Variable">Reff_InHand_ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">6</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="793493737471395" type="Object1">
+                                            <param id="0" name="Unique ID">373</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="733194797115509" type="Object2">
+                                            <param id="0" name="Unique ID">368</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="213282257690613" type="Object3">
+                                            <param id="0" name="Unique ID">372</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="600951440404877" type="Object4">
+                                            <param id="0" name="Unique ID">371</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="338048222584075" type="Object5">
+                                            <param id="0" name="Unique ID">370</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="221963468232604" type="Object6">
+                                            <param id="0" name="Unique ID">369</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="630532753383429" type="Object7">
+                                            <param id="0" name="Unique ID">366</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="858792454992070" type="Object8">
+                                            <param id="0" name="Unique ID">374</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="223522545827035" type="Object1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="151367257668189" type="Object2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="827435613964258" type="Object3">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="332027234440512" type="Object4">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="498760365499596" type="Object5">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="700576500355984" type="Object6">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="557354924516582" type="Object7">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="578685238677652" type="Object8">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="995572394847374">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="195021686589965" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="151022576647110" type="System">
+                                            <param id="0" name="Variable">Reff_InHand_ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">7</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="923785089071021" type="Object1">
+                                            <param id="0" name="Unique ID">373</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="673308121868989" type="Object2">
+                                            <param id="0" name="Unique ID">368</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="692431354208854" type="Object3">
+                                            <param id="0" name="Unique ID">372</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="619364338684649" type="Object4">
+                                            <param id="0" name="Unique ID">371</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="658180083696263" type="Object5">
+                                            <param id="0" name="Unique ID">370</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="854201093234404" type="Object6">
+                                            <param id="0" name="Unique ID">369</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="483602225604258" type="Object7">
+                                            <param id="0" name="Unique ID">366</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="414104611955206" type="Object8">
+                                            <param id="0" name="Unique ID">374</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="277718320168535" type="Object1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="775797512497193" type="Object2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="429342832163416" type="Object3">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="946088451636071" type="Object4">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="967921109387173" type="Object5">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="397274124104410" type="Object6">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="151417159665370" type="Object7">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="984306216642220" type="Object8">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="587926407592243">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="687102747444993" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="999271835951796" type="System">
+                                            <param id="0" name="Variable">Reff_InHand_ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">8</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="603077360233263" type="Object1">
+                                            <param id="0" name="Unique ID">373</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="989608741992059" type="Object2">
+                                            <param id="0" name="Unique ID">368</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="316387857409504" type="Object3">
+                                            <param id="0" name="Unique ID">372</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="308794957045172" type="Object4">
+                                            <param id="0" name="Unique ID">371</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="263687096640057" type="Object5">
+                                            <param id="0" name="Unique ID">370</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="469539393512675" type="Object6">
+                                            <param id="0" name="Unique ID">369</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="215884905106031" type="Object7">
+                                            <param id="0" name="Unique ID">366</param>
+                                        </condition>
+                                        <condition id="-14" name="Pick by unique ID" sid="141803087485474" type="Object8">
+                                            <param id="0" name="Unique ID">374</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="281435180940623" type="Object1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="868324177590422" type="Object2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="352028653260297" type="Object3">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="869941665589011" type="Object4">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="523776463454977" type="Object5">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="996050742770332" type="Object6">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="513700374758014" type="Object7">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="240275125172675" type="Object8">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
             </sub-events>
         </event-group>
     </events>

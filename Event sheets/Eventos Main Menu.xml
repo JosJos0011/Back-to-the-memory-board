@@ -13,6 +13,7 @@
                         <condition id="-2" name="On start of layout" sid="748975073383936" type="System" />
                     </conditions>
                     <actions>
+                        <action id="33" name="Stop all" sid="446792179868787" type="Audio" />
                         <action id="0" name="Play" sid="827950612650224" type="Audio">
                             <param id="0" name="Audio file">Back-to-the-Random-Access-Memory</param>
                             <param id="2" name="Loop">1</param>
@@ -153,7 +154,7 @@
                         </action>
                         <action id="-3" name="Create object" sid="892205527605170" type="System">
                             <param id="0" name="Object to create">Negro</param>
-                            <param id="1" name="Layer">0</param>
+                            <param id="1" name="Layer">1</param>
                             <param id="2" name="X">0</param>
                             <param id="3" name="Y">0</param>
                         </action>
@@ -177,7 +178,7 @@
                         </action>
                         <action id="-3" name="Create object" sid="575312246207208" type="System">
                             <param id="0" name="Object to create">Negro</param>
-                            <param id="1" name="Layer">0</param>
+                            <param id="1" name="Layer">2</param>
                             <param id="2" name="X">0</param>
                             <param id="3" name="Y">0</param>
                         </action>
@@ -201,7 +202,7 @@
                         </action>
                         <action id="-3" name="Create object" sid="585695471933633" type="System">
                             <param id="0" name="Object to create">Negro</param>
-                            <param id="1" name="Layer">0</param>
+                            <param id="1" name="Layer">3</param>
                             <param id="2" name="X">0</param>
                             <param id="3" name="Y">0</param>
                         </action>

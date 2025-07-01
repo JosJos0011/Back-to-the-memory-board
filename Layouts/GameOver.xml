@@ -72,10 +72,10 @@
             <instances>
                 <instance type="TextoReintentar" uid="68">
                     <properties>
-                        <text>PRECIONE ESPACIO PARA REINTENTAR</text>
+                        <text>PRECIONE &apos;ESPACIO&apos; PARA REINTENTAR</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-64,400,0</font>
-                        <color>255,255,255</color>
+                        <font>Goudy Old Style,-64,400,1</font>
+                        <color>0,255,255</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Top-left</hotspot>
@@ -85,8 +85,35 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>0</x>
-                        <y>835</y>
+                        <x>-6</x>
+                        <y>728</y>
+                        <z>0</z>
+                        <width>1909</width>
+                        <height>193</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="TextoReintentar" uid="365">
+                    <properties>
+                        <text>O &apos;TABULAR&apos; PARA IR AL MENU DE INICIO</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Goudy Old Style,-64,400,1</font>
+                        <color>0,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-1</x>
+                        <y>803</y>
                         <z>0</z>
                         <width>1909</width>
                         <height>193</height>

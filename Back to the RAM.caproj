@@ -10,6 +10,7 @@
     <unique-id>20arjir1jbyri</unique-id>
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
@@ -3548,6 +3549,33 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="arrow" sid="920743106628777">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="951977856344114">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="349870832955587" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\josjo\Downloads\arrow.png">
+                        <collision-poly>
+                            <point x="0.0275229" y="0.246032" />
+                            <point x="0.577981" y="0.261905" />
+                            <point x="0.581041" y="0" />
+                            <point x="0.993884" y="0.507937" />
+                            <point x="0.593273" y="0.988095" />
+                            <point x="0.587155" y="0.75" />
+                            <point x="0.030581" y="0.761905" />
+                            <point x="0.030581" y="0.507937" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="ListaObjetivos" sid="515646865841536">
+            <plugin id="Arr" />
+        </object-type>
     </object-folder>
     <families>
         <family name="FamReference" plugin-id="Sprite" sid="177368928108616">
@@ -3621,7 +3649,9 @@
         <global-instance type="Browser" uid="211" />
         <global-instance type="Function" uid="351" />
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="error.ogg" />
+    </sounds-folder>
     <music-folder>
         <file name="Back-to-the-Random-Access-Memory.ogg" />
         <file name="MattOglseby - 1.m4a" />
@@ -3630,6 +3660,7 @@
         <file name="SystemDown(No_tyr_catch).ogg" />
         <file name="Object_and_Rhyme.ogg" />
         <file name="Reff-The-Tireless-One.ogg" />
+        <file name="Future-Technology_Win-Track_.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">
